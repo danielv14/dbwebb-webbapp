@@ -1,0 +1,25 @@
+body {
+  word-wrap:break-word;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+aside {
+  float: right;
+  padding: 0.5em;
+}
+
+aside img {
+  border-radius: 50%;
+
+}
+
+article {
+  padding: .5em;
+  line-height: 1.4em;
+}
+
+h1.center-text {
+  text-align: center;
+}
