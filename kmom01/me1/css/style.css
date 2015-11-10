@@ -16,10 +16,16 @@ aside img {
 }
 
 article {
-  
   line-height: 1.4em;
 }
 
 .center-text {
   text-align: center;
+}
+
+
+code {
+  padding: 0.3em;
+  background-color: #D3D3D3;
+  border-radius: 2px;
 }
