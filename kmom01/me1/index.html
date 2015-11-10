@@ -53,12 +53,35 @@
         <h1 class ="center-text">Redovisningar</h1>
         <h2>Kmom01</h2>
         <h3>Allmänt</h3>
+
+        <p>Då var det första momentet avklarat utan några större problem. De problem jag stötte på var egentligen väldigt små och slarvfel från min sida. Momentet gick relativt fort att genomföra och var en bra introduktion till kursen och var ett vettigt första moment.</p>
+
         <h3>Vilken utvecklingsmiljö sitter du på?</h3>
-        <h3>Är du sedan tidigare bektant med utveckling av mobila appar?</h3>
+
+        <p>Jag använder mig av en Macbook Pro med OS X 10.11.1. Som editor använder jag mig av Atom. Har i tidigare kurser använt mig av Coda och Sublime Text också men har nu fattat tycke för Atom, även om den i vissa fall inte verkar vara lika rapp som Sublime Text. På datorn finns Safari, Firefox och Chrome installerade. Safari används mest i "privat bruk" men i utvecklingssyfte används både Firefox och Chrome för att testa hemsidorna. Redovisningstexterna skriver jag oftast med hjälp av ett Markdown program som heter Mou. Det gör jag därför att jag tycker att det är smidigare att skriva långa texter i markdown format istället för html-kod. När jag sedan känner mig nöjd med redovisningstexten kan Mou exportera texterna som html format till clipboard så att jag sen kan klistra in koden i Atom.</p>
+
+        <h3>Är du sedan tidigare bekant med utveckling av mobila appar?</h3>
+
+        <p>Jag är inte sedan tidigare bekant med att utveckla native appar till mobiler men jag har sedan tidigare gjort en webapp. Den webappen går ut på att hjälpa mig dela upp kvitton när exempelvis jag och min flickvän har varit och handlat mat men delar inte rakt av på alla råvaror då vi inte äter 100% samma kost. Den webbappen är byggd med <a href="http://materializecss.com">Materialize</a> som är ett responsivt Material Design inspirarat framework. Appen använder sig av caching och cookies för att även fungera offline och där kakorna är tänkt att hjälpa en att bilda en uppfattning av hur mycket mat som handlas varje månad. Webappen är byggd med hjälp av jQuery.</p>
+
+        <p>Kanske får jag en del tips under denna kursens gång på hur jag kan förbättra min webapp.</p>
+
         <h3>Är du bekant med jQuery och/eller jQuery Mobile?</h3>
+
+        <p>Jag är sedan tidigare inte bekant med just jQuery Mobile med jQuery har jag använt mig av tidigare både i tidigare kurser och till hobby-projekt såsom min kvitto-webapp som jag nämnde här ovan</p>
+
         <h3>Hur känns det att jobba i jQuery Mobile?</h3>
+
+        <p>Som med så mycket annat nytt så var det en del att ta till sig. Men det är ju inget ovanligt med nya ramverk såsom jQuery Mobile. Men när man väl lär sig mer och mer om hur ramverket fungerar tror jag man snabbt kan bygga funktionella web-appar. Det kändes väldigt kraftullt hur man med hjälp av <code>.toolbar()</code> och <code>.panel()</code> kunde göra header, footer och en meny. Jag ville att min header med meny ikon skulle vara fixerad även om man scrollar och detta gjordes väldigt enkelt med hjälp av <code>data-position="fixed"</code>. Det känns kraftfullt att man kan ändra en sådan sak på ett relativt enkelt sätt.</p>
+
         <h3>Var det något som krånglade eller tog extra mycket tid?</h3>
 
+        <p>Jag hade några problem under momentets gång men egentligen handlade det bara om slarvfel från min sida i alla fallen. Först hade jag problem att få till headern och footern som toolbar, de försvann från sidan helt. Jag testade att console-logga från <code>/js/main.js</code> men ingenting syntes i firebug. Då såg jag i firebug att main.js inte ens importerades i index.html och det visade sig att jag hade skrivit fel i script-taggen för importen av <code>/js/main.js</code>.  <br/>
+        När jag sedan var klar med momentet och skulle validera fick jag en del konstiga problem från htmlhint. Det klagades på att "special characters must be escaped" där htmlhint hänvisade till att några '&lt;' för divar skulle escapas. Förstod inte varför htmlhint klagade på div-taggar och tänkte först att htmlhint var konfigurerad fel på något sätt. Efter att ha inspekterad källkoden med firefox såg jag att en del kod var markerad med röd text där den röda texten indikerade att kod var felskriven. Det handlade om att jag hade missat '&#61;' när jag hade deklarerat några divar som hade <code>class="ui-content"</code>.    <br/>
+        De krångel jag hade under momentet var alltså slarfel från min sida men det är tur att det finns bra verktyg som kan upptäcka mina slarfel</p>
+
+        <hr>
+        <!-- Kmom02 -->
         <h2>Kmom02</h2>
         <p>Här kommer redovisningstexten</p>
         <p>Och så vidare...</p>
