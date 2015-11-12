@@ -42,3 +42,7 @@ code {
 .ui-li-static.ui-collapsible > .ui-collapsible-content {
     border-bottom-width: 0;
 }
+
+.draw {
+    border: 2px solid #ccc
+}
