@@ -16,12 +16,23 @@
     window.checkSizeAndOrientation = function() {
         var width = window.screen.width,
             height = window.screen.height,
+            availwidth = window.screen.availWidth,
+            availheigth = window.screen.availHeight,
+            availleft = window.screen.availLeft,
+            colordepth = window.screen.colorDepth,
+            pixeldepth = window.screen.pixelDepth,
             isPortrait = width < height,
             text = "",
             element = document.getElementById("orientationContent");
 
         text  = "<p>Skärmens storlek är (w x h):<br>" + width + " x " + height;
         text += "<p>Orienteringen är : " + (isPortrait ? "Porträtt" : "Landskap");
+        text += "<p>AvailWidth är : " + availwidth + " pixlar";
+        text += "<p>AvailHeight är : " + availheigth + " pixlar";
+        text += "<p>AvailLeft är : " + availleft + " pixlar";
+        text += "<p>ColorDepth är : " + colordepth;
+        text += "<p>PixelDepth är : " + pixeldepth;
+
 
         element.innerHTML = text;
     };
