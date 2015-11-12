@@ -126,5 +126,13 @@
         ctx.fillRect(x-5, y-5, 10, 10);
     });
 
+    /**
+    * Add eventhandler for the navigate back event.
+    */
+    $('[data-swipeleft="back"]').on("swipeleft", function(event) {
+        window.history.back();
+        return false;
+    });
+
 
 })();
