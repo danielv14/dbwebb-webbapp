@@ -1,0 +1,31 @@
+body {
+  word-wrap:break-word;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+aside {
+  float: right;
+  padding: 0.5em;
+}
+
+aside img {
+  border-radius: 50%;
+
+}
+
+article {
+  line-height: 1.4em;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+code {
+  padding: 0.3em;
+  background-color: #D3D3D3;
+  border-radius: 2px;
+}
