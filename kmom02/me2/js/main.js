@@ -49,7 +49,7 @@
     /**
      * Add eventhandler for the click event.
      */
-    $(window).on("click", function(event) {
+    $(window).on("click", function() {
         var swipeElement = document.getElementById("swipeContent");
         swipeElement.innerHTML += "click, ";
     });
@@ -57,7 +57,7 @@
     /**
      * Add eventhandler for the swipe event.
      */
-    $(window).on("swipe", function(event) {
+    $(window).on("swipe", function() {
         var swipeElement = document.getElementById("swipeContent");
         swipeElement.innerHTML += "swipe, ";
     });
@@ -65,7 +65,7 @@
     /**
      * Add eventhandler for the swiperight event.
      */
-    $(window).on("swiperight", function(event) {
+    $(window).on("swiperight", function() {
         var swipeElement = document.getElementById("swipeContent");
         swipeElement.innerHTML += "swiperight, ";
     });
@@ -73,7 +73,7 @@
     /**
      * Add eventhandler for the swipeleft event.
      */
-    $(window).on("swipeleft", function(event) {
+    $(window).on("swipeleft", function() {
         var swipeElement = document.getElementById("swipeContent");
         swipeElement.innerHTML += "swipeleft, ";
     });
@@ -81,7 +81,7 @@
     /**
      * Add eventhandler for the tap event.
      */
-    $(window).on("tap", function(event) {
+    $(window).on("tap", function() {
         var swipeElement = document.getElementById("swipeContent");
         swipeElement.innerHTML += "tap, ";
     });
@@ -89,7 +89,7 @@
     /**
      * Add eventhandler for the taphold event.
      */
-    $(window).on("taphold", function(event) {
+    $(window).on("taphold", function() {
         var swipeElement = document.getElementById("swipeContent");
         swipeElement.innerHTML += "taphold, ";
     });
@@ -97,7 +97,7 @@
     /**
      * Add eventhandler for the touch event.
      */
-    $(window).on("touchstart", function(event) {
+    $(window).on("touchstart", function() {
         var touchElement = document.getElementById("touchContent");
         touchElement.innerHTML += "touchstart, ";
     });
@@ -105,7 +105,7 @@
     /**
      * Add eventhandler for the touch event.
      */
-    $(window).on("touchend", function(event) {
+    $(window).on("touchend", function() {
         var touchElement = document.getElementById("touchContent");
         touchElement.innerHTML += "touchend, ";
     });
@@ -130,8 +130,8 @@
         //console.log(event);
         var offsetX = canvas.offsetLeft;
         var offsetY = canvas.offsetTop;
-        var x = event.originalEvent.changedTouches[0].clientX - offsetX;
-        var y = event.originalEvent.changedTouches[0].clientY - offsetY;
+        var x = event.originalEvent.changedTouches[ 0 ].clientX - offsetX;
+        var y = event.originalEvent.changedTouches[ 0 ].clientY - offsetY;
         //console.log("pos " + x + "x" + y);
         ctx.fillStyle = "#00FF00";
         ctx.fillRect(x-5, y-5, 10, 10);
@@ -140,7 +140,7 @@
     /**
     * Add eventhandler for the navigate back event.
     */
-    $('[data-swipeleft="back"]').on("swipeleft", function(event) {
+    $('[data-swipeleft="back"]').on("swipeleft", function() {
         window.history.back();
         return false;
     });
@@ -148,7 +148,7 @@
     /**
      * Add eventhandler for the clickevent as part of own test
      */
-    $(window).on("click", function(event) {
+    $(window).on("click", function() {
 
         $("#clickToby").toggleClass("round");
 
