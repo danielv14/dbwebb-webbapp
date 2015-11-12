@@ -26,6 +26,7 @@
         <ul data-role="listview" data-theme="a">
             <li><a href="#orientation">Orientation</a></li>
             <li><a href="#swipe">Swipe</a></li>
+            <li><a href="#touch">Touch</a></li>
         </ul>
 </li>
     </ul>
@@ -48,18 +49,18 @@
 
   <!-- Me-sidan -->
   <div id="me" data-role="page">
-  <div class="ui-content" data-role="main">
-      <article>
-        <h1>Om Mig</h1>
-        <aside>
-          <img src="img/dwight2.jpg" alt="bild på mig">
-        </aside>
-        <p>Hej, jag heter Daniel och går denna fjärde kurs <i>webapp</i> i kurspaketet på BTH.</p>
-        <p>Jag är uppvuxen i Falun men kommer ursprungligen ifrån Stockholm som jag flyttade ifrån vid 4 års ålder. Bor sedan några år tillbaka i Umeå med min flickvän.</p>
-        <p>På fritiden gillar jag att umgås med vänner, träna och att titta på alldeles för mycket film och serier...</p>
-        <p>Jag har tidigare läst det andra kurspaketet som finns på dbwebb och har nu alltså kommit till den sista kursen i detta kurspaket och det ska bli spännande att se vad kursen har att erbjuda.</p>
-      </article>
-  </div><!-- slut på main -->
+    <div class="ui-content" data-role="main">
+        <article>
+          <h1>Om Mig</h1>
+          <aside>
+            <img src="img/dwight2.jpg" alt="bild på mig">
+          </aside>
+          <p>Hej, jag heter Daniel och går denna fjärde kurs <i>webapp</i> i kurspaketet på BTH.</p>
+          <p>Jag är uppvuxen i Falun men kommer ursprungligen ifrån Stockholm som jag flyttade ifrån vid 4 års ålder. Bor sedan några år tillbaka i Umeå med min flickvän.</p>
+          <p>På fritiden gillar jag att umgås med vänner, träna och att titta på alldeles för mycket film och serier...</p>
+          <p>Jag har tidigare läst det andra kurspaketet som finns på dbwebb och har nu alltså kommit till den sista kursen i detta kurspaket och det ska bli spännande att se vad kursen har att erbjuda.</p>
+        </article>
+    </div><!-- slut på main -->
   </div><!-- slut på me -->
 
   <!-- Redovisningar -->
@@ -121,6 +122,16 @@
         </article>
     </div><!-- slut på content -->
   </div> <!-- slut på swipe -->
+
+  <!-- Touch -->
+  <div id="touch" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1>Upptäck när touch händer</h1>
+        <div id="touchContent"></div>
+        </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på Touch -->
 
 
 <script src="../../lib/jquery/jquery-2.1.4.js"></script>
