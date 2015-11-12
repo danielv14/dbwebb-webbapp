@@ -134,5 +134,14 @@
         return false;
     });
 
+    /**
+     * Add eventhandler for the clickevent as part of own test
+     */
+    $(window).on("click", function(event) {
+
+        $("#clickToby").toggleClass("round");
+
+    });
+
 
 })();
