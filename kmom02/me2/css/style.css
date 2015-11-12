@@ -4,7 +4,6 @@ body {
 }
 
 
-
 aside {
   float: right;
   padding: 0.5em;
@@ -23,9 +22,23 @@ article {
   text-align: center;
 }
 
-
 code {
   padding: 0.3em;
   background-color: #D3D3D3;
   border-radius: 2px;
+}
+
+/*style for collapsible widget inside menu panel*/
+.ui-li-static.ui-collapsible > .ui-collapsible-heading {
+    margin: 0;
+}
+.ui-li-static.ui-collapsible {
+    padding: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading > .ui-btn {
+    border-top-width: 0;
+}
+.ui-li-static.ui-collapsible > .ui-collapsible-heading.ui-collapsible-heading-collapsed > .ui-btn,
+.ui-li-static.ui-collapsible > .ui-collapsible-content {
+    border-bottom-width: 0;
 }
