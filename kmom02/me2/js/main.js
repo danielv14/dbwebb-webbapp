@@ -99,4 +99,32 @@
         touchElement.innerHTML += "touchend, ";
     });
 
+    // Init canvas
+    var canvas = document.getElementById("draw");
+    var ctx = canvas.getContext("2d");
+
+    /**
+     * Add eventhandler for click on canvas.
+     */
+    $('#draw').on("click", function(event) {
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(event.offsetX-5, event.offsetY-5, 10, 10);
+    });
+
+    /**
+     * Add eventhandler for click on canvas.
+     */
+     $('#draw').on("touchmove", function(event) {
+        event.preventDefault();
+        //console.log(event);
+        var offsetX = canvas.offsetLeft;
+        var offsetY = canvas.offsetTop;
+        var x = event.originalEvent.changedTouches[0].clientX - offsetX;
+        var y = event.originalEvent.changedTouches[0].clientY - offsetY;
+        //console.log("pos " + x + "x" + y);
+        ctx.fillStyle = "#00FF00";
+        ctx.fillRect(x-5, y-5, 10, 10);
+    });
+
+
 })();
