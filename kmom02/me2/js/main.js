@@ -35,5 +35,52 @@
     // Call the function one to write out current orientation
     window.checkSizeAndOrientation();
 
+    /**
+     * Add eventhandler for the click event.
+     */
+    $(window).on("click", function(event) {
+        var swipeElement = document.getElementById("swipeContent");
+        swipeElement.innerHTML += "click, ";
+    });
+
+    /**
+     * Add eventhandler for the swipe event.
+     */
+    $(window).on("swipe", function(event) {
+        var swipeElement = document.getElementById("swipeContent");
+        swipeElement.innerHTML += "swipe, ";
+    });
+
+    /**
+     * Add eventhandler for the swiperight event.
+     */
+    $(window).on("swiperight", function(event) {
+        var swipeElement = document.getElementById("swipeContent");
+        swipeElement.innerHTML += "swiperight, ";
+    });
+
+    /**
+     * Add eventhandler for the swipeleft event.
+     */
+    $(window).on("swipeleft", function(event) {
+        var swipeElement = document.getElementById("swipeContent");
+        swipeElement.innerHTML += "swipeleft, ";
+    });
+
+    /**
+     * Add eventhandler for the tap event.
+     */
+    $(window).on("tap", function(event) {
+        var swipeElement = document.getElementById("swipeContent");
+        swipeElement.innerHTML += "tap, ";
+    });
+
+    /**
+     * Add eventhandler for the taphold event.
+     */
+    $(window).on("taphold", function(event) {
+        var swipeElement = document.getElementById("swipeContent");
+        swipeElement.innerHTML += "taphold, ";
+    });
 
 })();
