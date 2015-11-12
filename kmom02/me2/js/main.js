@@ -83,4 +83,20 @@
         swipeElement.innerHTML += "taphold, ";
     });
 
+    /**
+     * Add eventhandler for the touch event.
+     */
+    $(window).on("touchstart", function(event) {
+        var touchElement = document.getElementById("touchContent");
+        touchElement.innerHTML += "touchstart, ";
+    });
+
+    /**
+     * Add eventhandler for the touch event.
+     */
+    $(window).on("touchend", function(event) {
+        var touchElement = document.getElementById("touchContent");
+        touchElement.innerHTML += "touchend, ";
+    });
+
 })();
