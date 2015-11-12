@@ -28,17 +28,20 @@
             <li><a href="#swipe">Swipe</a></li>
             <li><a href="#touch">Touch</a></li>
             <li><a href="#canvas">Canvas</a></li>
+            <li><a href="#list">List</a></li>
 
         </ul>
-</li>
+      </li>
     </ul>
   </div><!-- /panel -->
 
+  <!-- Header -->
   <div id="header" data-role="header" data-theme="a" data-position="fixed">
     <a href="#menu" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-a ui-btn-icon-notext ui-shadow-icon">Menu</a>
     <h1>Min första webapp</h1>
   </div><!-- /header -->
 
+  <!-- Footer -->
   <div id="footer" data-role="footer" data-theme="a" data-position="fixed">
       <div data-role="navbar">
           <ul>
@@ -54,9 +57,7 @@
     <div class="ui-content" data-role="main">
         <article>
           <h1>Om Mig</h1>
-          <aside>
-            <img src="img/dwight2.jpg" alt="bild på mig">
-          </aside>
+          <img src="img/dwight2.jpg" alt="bild på mig" class="right round">
           <p>Hej, jag heter Daniel och går denna fjärde kurs <i>webapp</i> i kurspaketet på BTH.</p>
           <p>Jag är uppvuxen i Falun men kommer ursprungligen ifrån Stockholm som jag flyttade ifrån vid 4 års ålder. Bor sedan några år tillbaka i Umeå med min flickvän.</p>
           <p>På fritiden gillar jag att umgås med vänner, träna och att titta på alldeles för mycket film och serier...</p>
@@ -144,6 +145,79 @@
       </article>
     </div><!-- slut på content -->
   </div> <!-- slut på canvas -->
+
+  <!-- Huvudlistan -->
+  <div id="list" data-role="page">
+      <div role="main" class="ui-content">
+          <ul data-role="listview" data-inset="false">
+              <li><a href="#michael">
+                  <img src="img/michael.jpg">
+                  <h2>Min Chef</h2>
+                  <p>Detta är min chef, Michael Scott.</p></a>
+              </li>
+              <li><a href="#jim">
+                  <img src="img/jim.jpg">
+                  <h2>Min nemisis</h2>
+                  <p>Detta är min nemisis.</p></a>
+              </li>
+              <li><a href="#pam">
+                  <img src="img/pam.jpg">
+                  <h2>Min nemisis fru</h2>
+                  <p>Detta är min nemisis fru.</p></a>
+              </li>
+              <li><a href="#toby">
+                  <img src="img/toby.jpg">
+                  <h2>Toby</h2>
+                  <p>Tja..vad finns det att säga?.</p></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Lista för Michael Scott -->
+  <div id="michael" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article>
+            <img src="img/michael.jpg">
+            <h2>Min Chef</h2>
+            <p>Detta är alltså min chef, Michael Scott. Han är verkligen underlig....</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Lista för Jim Halpert -->
+  <div id="jim" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article>
+            <img src="img/jim.jpg">
+            <h2>Min Nemesis</h2>
+            <p>Detta är min nemesis, Jim Halpert. Tillsammans med sin fru Pam försöker dom alltid förstöra för mig.</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Lista för Pam Beesly -->
+  <div id="pam" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article>
+            <img src="img/pam.jpg">
+            <h2>Min Nemesis fru</h2>
+            <p>Detta är min nemesis fru, Pam Beesly. Tillsammans med Jim försöker dom bägge göra livet surt för mig.</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Lista för Toby  -->
+  <div id="toby" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article>
+            <img src="img/toby.jpg">
+            <h2>Detta är alltså Toby</h2>
+            <p>Varken min chef eller jag gillar Toby...</p>
+        </article>
+    </div>
+  </div>
+
 
 
 <script src="../../lib/jquery/jquery-2.1.4.js"></script>
