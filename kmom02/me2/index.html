@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>Me-appen webapp</title>
 
   <link rel="stylesheet" href="../../lib/jquery/jquery.mobile-1.4.5.css">
@@ -18,6 +21,13 @@
         <li><a href="#me">Me</a></li>
         <li><a href="#report">Redovisning</a></li>
         <li><a href="#about">Om</a></li>
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+        <h3>Tester</h3>
+        <ul data-role="listview" data-theme="a">
+            <li><a href="#test1">Test #1</a></li>
+            <li><a href="#test2">Test #2</a></li>
+        </ul>
+</li>
     </ul>
   </div><!-- /panel -->
 
