@@ -3,15 +3,17 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-
-aside {
-  float: right;
-  padding: 0.5em;
+img {
+    max-width: 100%
 }
 
-aside img {
-  border-radius: 50%;
+.right {
+    float: right;
+    padding: .5em 0 .5em .5em;
+}
 
+.round {
+    border-radius: 50%;
 }
 
 article {
