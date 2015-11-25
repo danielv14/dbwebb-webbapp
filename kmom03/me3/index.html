@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Me-appen webapp</title>
+
+  <link rel="stylesheet" href="../../lib/jquery/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Add lato font from google -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <!-- Slide-out meny -->
+  <div data-role="panel" id="menu" data-theme="a" data-display="overlay" >
+    <ul data-role="listview">
+        <li><a href="#me">Me</a></li>
+        <li><a href="#report">Redovisning</a></li>
+        <li><a href="#about">Om</a></li>
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h3>Tester</h3>
+          <ul data-role="listview" data-theme="a">
+              <li><a href="#orientation">Orientation</a></li>
+              <li><a href="#swipe">Swipe</a></li>
+              <li><a href="#touch">Touch</a></li>
+              <li><a href="#canvas">Canvas</a></li>
+              <li><a href="#list">List</a></li>
+              <li><a href="#roundpicture">Rund bild</a></li>
+          </ul>
+        </li>
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h3>Ajax</h3>
+          <ul data-role="listview" data-theme="a">
+              <li><a href="#marvin">Marvin Citat</a></li>
+              <li><a href="#af-totalt">AF Totalt</a></li>
+              <li><a href="#af-lista">AF Listan</a></li>
+
+          </ul>
+        </li>
+    </ul>
+  </div><!-- /panel -->
+
+  <!-- Header -->
+  <div id="header" data-role="header" data-theme="a" data-position="fixed">
+    <a href="#menu" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-a ui-btn-icon-notext ui-shadow-icon">Menu</a>
+    <h1>Min första webapp</h1>
+  </div><!-- /header -->
+
+  <!-- Footer -->
+  <div id="footer" data-role="footer" data-theme="a" data-position="fixed">
+      <div data-role="navbar">
+          <ul>
+              <li><a href="#me" data-icon="user">Hem</a></li>
+              <li><a href="#report" data-icon="comment">Report</a></li>
+              <li><a href="#about" data-icon="info">About</a></li>
+          </ul>
+      </div>
+  </div><!-- /footer -->
+
+  <!-- Me-sidan -->
+  <div id="me" data-role="page">
+    <div class="ui-content" data-role="main">
+        <article>
+          <h1>Om Mig</h1>
+          <img src="img/dwight2.jpg" alt="bild på mig" class="right round">
+          <p>Hej, jag heter Daniel och går denna fjärde kurs <i>webapp</i> i kurspaketet på BTH.</p>
+          <p>Jag är uppvuxen i Falun men kommer ursprungligen ifrån Stockholm som jag flyttade ifrån vid 4 års ålder. Bor sedan några år tillbaka i Umeå med min flickvän.</p>
+          <p>På fritiden gillar jag att umgås med vänner, träna och att titta på alldeles för mycket film och serier...</p>
+          <p>Jag har tidigare läst det andra kurspaketet som finns på dbwebb och har nu alltså kommit till den sista kursen i detta kurspaket och det ska bli spännande att se vad kursen har att erbjuda.</p>
+        </article>
+    </div><!-- slut på main -->
+  </div><!-- slut på me -->
+
+  <!-- Redovisningar -->
+  <div id="report" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1 class ="center-text">Redovisningar</h1>
+        <h2>Kmom01</h2>
+        <h3>Allmänt</h3>
+        <p>Då var det första momentet avklarat utan några större problem. De problem jag stötte på var egentligen väldigt små och slarvfel från min sida. Momentet gick relativt fort att genomföra och var en bra introduktion till kursen och var ett vettigt första moment.</p>
+        <h3>Vilken utvecklingsmiljö sitter du på?</h3>
+        <p>Jag använder mig av en Macbook Pro med OS X 10.11.1. Som editor använder jag mig av Atom. Har i tidigare kurser använt mig av Coda och Sublime Text också men har nu fattat tycke för Atom, även om den i vissa fall inte verkar vara lika rapp som Sublime Text. På datorn finns Safari, Firefox och Chrome installerade. Safari används mest i "privat bruk" men i utvecklingssyfte används både Firefox och Chrome för att testa hemsidorna. Redovisningstexterna skriver jag oftast med hjälp av ett Markdown program som heter Mou. Det gör jag därför att jag tycker att det är smidigare att skriva långa texter i markdown format istället för html-kod. När jag sedan känner mig nöjd med redovisningstexten kan Mou exportera texterna som html format till clipboard så att jag sen kan klistra in koden i Atom.</p>
+        <h3>Är du sedan tidigare bekant med utveckling av mobila appar?</h3>
+        <p>Jag är inte sedan tidigare bekant med att utveckla native appar till mobiler men jag har sedan tidigare gjort en webapp. Den webappen går ut på att hjälpa mig dela upp kvitton när exempelvis jag och min flickvän har varit och handlat mat men delar inte rakt av på alla råvaror då vi inte äter 100% samma kost. Den webbappen är byggd med <a href="http://materializecss.com">Materialize</a> som är ett responsivt Material Design inspirarat framework. Appen använder sig av caching och cookies för att även fungera offline och där kakorna är tänkt att hjälpa en att bilda en uppfattning av hur mycket mat som handlas varje månad. Att använda cookies till det visade sig inte vara den bästa metoden för att spara data långsigtigt men jag har ännu inte brytt mig om att lösa sparningen på ett bättre sätt. Webappen är byggd med hjälp av jQuery.</p>
+        <p>Kanske får jag en del tips under denna kursens gång på hur jag kan förbättra min webapp.</p>
+        <h3>Är du bekant med jQuery och/eller jQuery Mobile?</h3>
+        <p>Jag är sedan tidigare inte bekant med just jQuery Mobile med jQuery har jag använt mig av tidigare både i tidigare kurser och till hobby-projekt såsom min kvitto-webapp som jag nämnde här ovan</p>
+        <h3>Hur känns det att jobba i jQuery Mobile?</h3>
+        <p>Som med så mycket annat nytt så var det en del att ta till sig. Men det är ju inget ovanligt med nya ramverk såsom jQuery Mobile. Men när man väl lär sig mer och mer om hur ramverket fungerar tror jag man snabbt kan bygga funktionella web-appar. Det kändes väldigt kraftullt hur man med hjälp av <code>.toolbar()</code> och <code>.panel()</code> kunde göra header, footer och en meny. Jag ville att min header med meny ikon skulle vara fixerad även om man scrollar och detta gjordes väldigt enkelt med hjälp av <code>data-position="fixed"</code>. Det känns kraftfullt att man kan ändra en sådan sak på ett relativt enkelt sätt.</p>
+        <h3>Var det något som krånglade eller tog extra mycket tid?</h3>
+        <p>Jag hade några problem under momentets gång men egentligen handlade det bara om slarvfel från min sida i alla fallen. Först hade jag problem att få till headern och footern som toolbar, de försvann från sidan helt. Jag testade att console-logga från <code>/js/main.js</code> men ingenting syntes i firebug. Då såg jag i firebug att main.js inte ens importerades i index.html och det visade sig att jag hade skrivit fel i script-taggen för importen av <code>/js/main.js</code>.  <br/>
+        När jag sedan var klar med momentet och skulle validera fick jag en del konstiga problem från htmlhint. Det klagades på att "special characters must be escaped" där htmlhint hänvisade till att några '&lt;' för divar skulle escapas. Förstod inte varför htmlhint klagade på div-taggar och tänkte först att htmlhint var konfigurerad fel på något sätt. Efter att ha inspekterad källkoden med firefox såg jag att en del kod var markerad med röd text där den röda texten indikerade att kod var felskriven. Det handlade om att jag hade missat '&#61;' när jag hade deklarerat några divar som hade <code>class="ui-content"</code>.    <br/>
+        De krångel jag hade under momentet var alltså slarfel från min sida men det är tur att det finns bra verktyg som kan upptäcka mina slarfel</p>
+        <hr>
+        <!-- Kmom02 -->
+        <h2>Kmom02</h2>
+        <h3>Allmänt</h3>
+        <p>Då var det andra momentet avklarat och även detta moment flöt på väldigt bra och var inte speciellt svårt. Även detta moment innehöll väldigt bra guider som förberedde en för momentets uppgift. Uppskattar verkligen guiderna! Överlag var det inga stora problem med själva kodningen utan mitt största problem var att få igång Android simulatorn.</p>
+        <p>Det var intressant att lösa om localStorage och dess fördelar över cookies och jag har börjat spåna på hur jag skulle kunna använda localStorage till min hobby-webapp.</p>
+        <h3>Hur känns det att jobba i jQuery Mobile, fördelar och nackdelar?</h3>
+        <p>Det känns än så länge bra att jobba i JQM. Jag börjar bli mer van med strukturen och så än vad jag var i första momentet men jag känner mig inte direkt som en expert vid det här laget.
+        Finns säkerligen en uppsjö kvar att lära sig.</p>
+        <p>En stor fördel som jag ser med JQM är att man snabbt kan skapa dubliga mobila webapplikationer som är responsiva och kan använda sig av svepningar på ett enkelt sätt, som är ett väldigt naturligt element i den mobila världen idag. En applikaiton på en mobil förväntas ha en interaktion där svepningar inkluderas.</p>
+        <p>En nackdel som jag kan se med JQM är att det kan kanske vara svårt att få en webapp att se unik ut. Visserligen kan man ju med hjälp av egen css manupulera utseendet men det är nog en hel del att sätta sig in i då säkerligen många saker hänger ihop med varandra och om man börjar pilla och ändra på ett ställe och så fallerar det i ett annat för att komponenter hänger ihop eller så. Vill man bara ändra lite färger och så finns ju alltid ThemeRoller.  <br/>
+        Vidare skulle en eventuell nackdel kunna vara är om JQM inte är flexibelt i den mening att det är "my way or the highway", att JQM's sätt att lösa saker på är den enda vägen och att det inte finns mycket utrymme för improvisation och flexibilitet i hur kod och layout ska se ut.
+        En annan nackdel, som kanske främst handlar om single-page-apps är att det kan bli väldigt mycket html-kod i en och samma fil om applikationen är avancerad och har många funktioner. Om html-koden inte dokumenteras väl och struktureras på ett bra sätt kan jag tänka mig att det väldigt lätt blir rörigt och svårt att få en överblick.</p>
+        <h3>Så här långt, känner du att du har koll på koden? Är det något särskilt du funderar på?</h3>
+        <p>Än så länge skulle jag påstå att jag har relativt bra koll på koden. Kommer nog några gånger mer gå igenom dokumentationen för de delar som rör detta kursmoment för att få ännu bättre koll på den kod momenten än så länge gott igenom.</p>
+        <h3>Hur gick det att installera simulatorn för Android?</h3>
+        <p>Ja, att installera simulatorn var det som gav mig mest problem under detta kursmoment. Det hade varit bra om guiden för installtionen påpekade att uppgradering av paket kunde ta uppåt 16gb, något som min dator inte gillade då det redan var väldigt trångt. Det såg dock ut som att alla paket installerades men jag fick problem i och med att min simulator (Nexus 6) bara visade svart skärm. Samtidigt fick jag en popup om att Java behövde uppdateras villket jag gjorde. Startade om ANdroid SDK tools men nu gick det helt plötsligt inte att välja tools i menyn, ingen dropdown meny syntes till. Jag fick då rensa lite på datorn, flytta filer till en extern hårddisk, ta bort Android SDK'n, starta om datorn och börja om med installationen av Android SDK Tools.</p>
+        <p>När jag väl hade gått igenom proceduren en gång till var det inga problem att få igång en simulator för att testa webappen.</p>
+        <h3>Var det något som krånglade eller tog extra mycket tid?</h3>
+        <p>Det som krånglade mest för mig var som sagt att få igång Android simulatorn. Vidare hade jag lite valideringsproblem, som lustigt nog kom sig av att jag skrev av kod från guiden. Men dessa problem rättades snabbt till</p>
+      </article>
+    </div><!-- slut på main -->
+  </div><!-- slut på report -->
+
+  <!-- OM -->
+  <div id="about" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1>Om</h1>
+        <p>Detta är min me-app i kursen webapp.</p>
+      </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på about -->
+
+  <!-- Orientation -->
+  <div id="orientation" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1>Är du i landskap eller portätt-läge?</h1>
+        <div id="orientationContent"></div>
+        </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på orientation -->
+
+  <!-- Swipe -->
+  <div id="swipe" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1>Upptäck när event händer</h1>
+        <div id="swipeContent"></div>
+      </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på swipe -->
+
+  <!-- Touch -->
+  <div id="touch" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1>Upptäck när touch händer</h1>
+        <div id="touchContent"></div>
+      </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på Touch -->
+
+  <!-- canvas -->
+  <div id="canvas" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1>Rita på canvas</h1>
+        <canvas id="draw" width="200" height="200" class="draw"></canvas>
+      </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på canvas -->
+
+  <!-- Huvudlistan -->
+  <div id="list" data-role="page">
+      <div role="main" class="ui-content">
+          <ul data-role="listview" data-inset="false">
+              <li><a href="#michael">
+                  <img src="img/michael.jpg">
+                  <h2>Min Chef</h2>
+                  <p>Detta är min chef, Michael Scott.</p></a>
+              </li>
+              <li><a href="#jim">
+                  <img src="img/jim.jpg">
+                  <h2>Min nemisis</h2>
+                  <p>Detta är min nemisis.</p></a>
+              </li>
+              <li><a href="#pam">
+                  <img src="img/pam.jpg">
+                  <h2>Min nemisis fru</h2>
+                  <p>Detta är min nemisis fru.</p></a>
+              </li>
+              <li><a href="#toby">
+                  <img src="img/toby.jpg">
+                  <h2>Toby</h2>
+                  <p>Tja..vad finns det att säga?.</p></a>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Lista för Michael Scott -->
+  <div id="michael" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article>
+            <img src="img/michael.jpg">
+            <h2>Min Chef</h2>
+            <p>Detta är alltså min chef, Michael Scott. Han är verkligen underlig....</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Lista för Jim Halpert -->
+  <div id="jim" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article>
+            <img src="img/jim.jpg">
+            <h2>Min Nemesis</h2>
+            <p>Detta är min nemesis, Jim Halpert. Tillsammans med sin fru Pam försöker dom alltid förstöra för mig.</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Lista för Pam Beesly -->
+  <div id="pam" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article>
+            <img src="img/pam.jpg">
+            <h2>Min Nemesis fru</h2>
+            <p>Detta är min nemesis fru, Pam Beesly. Tillsammans med Jim försöker dom bägge göra livet surt för mig.</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Lista för Toby  -->
+  <div id="toby" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article>
+            <img src="img/toby.jpg">
+            <h2>Detta är alltså Toby</h2>
+            <p>Varken min chef eller jag gillar Toby...</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Eget test roundpicture  -->
+  <div id="roundpicture" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article>
+            <img src="img/toby.jpg" id="clickToby">
+            <h2>Runda Bilder</h2>
+            <p>Som vi redan vet är detta Toby. Prova klicka på hans tryne...</p>
+        </article>
+    </div>
+  </div>
+
+  <!-- Marvin Citat -->
+  <div id="marvin" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+         <img src="img/marvin.jpg" class="right">
+        <h1>Ett Citat från Marvin</h1>
+        <p><a id="ajax" href="#">Hämta ett citat med jQuery <code>.ajax()</code>.</a></p>
+        <p><a id="getjson" href="#">Hämta ett citat med jQuery <code>.getJSON()</code>.</a></p>
+        <div id="quote" class="quote"></div>
+      </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på marvin -->
+
+  <!-- AF Totalt -->
+  <div id="af-totalt" data-role="page">
+    <div data-role="main" class="ui-content">
+        <h1>Det finns nu lediga jobb i Sverige</h1>
+        <table>
+            <tr><th>totalt_antal_ledigajobb</th><td id="totalt_antal_ledigajobb"></td></tr>
+            <tr><th>totalt_antal_platsannonser</th><td id="totalt_antal_platsannonser"></td></tr>
+        </table>
+    </div><!-- slut på content -->
+  </div> <!-- slut på AF Totalt -->
+
+  <!-- AF Listan -->
+  <div id="af-lista" data-role="page">
+    <div data-role="main" class="ui-content">
+      <ul id="af-listview" data-role="listview" data-inset="false">
+           <li>Nothing here</li>
+       </ul>
+    </div><!-- slut på content -->
+  </div> <!-- slut på AF Lista -->
+
+  <!-- AF Undersida -->
+  <div id="af-sida" data-role="page">
+    <div id="af-undersida" role="main" class="ui-content">
+        Nothing yet.
+    </div> <!-- slut på content -->
+  </div> <!-- slut på AF Undersida -->
+
+<script src="../../lib/jquery/jquery-2.1.4.js"></script>
+<script src="../../lib/jquery/jquery.mobile-1.4.5.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
