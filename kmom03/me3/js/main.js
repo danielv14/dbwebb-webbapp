@@ -210,7 +210,6 @@
     * Code for Instagram here
     */
 
-
     /**
     * Cache the JSON objekt.
     */
@@ -218,7 +217,7 @@
    $(document).on('pagebeforeshow', '#instagram-lista', function(/* event, data */){
 
        if (soklistaLan !== null) {
-           window.updateInstramList();
+           window.updateInstagramList();
            return;
        }
 
@@ -228,7 +227,7 @@
 
            success: function (data) {
                soklistaLan = data;
-               window.updateInstramList();
+               window.updateInstagramList();
            },
 
            error: function (/* request, error */) {
@@ -273,7 +272,7 @@
 
         soklistaLan.data.forEach(function(row) {
             //html += "<li><a href='#instagram-lista-" + row.id + "'>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</a></li>";
-            html += '<li><a href"#"><img src="' + row.images.thumbnail.url + '" alt="instagram-bild"></a></li>';
+            html += '<li><a href="#instagram-lista-' + row.id + '"><img src="' + row.images.thumbnail.url + '" alt="instagram-bild"></a></li>';
             //html += '<li><p>Länk till bilden: ' + row.images.thumbnail.url + '</p></li>';
         });
 
@@ -281,6 +280,74 @@
 
         $('#instagram-listview').listview('refresh');
     };
+
+     /**
+     * Display subpage, expect that JSON is already loaded.
+     */
+    var afSubPageId = null;
+
+    $(document).on('pagebeforeshow', '#instagram-sida', function(/*event, data*/){
+
+       window.updateAFSubPage(afSubPageId);
+
+    });
+
+     /**
+     * Update subpage with details from specified county.
+     */
+    window.updateAFSubPage = function(pageId) {
+        var element = document.getElementById("instagram-undersida");
+        var html="Specified page id not found.";
+
+        soklistaLan.data.forEach(function(row) {
+            if (row.id == pageId) {
+                html = '<img src="' + row.images.standard_resolution.url + '" alt="bild">';
+                html += '<p>Bildens caption: ' + row.caption.text + '</p>';
+                html += '<p>Taggar: ' + row.tags + '</p>';
+                html += '<p>Antal Likes: ' + row.likes.count + '</p>';
+                html += '<h2>Kommentarer' + '<p>' + row.comments.count + '</p>';
+
+
+                return;
+            }
+        });
+
+
+
+        element.innerHTML = html;
+    };
+
+     /**
+     * Intercept change of page and implement routing.
+     */
+    $("body").on( "pagecontainerbeforechange", function( event, ui ) {
+        var to = ui.toPage;
+        var from = ui.options.fromPage;
+
+        // If not a valid pageid
+        if (typeof to  === 'string') {
+            var url = $.mobile.path.parseUrl(to);
+            var toSubPage;
+
+            to = url.hash || '#' + url.pathname.substring(1);
+
+            if (from) {
+                from = '#' + from.attr('id');
+            }
+
+            var length = "#instagram-lista-".length;
+            toSubPage = to.substring(0, length);
+
+            if (from === '#instagram-lista' && toSubPage === '#instagram-lista-') {
+                event.preventDefault();
+                event.stopPropagation();
+
+                afSubPageId = to.substring(length);
+                console.log("Subpageid = " + afSubPageId);
+                $(":mobile-pagecontainer").pagecontainer("change", "#instagram-sida", { foo: "Hello World!" });
+            }
+        }
+    });
 
 
 
