@@ -308,7 +308,7 @@
                 html += '<h2>Kommentarer</h2>';
                 row.comments.data.forEach(function(row2) {
                   html += '<p>' + row2.text + '</p>';
-                })
+                });
                 return;
             }
         });
