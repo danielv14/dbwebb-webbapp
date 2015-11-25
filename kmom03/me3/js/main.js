@@ -305,9 +305,10 @@
                 html += '<p>Bildens caption: ' + row.caption.text + '</p>';
                 html += '<p>Taggar: ' + row.tags + '</p>';
                 html += '<p>Antal Likes: ' + row.likes.count + '</p>';
-                html += '<h2>Kommentarer' + '<p>' + row.comments.count + '</p>';
-
-
+                html += '<h2>Kommentarer</h2>';
+                row.comments.data.forEach(function(row2) {
+                  html += '<p>' + row2.text + '</p>';
+                })
                 return;
             }
         });
