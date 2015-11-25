@@ -354,7 +354,7 @@
             if (from) {
                 from = '#' + from.attr('id');
             }
-     
+
             var length = "#af-lista-".length;
             toSubPage = to.substring(0, length);
 
