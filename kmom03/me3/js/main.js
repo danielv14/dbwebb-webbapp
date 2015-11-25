@@ -273,7 +273,7 @@
 
         soklistaLan.data.forEach(function(row) {
             //html += "<li><a href='#instagram-lista-" + row.id + "'>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</a></li>";
-            html += '<img src="' + row.images.standard_resolution.url + '" alt="instagram-bild">';
+            html += '<li><a href"#"><img src="' + row.images.thumbnail.url + '" alt="instagram-bild"></a></li>';
             //html += '<li><p>Länk till bilden: ' + row.images.thumbnail.url + '</p></li>';
         });
 
