@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mithril Content</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+      <a href="#/">Hem</a>
+      <a href="#/redovisning">Redovisning</a>
+      <a href="#/om">Om</a>
+  </header>
+
+  <main id="main"></main>
+
+
+<script src="../../lib/mithril/js/mithril.min.js"></script>
+<script>
+//app goes here
+// Model
+var Page = {
+    me: function() {
+        return m.request({method: "GET", url: "../../lib/mithril/json/me.json"});
+    },
+    report: function() {
+        return m.request({method: "GET", url: "../../lib/mithril/json/report.json"});
+    },
+    about: function() {
+        return m.request({method: "GET", url: "../../lib/mithril/json/about.json"});
+    }
+};
+
+var Me = {
+    controller: function() {
+        return {page: Page.me()};
+    },
+    view: function(controller) {
+        page = controller.page();
+        return m("article", [
+            m("header", m.trust(page.header)),
+            m("section", m.trust(page.content)),
+        ]);
+    }
+}
+
+var Report = {
+    controller: function() {
+        return {page: Page.report()};
+    },
+    view: function(controller) {
+        page = controller.page();
+        return m("article", [
+            m("header", m.trust(page.intro.header)),
+            m("section", m.trust(page.intro.content)), [
+                page.sections.map(function(section) {
+                    return m("section", [
+                        m("header", m.trust(section.header)),
+                        m("section", m.trust(section.content)),
+                    ]);
+                }),
+            ]
+        ]);
+    }
+}
+
+var About = {
+    controller: function() {
+        return {page: Page.about()};
+    },
+    view: function(controller) {
+        page = controller.page();
+        return m("article", [
+            m("header", m.trust(page.header)),
+            m("section", m.trust(page.content)),
+        ]);
+    }
+}
+
+// Routes
+m.route(document.getElementById("main"), "/", {
+  "/": Me,
+  "/redovisning": Report,
+  "/om": About,
+});
+
+m.route.mode = "hash";
+</script>
