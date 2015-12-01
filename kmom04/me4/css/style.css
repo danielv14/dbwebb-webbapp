@@ -1,3 +1,7 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 a {
     display: block;
     margin-bottom: 0.3em;
@@ -40,4 +44,20 @@ a::after {
 
 .listview a:hover {
     background-color: #eee;
+}
+
+.header {
+  background-color: #eee;
+  padding: 10px;
+}
+
+.header a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.header a:hover {
+  text-decoration: underline;;
 }
