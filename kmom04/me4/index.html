@@ -11,10 +11,12 @@
         <a href="#/">Hem</a>
         <a href="#/redovisning">Redovisning</a>
         <a href="#/om">Om</a>
+        <a href="#/dagbok">Dagbok</a>
     </header>
 
     <main id="main"></main>
 
+    <!-- standard page -->
     <script id="page_tpl" type="text/template">
     <article>
     <header>{{{header}}}</header>
@@ -22,6 +24,7 @@
     </article>
     </script>
 
+    <!-- Report page -->
     <script id="report_tpl" type="text/template">
     <article>
     {{#with intro}}
@@ -35,20 +38,72 @@
     </article>
     </script>
 
+    <script id="diarypage_tpl" type="text/template">
+    <article>
+    <img src="{{image}}">
+    <h1>{{{title}}}</h1>
+    <p>{{{content}}}</p>
+    </article>
+    </script>
+
+
+
+    <script id="list_tpl" type="text/template">
+    <ul class="listview">
+    {{#each items}}
+        <a href="#/{{@index}}">
+            <li>
+                <img src="{{image}}">
+                <h1>{{{title}}}</h1>
+                <p>{{{content}}}</p>
+            </li>
+        </a>
+    {{/each}}
+    </ul>
+    </script>
+
 <script src="../../lib/handlebars/handlebars-v4.0.5.js"></script>
 <script src="../../lib/mithril/js/mithril.min.js"></script>
 <script>
 //app goes here
 // Model
 var Page = {
+
+    items: null,
+
     me: function() {
-        return m.request({method: "GET", url: "../../lib/mithril/json/me.json"});
+        this.items = m.request({method: "GET", url: "../../lib/mithril/json/me.json"});
+        return this.items;
     },
     report: function() {
-        return m.request({method: "GET", url: "../../lib/mithril/json/report.json"});
+        this.items = m.request({method: "GET", url: "../../lib/mithril/json/report.json"});
+        return this.items;
     },
     about: function() {
-        return m.request({method: "GET", url: "../../lib/mithril/json/about.json"});
+        this.items = m.request({method: "GET", url: "../../lib/mithril/json/about.json"});
+        return this.items;
+    },
+
+    list: function() {
+
+        this.items = m.request({method: "GET", url: "../../lib/mithril/json/diaryextended.json"});
+        return this.items;
+    },
+
+    item: function(id) {
+        json = this.items();
+        return json.items[id];
+    }
+};
+
+// Template
+var Template = {
+    compile: function(id, context) {
+        var source   = document.getElementById(id).innerHTML;
+        var template = Handlebars.compile(source);
+        var html     = template(context);
+
+        return html;
     }
 };
 
@@ -98,11 +153,35 @@ var About = {
     }
 }
 
+// Components
+var ListView = {
+    controller: function() {
+        return { items: Page.list() };
+    },
+    view: function(controller) {
+        html = Template.compile("list_tpl", controller.items());
+        return m("div", m.trust(html));
+    }
+};
+
+var ListViewPage = {
+    controller: function() {
+        var id = m.route.param("id");
+        return { item: Page.item(id) }
+    },
+    view: function(controller) {
+        html = Template.compile("diarypage_tpl", controller.item);
+        return m("div", m.trust(html));
+    }
+};
+
 // Routes
 m.route(document.getElementById("main"), "/", {
   "/": Me,
   "/redovisning": Report,
   "/om": About,
+  "/dagbok": ListView,
+  "/:id": ListViewPage,
 });
 
 m.route.mode = "hash";
