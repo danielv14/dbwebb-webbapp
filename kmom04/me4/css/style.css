@@ -11,6 +11,17 @@ a::after {
     content: "\bb";
 }
 
+p, article {
+  line-height: 1.4em;
+}
+
+#main {
+  width: 95%;
+  margin: 0 auto;
+
+}
+
+
 .listview a::after {
     content: none;
 }
@@ -47,8 +58,10 @@ a::after {
 }
 
 .header {
+  text-align: center;
   background-color: #eee;
   padding: 10px;
+  margin-bottom: 5%;
 }
 
 .header a {
