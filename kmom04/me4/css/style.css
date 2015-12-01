@@ -16,7 +16,7 @@ p, article {
   line-height: 1.4em;
 }
 
-#main {
+.wrapper {
   width: 95%;
   margin: 0 auto;
 
