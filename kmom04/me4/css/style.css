@@ -9,6 +9,7 @@ a {
 
 a::after {
     content: "\bb";
+    display:none;
 }
 
 p, article {
