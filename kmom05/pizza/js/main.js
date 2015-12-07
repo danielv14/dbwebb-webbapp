@@ -252,8 +252,6 @@
 
     // Function to delete individual sessionStorage
     function deletePizzaSession(ID, pizza) {
-
-
       $(ID).click(function() {
         console.log("du har klickat på att ta bort en pizza");
         sessionStorage.removeItem(pizza);
@@ -510,12 +508,10 @@
     location.reload();
     });
 
-    $('#deleteBussola').click(function() {
-    location.reload();
-    });
+
 
     // delete individual sessionStorage
-    // deletePizzaSession("#deleteBussola", "bussola");
+    deletePizzaSession("#deleteBussola", "bussola");
 
 
 
