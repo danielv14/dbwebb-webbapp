@@ -270,7 +270,7 @@
      * Get JSON, if not already available and update AF list,
      * before loading page.
      */
-    $(document).on('pagebeforeshow', '#af-lista', function(/* event, data */){
+    $(document).on('pagebeforeshow', '#meny', function(/* event, data */){
 
         if (soklistaLan !== null) {
           window.updateAFList();
@@ -301,7 +301,7 @@
 
         soklistaLan.soklista.sokdata.forEach(function(row) {
             //html += "<li>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</li>";
-            html += "<li><a href='#af-lista-" + row.id + "'>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</a></li>";
+            html += "<li><a href='#meny-" + row.id + "'>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</a></li>";
         });
 
         list.innerHTML = html;
@@ -355,10 +355,10 @@
                 from = '#' + from.attr('id');
             }
 
-            var length = "#af-lista-".length;
+            var length = "#meny-".length;
             toSubPage = to.substring(0, length);
 
-            if (from === '#af-lista' && toSubPage === '#af-lista-') {
+            if (from === '#meny' && toSubPage === '#meny-') {
                 event.preventDefault();
                 event.stopPropagation();
 
@@ -370,6 +370,25 @@
     });
 
 
+    // Pizzeria Code here
 
+
+    // function for google maps on contact page
+    function initMap() {
+      var myLatLng = {lat: 63.827894, lng: 20.256578};
+
+      var map = new google.maps.Map(document.getElementById('googleMap'), {
+        zoom: 15,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+    }
+
+    initMap();
 
 })();

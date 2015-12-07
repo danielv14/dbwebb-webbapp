@@ -6,12 +6,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="mobile-web-app-capable" content="yes">
-  <title>Me-appen webapp</title>
-
+  <title>Pizzeria Calzone</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../lib/jquery/jquery.mobile-1.4.5.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Add lato font from google -->
+  <!-- Add fonts from google -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -22,22 +24,11 @@
         <li><a href="#report">Redovisning</a></li>
         <li><a href="#about">Om</a></li>
         <li data-role="collapsible" data-iconpos="right" data-inset="false">
-          <h3>Tester</h3>
-          <ul data-role="listview" data-theme="a">
-              <li><a href="#orientation">Orientation</a></li>
-              <li><a href="#swipe">Swipe</a></li>
-              <li><a href="#touch">Touch</a></li>
-              <li><a href="#canvas">Canvas</a></li>
-              <li><a href="#list">List</a></li>
-              <li><a href="#roundpicture">Rund bild</a></li>
-          </ul>
-        </li>
-        <li data-role="collapsible" data-iconpos="right" data-inset="false">
           <h3>Ajax</h3>
           <ul data-role="listview" data-theme="a">
               <li><a href="#marvin">Marvin Citat</a></li>
               <li><a href="#af-totalt">AF Totalt</a></li>
-              <li><a href="#af-lista">AF Listan</a></li>
+              <li><a href="#meny">AF Listan</a></li>
 
           </ul>
         </li>
@@ -47,16 +38,17 @@
   <!-- Header -->
   <div id="header" data-role="header" data-theme="a" data-position="fixed">
     <a href="#menu" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left ui-btn-a ui-btn-icon-notext ui-shadow-icon">Menu</a>
-    <h1>Min första webapp</h1>
+    <h1 class="special-font">Pizzeria Calzone</h1>
   </div><!-- /header -->
 
   <!-- Footer -->
   <div id="footer" data-role="footer" data-theme="a" data-position="fixed">
       <div data-role="navbar">
           <ul>
-              <li><a href="#me" data-icon="user">Hem</a></li>
-              <li><a href="#report" data-icon="comment">Report</a></li>
-              <li><a href="#about" data-icon="info">About</a></li>
+              <li><a href="#me" data-icon="home">Hem</a></li>
+              <li><a href="#meny" data-icon="bullets">Meny</a></li>
+              <li><a href="#report" data-icon="shop">Beställning</a></li>
+              <li><a href="#about" data-icon="location">Kontakt</a></li>
           </ul>
       </div>
   </div><!-- /footer -->
@@ -65,12 +57,12 @@
   <div id="me" data-role="page">
     <div class="ui-content" data-role="main">
         <article>
-          <h1>Om Mig</h1>
-          <img src="img/dwight2.jpg" alt="bild på mig" class="right round">
-          <p>Hej, jag heter Daniel och går denna fjärde kurs <i>webapp</i> i kurspaketet på BTH.</p>
-          <p>Jag är uppvuxen i Falun men kommer ursprungligen ifrån Stockholm som jag flyttade ifrån vid 4 års ålder. Bor sedan några år tillbaka i Umeå med min flickvän.</p>
-          <p>På fritiden gillar jag att umgås med vänner, träna och att titta på alldeles för mycket film och serier...</p>
-          <p>Jag har tidigare läst det andra kurspaketet som finns på dbwebb och har nu alltså kommit till den sista kursen i detta kurspaket och det ska bli spännande att se vad kursen har att erbjuda.</p>
+          <h1 class="center-text">Pizzeria Calzone</h1>
+          <img src="img/pizzeria.jpg" alt="bild på mig" class="right">
+          <h2 class="special-font"><span class="font-lighter">Välkommen till </span>Pizzeria Calzone!</h2>
+          <p>Välkommen till Pizzeria Calzone. Hos oss kan du  beställa de bästa och godaste pizzorna i Sverige.
+            Kanske är du sugen på en Vesuvio? Eller kanske en riktigt god kebabpizza? Vi har något för alla helt enkelt!.</p>
+          <p>Navigera med hjälp av ikonerna för att se vårat sortiment. Känner du dig sugen kan du direkt i appen köpa de pizzor du vill ha.</p>
         </article>
     </div><!-- slut på main -->
   </div><!-- slut på me -->
@@ -124,8 +116,17 @@
   <div id="about" data-role="page">
     <div data-role="main" class="ui-content">
       <article>
-        <h1>Om</h1>
-        <p>Detta är min me-app i kursen webapp.</p>
+        <h1>Kontakta Pizzeria Calzone</h1>
+        <p>Här nedan finns olika kanaler att kontakta oss på.</p>
+        <div class="contact">
+          <ul>
+            <li><i class="fa fa-phone"></i> 090-1234567</li>
+            <li><i class="fa fa-envelope-o"></i> pizzeriacalzone@pizza.se</li>
+            <li><i class="fa fa-map-marker"></i> Pizzavägen 23. 902 40 Umeå. Sverige.</li>
+            <li><i class="fa fa-facebook"></i> <a href="#">Vi finns på Facebook</a></li>
+          </ul>
+        </div>
+        <div class="googlemaps" id="googleMap"></div>
       </article>
     </div><!-- slut på content -->
   </div> <!-- slut på about -->
@@ -278,8 +279,9 @@
   </div> <!-- slut på AF Totalt -->
 
   <!-- AF Listan -->
-  <div id="af-lista" data-role="page">
+  <div id="meny" data-role="page">
     <div data-role="main" class="ui-content">
+      <h1 class="center-text">Vårt sortiment</h1>
       <ul id="af-listview" data-role="listview" data-inset="false">
            <li>Nothing here</li>
        </ul>
@@ -293,6 +295,7 @@
     </div> <!-- slut på content -->
   </div> <!-- slut på AF Undersida -->
 
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="../../lib/jquery/jquery-2.1.4.js"></script>
 <script src="../../lib/jquery/jquery.mobile-1.4.5.js"></script>
 <script src="js/main.js"></script>
