@@ -213,6 +213,58 @@
 
     // Pizzeria Code here
 
+    // object for shopping carts
+    var bussola = {
+      name : "Bussola",
+      price : "70"
+    };
+
+    var calzoncino = {
+      name : "Calzoncino",
+      price : "75"
+    };
+
+    var capricciosa = {
+      name : "Capricciosa",
+      price : "70"
+    };
+
+    var hawaiispecial = {
+      name : "Hawaii Special",
+      price : "80"
+    };
+
+    var hawaii = {
+      name : "Hawaii",
+      price : "65"
+    };
+
+    var kebabpizza = {
+      name : "Kebabpizza",
+      price : "75"
+    };
+
+    var margerita = {
+      name : "Margerita",
+      price : "70"
+    };
+
+    var marina = {
+      name : "Marina",
+      price : "70"
+    };
+
+    var vesuvio = {
+      name : "Vesuvio",
+      price : "65"
+    };
+
+    var calzone = {
+      name : "Calzone",
+      price : "65"
+    };
+
+
 
     // function for google maps on contact
     function initMap() {
