@@ -210,55 +210,7 @@
         }
     });
 
-    // var bussola = {
-    //   name : "Bussola",
-    //   price : "70",
-    // };
-    //
-    // var calzoncino = {
-    //   name : "Calzoncino",
-    //   price : "75"
-    // };
-    //
-    // var capricciosa = {
-    //   name : "Capricciosa",
-    //   price : "70"
-    // };
-    //
-    // var hawaiispecial = {
-    //   name : "Hawaii Special",
-    //   price : "80"
-    // };
-    //
-    // var hawaii = {
-    //   name : "Hawaii",
-    //   price : "65"
-    // };
-    //
-    // var kebabpizza = {
-    //   name : "Kebabpizza",
-    //   price : "75"
-    // };
-    //
-    // var margerita = {
-    //   name : "Margerita",
-    //   price : "70"
-    // };
-    //
-    // var marina = {
-    //   name : "Marina",
-    //   price : "70"
-    // };
-    //
-    // var vesuvio = {
-    //   name : "Vesuvio",
-    //   price : "65"
-    // };
-    //
-    // var calzone = {
-    //   name : "Calzone",
-    //   price : "65"
-    // };
+
 
 
     // Pizzeria Code here
@@ -294,13 +246,56 @@
     }
 
 
-    // Nested object för att visa kundvagnen?
-    //http://stackoverflow.com/questions/7942398/nested-objects-in-javascript-best-practices
-    var shoppingCart = {
-      total : "0kr"
-    }
+    var bussola = {
+      name : "Bussola",
+      price : "70",
+    };
 
-    console.log(shoppingCart)
+    var calzoncino = {
+      name : "Calzoncino",
+      price : "75"
+    };
+
+    var capricciosa = {
+      name : "Capricciosa",
+      price : "70"
+    };
+
+    var hawaiispecial = {
+      name : "Hawaii Special",
+      price : "80"
+    };
+
+    var hawaii = {
+      name : "Hawaii",
+      price : "65"
+    };
+
+    var kebabpizza = {
+      name : "Kebabpizza",
+      price : "75"
+    };
+
+    var margerita = {
+      name : "Margerita",
+      price : "70"
+    };
+
+    var marina = {
+      name : "Marina",
+      price : "70"
+    };
+
+    var vesuvio = {
+      name : "Vesuvio",
+      price : "65"
+    };
+
+    var calzone = {
+      name : "Calzone",
+      price : "65"
+    };
+
 
 
     // Rensa beställningen
@@ -398,10 +393,6 @@
       }
     })
 
-
-
-
-
     // show how many pizzaz in the shopping bag, using the function targetCount
     shoppingCount("count-bussola", "bussola");
     shoppingCount("count-calzone", "calzone");
@@ -415,14 +406,26 @@
     shoppingCount("count-vesuvio", "vesuvio");
 
 
+    // Create variables for total price
+    var totalBussola = Number(bussola.price * sessionStorage.bussola);
+    var totalCalzoncino = Number(calzoncino.price * sessionStorage.calzoncino);
+    var totalCalzone = Number(calzone.price * sessionStorage.calzone);
+    var totalHawaiispecial = Number(hawaiispecial.price * sessionStorage.hawaiispecial);
+    var totalHawaii = Number(hawaii.price * sessionStorage.hawaii);
+    var totalKebabpizza = Number(kebabpizza.price * sessionStorage.kebabpizza);
+    var totalMargerita = Number(margerita.price * sessionStorage.margerita);
+    var totalMarina = Number(marina.price * sessionStorage.marina);
+    var totalVesuvio = Number(vesuvio.price * sessionStorage.vesuvio);
 
+    // sum of all the totalPizzas
+    var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
 
 
 
 
 
     // Set total sum to pay
-    document.getElementById("total").innerHTML = sessionStorage.getItem("bussola");
+    document.getElementById("total").innerHTML = priceToPay + ' kr';
 
 
 
