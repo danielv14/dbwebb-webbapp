@@ -44,31 +44,7 @@
         });
     };
 
-    // Add eventlistener for click in a link
-    var ajax = document.getElementById("ajax");
-    ajax.addEventListener("click", window.getMarvinQuoteByAjax);
 
-
-    /**
-     * Get a quote from Marvin using jQuery getJSON.
-     *
-     * @return void
-     */
-    window.getMarvinQuoteByGetJSON = function() {
-
-        var url = "http://dbwebb.se/javascript/lekplats/get-going-with-jquery-ajax/quote.php";
-
-        $.getJSON(url, function(data){
-          $('#quote').fadeOut(function() {
-            $('#quote').html(data.quote).fadeIn();
-          });
-          console.log('.getJSON() request returned successfully.');
-        });
-    };
-
-    // Add eventlistener for click in a link
-    var getjson = document.getElementById("getjson");
-    getjson.addEventListener("click", window.getMarvinQuoteByGetJSON);
 
 
 
