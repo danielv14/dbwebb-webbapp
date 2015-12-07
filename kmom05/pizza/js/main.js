@@ -429,6 +429,12 @@
 
 
 
+    // refresh the shopping cart
+    $('#refresh').click(function() {
+    location.reload();
+    });
+
+
 
     // function for google maps on contact view
     function initMap() {
