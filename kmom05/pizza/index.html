@@ -131,7 +131,7 @@
         <p>Tänk på att du kanske måste ladda om sidan för att visa korrekta antal.</p>
         <a href="#" id="refresh" data-inline="true" data-role="button" data-icon="refresh">Uppdatera kundvagn</a>
 
-        <table data-role="table" class="ui-responsive">
+        <table data-role="table" class="ui-responsive" id="shoppingcart">
       <thead>
         <tr>
           <th>Pizza</th>
@@ -143,52 +143,52 @@
         <tr>
           <td>Bussola</td>
           <td id="count-bussola">0</td>
-          <td>Ta bort?</td>
+          <td><a href="#" id="refresh" data-inline="true" data-role="button" data-icon="refresh">Uppdatera kundvagn</a></td>
         </tr>
         <tr>
           <td>Calzoncino</td>
           <td id="count-calzoncino">0</td>
-          <td>Ta bort?</td>
+          <td> <a href="#deleteCalzoncino" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Calzone</td>
           <td id="count-calzone">0</td>
-          <td>Ta bort?</td>
+          <td> <a href="#deleteCalzone" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Capricciosa</td>
           <td id="count-capricciosa">0</td>
-          <td>Ta bort?</td>
+          <td> <a href="#deleteCapricciosa" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Hawaii Special</td>
           <td id="count-hawaiispecial">0</td>
-          <td>Ta bort?</td>
+          <td> <a href="#deleteHawaiispecial" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Hawaii</td>
           <td id="count-hawaii">0</td>
-          <td>Ta bort?</td>
+          <td> <a href="#deleteHawaii" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Kebabpizza</td>
           <td id="count-kebabpizza">0</td>
-          <td>Ta bort?</td>
+          <td> <a href="#deleteKebabpizza" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Margerita</td>
           <td id="count-margerita">0</td>
-          <td>Ta bort?</td>
+          <td> <a href="#deleteMargerita" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Marina</td>
           <td id="count-marina">0</td>
-          <td>Ta bort?</td>
+          <td><a href="#deleteMarina" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
         <tr>
           <td>Vesuvio</td>
           <td id="count-vesuvio">0</td>
-          <td>Ta bort?</td>
+          <td><a href="#deleteVesuvio" class="ui-btn ui-btn-inline">Ta bort</a></td>
         </tr>
       </tbody>
     </table>
@@ -201,7 +201,9 @@
         <div data-role="popup" id="popupDelete">
           <p>Är du säker?</p>
         </div>
+        <!-- button to delete all -->
         <a href="#popupDialog" data-rel="popup" class="ui-btn ui-btn-inline">Rensa beställningen</a>
+        <!-- popup confirm dialog -->
         <div data-role="popup" id="popupDialog" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
           <div data-role="header" data-theme="a" class="ui-corner-top">
               <h1>Ta bort?</h1>
@@ -226,19 +228,22 @@
         <p>Här nedan finns Pizzeria Calzones meny. Tryck på bilderna eller texterna för att få mer info om pizzorna. Tryck på plus-tecknet för att lägga till pizzan i din beställning.</p>
         <br>
           <ul data-role="listview" data-inset="false">
+            <div data-role="popup" id="popupBasic">
+          	  <p>Pizzan tillagd i beställningen.<p>
+            </div>
               <li><a href="#bussola">
                   <img src="img/bussola.jpg">
                   <h2>Bussola</h2>
                   <p>Skinka, räkor</p>
                   <p>70kr</p></a>
-                  <a href="#" id="order-bussola" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-bussola" data-role="button" data-icon="plus"></a>
               </li>
               <li><a href="#calzoncino">
                   <img src="img/calzoncino.jpg">
                   <h2>Calzoncino</h2>
                   <p>Inbakad. Skinka, champinjoner.</p>
                   <p id="price">75kr</p></a>
-                  <a href="#" id="order-calzoncino" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-calzoncino" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#capricciosa">
@@ -246,7 +251,7 @@
                   <h2>Capricciosa</h2>
                   <p>Skinka, champinjoner.</p>
                   <p id="price">70kr</p></a>
-                  <a href="#" id="order-capricciosa" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-capricciosa" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#hawaii-special">
@@ -254,7 +259,7 @@
                   <h2>Hawaii Special</h2>
                   <p>Skinka, ananas, banan, curry.</p>
                   <p id="price">80kr</p></a>
-                  <a href="#" id="order-hawaiispecial" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-hawaiispecial" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#hawaii">
@@ -262,7 +267,7 @@
                   <h2>Hawaii</h2>
                   <p>Skinka, ananas.</p>
                   <p id="price">65kr</p></a>
-                  <a href="#" id="order-hawaii" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-hawaii" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#kebabpizza">
@@ -270,7 +275,7 @@
                   <h2>Kebabpizza</h2>
                   <p>Lök, tomat, kebab, vitlökssås.</p>
                   <p id="price">75kr</p></a>
-                  <a href="#" id="order-kebabpizza" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-kebabpizza" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#margerita">
@@ -278,7 +283,7 @@
                   <h2>Margerita</h2>
                   <p>Tomat, ost.</p>
                   <p id="price">70kr</p></a>
-                  <a href="#" id="order-margerita" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-margerita" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#marina">
@@ -286,7 +291,7 @@
                   <h2>Marina</h2>
                   <p>Skinka, räkor, musslor.</p>
                   <p id="price">70kr</p></a>
-                  <a href="#" id="order-marina" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-marina" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#vesuvio">
@@ -294,7 +299,7 @@
                   <h2>Vesuvio</h2>
                   <p>Skinnka.</p>
                   <p id="price">65kr</p></a>
-                  <a href="#" id="order-vesuvio" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-vesuvio" data-role="button" data-icon="plus"></a>
 
               </li>
               <li><a href="#calzone">
@@ -302,10 +307,11 @@
                   <h2>Calzone</h2>
                   <p>Skinka.</p>
                   <p id="price">65kr</p></a>
-                  <a href="#" id="order-calzone" data-role="button" data-icon="plus"></a>
+                  <a href="#popupBasic" id="order-calzone" data-role="button" data-icon="plus"></a>
 
               </li>
           </ul>
+
       </div>
   </div>
 

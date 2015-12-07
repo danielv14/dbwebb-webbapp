@@ -245,6 +245,23 @@
         document.getElementById(countpizza).innerHTML = sessionStorage.getItem(pizza);
     }
 
+    // function to set antal as 0 if sessionStorage doesnt exist
+    function shoppingCountZero(countpizza) {
+      document.getElementById(countpizza).innerHTML = 0;
+    }
+
+    // Function to delete individual sessionStorage
+    function deletePizzaSession(ID, pizza) {
+
+
+      $(ID).click(function() {
+        console.log("du har klickat på att ta bort en pizza");
+        sessionStorage.removeItem(pizza);
+      })
+
+
+    }
+
 
     var bussola = {
       name : "Bussola",
@@ -303,9 +320,8 @@
       console.log("du har klickat");
     })
 
-    // beställ Bussola
+    // order Bussola
     $('#order-bussola').click(function() {
-      console.log("du har klickat på bussola");
       if (sessionStorage.bussola) {
         sessionStorage.bussola = Number(sessionStorage.bussola) + 1;
       } else {
@@ -313,16 +329,15 @@
       }
     })
 
-    // beställ Calzone
+    // order Calzone
     $('#order-calzone').click(function() {
-      console.log("du har klickat på bussola");
       if (sessionStorage.calzone) {
         sessionStorage.calzone = Number(sessionStorage.calzone) + 1;
       } else {
         sessionStorage.setItem('calzone', 1);
       }
     })
-    // beställ calzoncino
+    // order calzoncino
     $('#order-calzoncino').click(function() {
       if (sessionStorage.calzoncino) {
         sessionStorage.calzoncino = Number(sessionStorage.calzoncino) + 1;
@@ -330,7 +345,7 @@
         sessionStorage.setItem('calzoncino', 1);
       }
     })
-    // beställ capricciosa
+    // order capricciosa
     $('#order-capricciosa').click(function() {
       if (sessionStorage.capricciosa) {
         sessionStorage.capricciosa = Number(sessionStorage.capricciosa) + 1;
@@ -339,7 +354,7 @@
       }
     })
 
-    // beställ hawaii-special
+    // order hawaii-special
     $('#order-hawaiispecial').click(function() {
       if (sessionStorage.hawaiispecial) {
         sessionStorage.hawaiispecial = Number(sessionStorage.hawaiispecial) + 1;
@@ -348,7 +363,7 @@
       }
     })
 
-    // beställ hawaii
+    // order hawaii
     $('#order-hawaii').click(function() {
       if (sessionStorage.hawaii) {
         sessionStorage.hawaii = Number(sessionStorage.hawaii) + 1;
@@ -357,7 +372,7 @@
       }
     })
 
-    // beställ kebabpizza
+    // order kebabpizza
     $('#order-kebabpizza').click(function() {
       if (sessionStorage.kebabpizza) {
         sessionStorage.kebabpizza = Number(sessionStorage.kebabpizza) + 1;
@@ -366,7 +381,7 @@
       }
     })
 
-    // beställ margerita
+    // order margerita
     $('#order-margerita').click(function() {
       if (sessionStorage.margerita) {
         sessionStorage.margerita = Number(sessionStorage.margerita) + 1;
@@ -375,7 +390,7 @@
       }
     })
 
-    // beställ marina
+    // order marina
     $('#order-marina').click(function() {
       if (sessionStorage.marina) {
         sessionStorage.marina = Number(sessionStorage.marina) + 1;
@@ -384,7 +399,7 @@
       }
     })
 
-    // beställ vesuvio
+    // order vesuvio
     $('#order-vesuvio').click(function() {
       if (sessionStorage.vesuvio) {
         sessionStorage.vesuvio = Number(sessionStorage.vesuvio) + 1;
@@ -393,46 +408,125 @@
       }
     })
 
+    // Set total number for pizzaz to 0
+    var totalBussola = 0 ;
+    var totalCalzoncino = 0;
+    var totalCalzone = 0;
+    var totalCapricciosa = 0;
+    var totalHawaiispecial = 0;
+    var totalHawaii = 0;
+    var totalKebabpizza = 0;
+    var totalMargerita = 0;
+    var totalMarina = 0;
+    var totalVesuvio = 0;
+
     // show how many pizzaz in the shopping bag, using the function targetCount
-    shoppingCount("count-bussola", "bussola");
-    shoppingCount("count-calzone", "calzone");
-    shoppingCount("count-calzoncino", "calzoncino");
-    shoppingCount("count-capricciosa", "capricciosa");
-    shoppingCount("count-hawaiispecial", "hawaiispecial");
-    shoppingCount("count-hawaii", "hawaii");
-    shoppingCount("count-kebabpizza", "kebabpizza");
-    shoppingCount("count-margerita", "margerita");
-    shoppingCount("count-marina", "marina");
-    shoppingCount("count-vesuvio", "vesuvio");
+    if (sessionStorage.bussola) {
+      shoppingCount("count-bussola", "bussola");
+      totalBussola = Number(bussola.price * sessionStorage.bussola);
+    } else {
+      shoppingCountZero("count-bussola");
+    }
+
+    if (sessionStorage.calzoncino) {
+      shoppingCount("count-calzoncino", "calzoncino");
+      totalCalzoncino = Number(calzoncino.price * sessionStorage.calzoncino);
+    } else {
+      shoppingCountZero("count-calzoncino");
+    }
+
+    if (sessionStorage.calzone) {
+      shoppingCount("count-calzone", "calzone");
+      totalCalzone = Number(calzone.price * sessionStorage.calzone);
+    } else {
+      shoppingCountZero("count-calzone");
+    }
+
+    if (sessionStorage.capricciosa) {
+      shoppingCount("count-capricciosa", "capricciosa");
+      totalCapricciosa = Number(capricciosa.price * sessionStorage.capricciosa)
+    } else {
+      shoppingCountZero("count-capricciosa");
+    }
+
+    if (sessionStorage.hawaiispecial) {
+      shoppingCount("count-hawaiispecial", "hawaiispecial");
+      totalHawaiispecial = Number(hawaiispecial.price * sessionStorage.hawaiispecial);
+    } else {
+      shoppingCountZero("count-hawaiispecial");
+    }
+
+    if (sessionStorage.hawaii) {
+      shoppingCount("count-hawaii", "hawaii");
+      totalHawaii = Number(hawaii.price * sessionStorage.hawaii);
+    } else {
+      shoppingCountZero("count-hawaii");
+    }
+
+    if (sessionStorage.kebabpizza) {
+      shoppingCount("count-kebabpizza", "kebabpizza");
+      totalKebabpizza = Number(kebabpizza.price * sessionStorage.kebabpizza);
+    } else {
+      shoppingCountZero("count-kebabpizza");
+    }
+
+    if (sessionStorage.margerita) {
+      shoppingCount("count-margerita", "margerita");
+      totalMargerita = Number(margerita.price * sessionStorage.margerita);
+    } else {
+      shoppingCountZero("count-margerita");
+    }
+
+    if (sessionStorage.marina) {
+      shoppingCount("count-marina", "marina");
+      totalMarina = Number(marina.price * sessionStorage.marina);
+    } else {
+      shoppingCountZero("count-marina");
+    }
+
+    if (sessionStorage.vesuvio) {
+      shoppingCount("count-vesuvio", "vesuvio");
+      totalVesuvio = Number(vesuvio.price * sessionStorage.vesuvio);
+    } else {
+      shoppingCountZero("count-vesuvio");
+    }
 
 
-    // Create variables for total price
-    var totalBussola = Number(bussola.price * sessionStorage.bussola);
-    var totalCalzoncino = Number(calzoncino.price * sessionStorage.calzoncino);
-    var totalCalzone = Number(calzone.price * sessionStorage.calzone);
-    var totalHawaiispecial = Number(hawaiispecial.price * sessionStorage.hawaiispecial);
-    var totalHawaii = Number(hawaii.price * sessionStorage.hawaii);
-    var totalKebabpizza = Number(kebabpizza.price * sessionStorage.kebabpizza);
-    var totalMargerita = Number(margerita.price * sessionStorage.margerita);
-    var totalMarina = Number(marina.price * sessionStorage.marina);
-    var totalVesuvio = Number(vesuvio.price * sessionStorage.vesuvio);
+
 
     // sum of all the totalPizzas
     var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
 
 
-
-
-
     // Set total sum to pay
-    document.getElementById("total").innerHTML = priceToPay + ' kr';
-
-
+    if (priceToPay == NaN) {
+      document.getElementById("total").innerHTML = 0;
+    } else {
+      document.getElementById("total").innerHTML = priceToPay + ' kr';
+    }
 
     // refresh the shopping cart
     $('#refresh').click(function() {
     location.reload();
     });
+
+    $('#deleteBussola').click(function() {
+    location.reload();
+    });
+
+    // delete individual sessionStorage
+    // deletePizzaSession("#deleteBussola", "bussola");
+
+
+
+    // clear all the sessionstorage
+    $('#rensa').click(function() {
+      console.log("du har klickat på rensa");
+      sessionStorage.clear();
+      window.location.reload();
+    })
+
+
 
 
 
