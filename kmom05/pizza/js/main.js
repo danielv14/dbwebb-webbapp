@@ -512,6 +512,15 @@
 
     // delete individual sessionStorage
     deletePizzaSession("#deleteBussola", "bussola");
+    deletePizzaSession("#deleteCalzoncino", "calzoncino");
+    deletePizzaSession("#deleteCalzone", "calzone");
+    deletePizzaSession("#deleteCapricciosa", "capricciosa");
+    deletePizzaSession("#deleteHawaiispecial", "hawaiispecial");
+    deletePizzaSession("#deleteHawaii", "hawaii");
+    deletePizzaSession("#deleteKebabpizza", "kebabpizza");
+    deletePizzaSession("#deleteMargerita", "margerita");
+    deletePizzaSession("#deleteMarina", "marina");
+    deletePizzaSession("#deleteVesuvio", "vesuvio");
 
 
 
@@ -526,23 +535,23 @@
 
 
 
-    // function for google maps on contact view
-    function initMap() {
-      var myLatLng = {lat: 63.827894, lng: 20.256578};
-
-      var map = new google.maps.Map(document.getElementById('googleMap'), {
-        zoom: 15,
-        center: myLatLng
-      });
-
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-      });
-    }
-
-    initMap();
+    // // function for google maps on contact view
+    // function initMap() {
+    //   var myLatLng = {lat: 63.827894, lng: 20.256578};
+    //
+    //   var map = new google.maps.Map(document.getElementById('googleMap'), {
+    //     zoom: 15,
+    //     center: myLatLng
+    //   });
+    //
+    //   var marker = new google.maps.Marker({
+    //     position: myLatLng,
+    //     map: map,
+    //     title: 'Hello World!'
+    //   });
+    // }
+    //
+    // initMap();
 
 
 })();
