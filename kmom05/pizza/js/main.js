@@ -210,63 +210,224 @@
         }
     });
 
+    // var bussola = {
+    //   name : "Bussola",
+    //   price : "70",
+    // };
+    //
+    // var calzoncino = {
+    //   name : "Calzoncino",
+    //   price : "75"
+    // };
+    //
+    // var capricciosa = {
+    //   name : "Capricciosa",
+    //   price : "70"
+    // };
+    //
+    // var hawaiispecial = {
+    //   name : "Hawaii Special",
+    //   price : "80"
+    // };
+    //
+    // var hawaii = {
+    //   name : "Hawaii",
+    //   price : "65"
+    // };
+    //
+    // var kebabpizza = {
+    //   name : "Kebabpizza",
+    //   price : "75"
+    // };
+    //
+    // var margerita = {
+    //   name : "Margerita",
+    //   price : "70"
+    // };
+    //
+    // var marina = {
+    //   name : "Marina",
+    //   price : "70"
+    // };
+    //
+    // var vesuvio = {
+    //   name : "Vesuvio",
+    //   price : "65"
+    // };
+    //
+    // var calzone = {
+    //   name : "Calzone",
+    //   price : "65"
+    // };
+
 
     // Pizzeria Code here
 
-    // object for shopping carts
-    var bussola = {
-      name : "Bussola",
-      price : "70"
-    };
+    // // Function to set sessionStorage
+    // function setSessionStorage(pizzaName, pizzaPrice, sessionName, sessionValue) {
+    //   var pizza = String(pizzaName);
+    //   var price = String(pizzaPrice);
+    //   console.log(pizza);
+    //   console.log(price);
+    //   sessionStorage.setItem(String(pizza), String(price));
+    // }
 
-    var calzoncino = {
-      name : "Calzoncino",
-      price : "75"
-    };
+    // Append sessionStorage
+    // function appendSession(pizza) {
+    //   console.log("finns jag?");
+    //   if (sessionStorage.pizza) {
+    //     sessionStorage.pizza = Number(sessionStorage.pizza) + 1;
+    //   } else {
+    //     sessionStorage.pizza = 1;
+    //   }
+    //   console.log(sessionStorage.pizza);
+    //   return sessionStorage.pizza;
+    // }
 
-    var capricciosa = {
-      name : "Capricciosa",
-      price : "70"
-    };
-
-    var hawaiispecial = {
-      name : "Hawaii Special",
-      price : "80"
-    };
-
-    var hawaii = {
-      name : "Hawaii",
-      price : "65"
-    };
-
-    var kebabpizza = {
-      name : "Kebabpizza",
-      price : "75"
-    };
-
-    var margerita = {
-      name : "Margerita",
-      price : "70"
-    };
-
-    var marina = {
-      name : "Marina",
-      price : "70"
-    };
-
-    var vesuvio = {
-      name : "Vesuvio",
-      price : "65"
-    };
-
-    var calzone = {
-      name : "Calzone",
-      price : "65"
-    };
+    /*
+    * function to target count in the shopping cart
+    * @param String countpizza The html-id to target
+    * @param String pizza The sessionStorage Name
+    */
+    function shoppingCount (countpizza, pizza) {
+        document.getElementById(countpizza).innerHTML = sessionStorage.getItem(pizza);
+    }
 
 
+    // Nested object för att visa kundvagnen?
+    //http://stackoverflow.com/questions/7942398/nested-objects-in-javascript-best-practices
+    var shoppingCart = {
+      total : "0kr"
+    }
 
-    // function for google maps on contact
+    console.log(shoppingCart)
+
+
+    // Rensa beställningen
+    $('#rensa').click(function() {
+      console.log("du har klickat");
+    })
+
+    // beställ Bussola
+    $('#order-bussola').click(function() {
+      console.log("du har klickat på bussola");
+      if (sessionStorage.bussola) {
+        sessionStorage.bussola = Number(sessionStorage.bussola) + 1;
+      } else {
+        sessionStorage.setItem('bussola', 1);
+      }
+    })
+
+    // beställ Calzone
+    $('#order-calzone').click(function() {
+      console.log("du har klickat på bussola");
+      if (sessionStorage.calzone) {
+        sessionStorage.calzone = Number(sessionStorage.calzone) + 1;
+      } else {
+        sessionStorage.setItem('calzone', 1);
+      }
+    })
+    // beställ calzoncino
+    $('#order-calzoncino').click(function() {
+      if (sessionStorage.calzoncino) {
+        sessionStorage.calzoncino = Number(sessionStorage.calzoncino) + 1;
+      } else {
+        sessionStorage.setItem('calzoncino', 1);
+      }
+    })
+    // beställ capricciosa
+    $('#order-capricciosa').click(function() {
+      if (sessionStorage.capricciosa) {
+        sessionStorage.capricciosa = Number(sessionStorage.capricciosa) + 1;
+      } else {
+        sessionStorage.setItem('capricciosa', 1);
+      }
+    })
+
+    // beställ hawaii-special
+    $('#order-hawaiispecial').click(function() {
+      if (sessionStorage.hawaiispecial) {
+        sessionStorage.hawaiispecial = Number(sessionStorage.hawaiispecial) + 1;
+      } else {
+        sessionStorage.setItem('hawaiispecial', 1);
+      }
+    })
+
+    // beställ hawaii
+    $('#order-hawaii').click(function() {
+      if (sessionStorage.hawaii) {
+        sessionStorage.hawaii = Number(sessionStorage.hawaii) + 1;
+      } else {
+        sessionStorage.setItem('hawaii', 1);
+      }
+    })
+
+    // beställ kebabpizza
+    $('#order-kebabpizza').click(function() {
+      if (sessionStorage.kebabpizza) {
+        sessionStorage.kebabpizza = Number(sessionStorage.kebabpizza) + 1;
+      } else {
+        sessionStorage.setItem('kebabpizza', 1);
+      }
+    })
+
+    // beställ margerita
+    $('#order-margerita').click(function() {
+      if (sessionStorage.margerita) {
+        sessionStorage.margerita = Number(sessionStorage.margerita) + 1;
+      } else {
+        sessionStorage.setItem('margerita', 1);
+      }
+    })
+
+    // beställ marina
+    $('#order-marina').click(function() {
+      if (sessionStorage.marina) {
+        sessionStorage.marina = Number(sessionStorage.marina) + 1;
+      } else {
+        sessionStorage.setItem('marina', 1);
+      }
+    })
+
+    // beställ vesuvio
+    $('#order-vesuvio').click(function() {
+      if (sessionStorage.vesuvio) {
+        sessionStorage.vesuvio = Number(sessionStorage.vesuvio) + 1;
+      } else {
+        sessionStorage.setItem('vesuvio', 1);
+      }
+    })
+
+
+
+
+
+    // show how many pizzaz in the shopping bag, using the function targetCount
+    shoppingCount("count-bussola", "bussola");
+    shoppingCount("count-calzone", "calzone");
+    shoppingCount("count-calzoncino", "calzoncino");
+    shoppingCount("count-capricciosa", "capricciosa");
+    shoppingCount("count-hawaiispecial", "hawaiispecial");
+    shoppingCount("count-hawaii", "hawaii");
+    shoppingCount("count-kebabpizza", "kebabpizza");
+    shoppingCount("count-margerita", "margerita");
+    shoppingCount("count-marina", "marina");
+    shoppingCount("count-vesuvio", "vesuvio");
+
+
+
+
+
+
+
+
+    // Set total sum to pay
+    document.getElementById("total").innerHTML = sessionStorage.getItem("bussola");
+
+
+
+
+    // function for google maps on contact view
     function initMap() {
       var myLatLng = {lat: 63.827894, lng: 20.256578};
 
@@ -283,5 +444,6 @@
     }
 
     initMap();
+
 
 })();
