@@ -482,10 +482,7 @@
 
     document.getElementById("total").innerHTML = priceToPay + ' kr';
 
-    // refresh the shopping cart
-    $('#refresh').click(function() {
-    location.reload();
-    });
+
 
 
 
@@ -503,11 +500,16 @@
     deletePizzaSession("#deleteVesuvio", "vesuvio");
 
 
+    // refresh the shopping cart
+    $('#refresh').click(function() {
+    location.reload();
+    });
+
     // clear all the sessionstorage
-    $('#rensa').click(function() {
+    $('#clearShoppingcart').click(function() {
       console.log("du har klickat på rensa");
       sessionStorage.clear();
-      window.location.reload();
+      location.reload();
     });
 
 
