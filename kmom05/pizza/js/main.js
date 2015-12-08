@@ -5,8 +5,6 @@
     $("#header").toolbar();
     $("#footer").toolbar();
 
-    // Add shared panel as a panel.
-    $("#menu").panel().enhanceWithin();
 
 
 
