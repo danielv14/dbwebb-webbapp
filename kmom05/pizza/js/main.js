@@ -500,7 +500,7 @@
 
     // refresh the shopping cart
     $('#refresh').click(function() {
-    location.reload();
+      location.reload();
     });
 
     // clear all the sessionstorage
