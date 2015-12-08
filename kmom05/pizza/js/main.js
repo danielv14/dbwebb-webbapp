@@ -260,12 +260,12 @@
     }
 
     function pizzaArticle(articleID, pizza) {
-      var pizzaArticle = document.getElementById(articleID);
-      pizzaArticle.innerHTML = '<img src="' + pizza.image + '">';
-      pizzaArticle.innerHTML += '<h2 class="special-font">' + pizza.name + '</h2>';
-      pizzaArticle.innerHTML += '<p>' + pizza.desc + '</p>';
-      pizzaArticle.innerHTML += '<p><b>Innehåller: </b>' + pizza.topping + '</p>';
-      pizzaArticle.innerHTML += '<p><b>Pris: </b>' + pizza.price + '</p>';
+      var article = document.getElementById(articleID);
+      article.innerHTML = '<img src="' + pizza.image + '">';
+      article.innerHTML += '<h2 class="special-font">' + pizza.name + '</h2>';
+      article.innerHTML += '<p>' + pizza.desc + '</p>';
+      article.innerHTML += '<p><b>Innehåller: </b>' + pizza.topping + '</p>';
+      article.innerHTML += '<p><b>Pris: </b>' + pizza.price + '</p>';
     }
 
     // create pizza objects
