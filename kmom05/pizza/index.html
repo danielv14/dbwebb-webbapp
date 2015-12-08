@@ -191,85 +191,37 @@
         <p>Här nedan finns Pizzeria Calzones meny. Tryck på bilderna eller texterna för att få mer info om pizzorna. Tryck på plus-tecknet för att lägga till pizzan i din beställning.</p>
         <br>
           <ul data-role="listview" data-inset="false">
-              <li><a href="#bussola">
-                  <img src="img/bussola.jpg">
-                  <h2>Bussola</h2>
-                  <p>Skinka, räkor</p>
-                  <p>70kr</p></a>
-                  <a href="#" id="order-bussola" data-role="button" data-icon="plus"></a>
+              <li id="menu-bussola"><a id="link-bussola" href="#bussola"></a>
               </li>
-              <li><a href="#calzoncino">
-                  <img src="img/calzoncino.jpg">
-                  <h2>Calzoncino</h2>
-                  <p>Inbakad. Skinka, champinjoner.</p>
-                  <p>75kr</p></a>
-                  <a href="#" id="order-calzoncino" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#calzoncino" id="link-calzoncino"></a>
               </li>
-              <li><a href="#capricciosa">
-                  <img src="img/capricciosa.jpeg">
-                  <h2>Capricciosa</h2>
-                  <p>Skinka, champinjoner.</p>
-                  <p>70kr</p></a>
-                  <a href="#" id="order-capricciosa" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#calzone" id="link-calzone"></a>
               </li>
-              <li><a href="#hawaii-special">
-                  <img src="img/hawaii-special.jpg">
-                  <h2>Hawaii Special</h2>
-                  <p>Skinka, ananas, banan, curry.</p>
-                  <p>80kr</p></a>
-                  <a href="#" id="order-hawaiispecial" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#capricciosa" id="link-capricciosa"></a>
               </li>
-              <li><a href="#hawaii">
-                  <img src="img/hawaii.jpg">
-                  <h2>Hawaii</h2>
-                  <p>Skinka, ananas.</p>
-                  <p>65kr</p></a>
-                  <a href="#" id="order-hawaii" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#hawaii-special" id="link-hawaiispecial"></a>
               </li>
-              <li><a href="#kebabpizza">
-                  <img src="img/kebabpizza.jpg">
-                  <h2>Kebabpizza</h2>
-                  <p>Lök, tomat, kebab, vitlökssås.</p>
-                  <p>75kr</p></a>
-                  <a href="#" id="order-kebabpizza" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#hawaii" id="link-hawaii"></a>
               </li>
-              <li><a href="#margerita">
-                  <img src="img/margerita.png">
-                  <h2>Margerita</h2>
-                  <p>Tomat, ost.</p>
-                  <p>70kr</p></a>
-                  <a href="#" id="order-margerita" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#kebabpizza" id="link-kebabpizza"></a>
               </li>
-              <li><a href="#marina">
-                  <img src="img/marina.jpg">
-                  <h2>Marina</h2>
-                  <p>Skinka, räkor, musslor.</p>
-                  <p>70kr</p></a>
-                  <a href="#" id="order-marina" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#margerita" id="link-margerita"></a>
               </li>
-              <li><a href="#vesuvio">
-                  <img src="img/vesuvio.jpg">
-                  <h2>Vesuvio</h2>
-                  <p>Skinnka.</p>
-                  <p>65kr</p></a>
-                  <a href="#" id="order-vesuvio" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#marina" id="link-marina"></a>
               </li>
-              <li><a href="#calzone">
-                  <img src="img/calzone.jpg">
-                  <h2>Calzone</h2>
-                  <p>Skinka.</p>
-                  <p>65kr</p></a>
-                  <a href="#" id="order-calzone" data-role="button" data-icon="plus"></a>
 
+              <li><a href="#vesuvio" id="link-vesuvio"></a>
               </li>
+
+
           </ul>
 
       </div>
@@ -279,132 +231,74 @@
   <!-- lista för bussola -->
   <div id="bussola" data-role="page" data-swipeleft="back">
     <div role="main" class="ui-content">
-        <article>
-            <img src="img/bussola.jpg">
-            <h2 class="special-font">Bussola</h2>
-            <p>Detta är våran sjukt goda Bussolapizza.</p>
-            <p><b>Innehåller: </b> Skinka och räkor</p>
-            <p><b>Pris: </b>70kr</p>
-        </article>
+        <article id="article-bussola"></article>
     </div>
   </div>
 
   <!-- Lista för calzoncino -->
   <div id="calzoncino" data-role="page">
     <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/calzoncino.jpg">
-            <h2 class="special-font">Calzoncino</h2>
-            <p>Detta är våran populära inbakade pizza Calzoncino.</p>
-            <p><b>Innehåller: </b> Skinka och champinjoner</p>
-            <p><b>Pris: </b>75kr</p>
-        </article>
-    </div>
-  </div>
-
-  <!-- Lista för capricciosa -->
-  <div id="capricciosa" data-role="page">
-    <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/capricciosa.jpeg">
-            <h2 class="special-font">Capricciosa</h2>
-            <p>Detta är våran mest sålda pizza.</p>
-            <p><b>Innehåller: </b> Skinka och champinjoner</p>
-            <p><b>Pris: </b>70kr</p>
-        </article>
-    </div>
-  </div>
-
-  <!-- Lista för hawaii special -->
-  <div id="hawaii-special" data-role="page">
-    <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/hawaii-special.jpg">
-            <h2 class="special-font">Hawaii Special</h2>
-            <p>Detta är en rolig twist på klassikern hawaii.</p>
-            <p><b>Innehåller: </b> Skinka, ananas, banan, curry.</p>
-            <p><b>Pris: </b>80kr</p>
-        </article>
-    </div>
-  </div>
-
-  <!-- Lista för hawaii -->
-  <div id="hawaii" data-role="page">
-    <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/hawaii.jpg">
-            <h2 class="special-font">Hawaii</h2>
-            <p>Den supergoda pizzan Hawaii.</p>
-            <p><b>Innehåller: </b> Skinka och ananas.</p>
-            <p><b>Pris: </b>65kr</p>
-        </article>
-    </div>
-  </div>
-
-  <!-- Lista för kebabpizza -->
-  <div id="kebabpizza" data-role="page">
-    <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/kebabpizza.jpg">
-            <h2 class="special-font">Kebabpizza</h2>
-            <p>Är du sugen på kebab? Då kommer denna pizza falla dig i smaken</p>
-            <p><b>Innehåller: </b> Lök, tomat, kebab och vitlökssås.</p>
-            <p><b>Pris: </b>75kr</p>
-        </article>
-    </div>
-  </div>
-
-  <!-- Lista för margerita -->
-  <div id="margerita" data-role="page">
-    <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/margerita.png">
-            <h2 class="special-font">Margerita</h2>
-            <p>Ingrediensinehållet må inte se så spännande ut men denna pizza är sjukt god.</p>
-            <p><b>Innehåller: </b> Tomat och ost</p>
-            <p><b>Pris: </b>70kr</p>
-        </article>
-    </div>
-  </div>
-
-  <!-- Lista för marina -->
-  <div id="marina" data-role="page">
-    <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/marina.jpg">
-            <h2 class="special-font">Marina</h2>
-            <p>Detta är våran populära pizza med inspiration från havet.</p>
-            <p><b>Innehåller: </b> Skinka, räkor och musslor</p>
-            <p><b>Pris: </b>70kr</p>
-        </article>
-    </div>
-  </div>
-
-  <!-- Lista för vesuvio -->
-  <div id="vesuvio" data-role="page">
-    <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/vesuvio.jpg">
-            <h2 class="special-font">Vesuvio</h2>
-            <p>En av de mest populära pizzor hos Pizzeria Calzone.</p>
-            <p><b>Innehåller: </b> Skinka</p>
-            <p><b>Pris: </b>65kr</p>
-        </article>
+        <article id="article-calzoncino"></article>
     </div>
   </div>
 
   <!-- Lista för calzone -->
   <div id="calzone" data-role="page">
     <div role="main" class="ui-content" data-swipeleft="back">
-        <article>
-            <img src="img/calzone.jpg">
-            <h2 class="special-font">Calzone</h2>
-            <p>Detta är våran inbakade bästsäljare.</p>
-            <p><b>Innehåller: </b> Skinka</p>
-            <p><b>Pris: </b>70kr</p>
-        </article>
+        <article id="article-calzone"></article>
     </div>
   </div>
+
+  <!-- Lista för capricciosa -->
+  <div id="capricciosa" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-capricciosa"></article>
+    </div>
+  </div>
+
+  <!-- Lista för hawaii special -->
+  <div id="hawaii-special" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-hawaiispecial"></article>
+    </div>
+  </div>
+
+  <!-- Lista för hawaii -->
+  <div id="hawaii" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-hawaii"></article>
+    </div>
+  </div>
+
+  <!-- Lista för kebabpizza -->
+  <div id="kebabpizza" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-kebabpizza"></article>
+    </div>
+  </div>
+
+  <!-- Lista för margerita -->
+  <div id="margerita" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-margerita"></article>
+    </div>
+  </div>
+
+  <!-- Lista för marina -->
+  <div id="marina" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-marina"></article>
+    </div>
+  </div>
+
+  <!-- Lista för vesuvio -->
+  <div id="vesuvio" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-vesuvio"></article>
+    </div>
+  </div>
+
+
 
 <!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
 <script src="../../lib/jquery/jquery-2.1.4.js"></script>
