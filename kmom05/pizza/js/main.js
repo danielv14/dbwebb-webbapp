@@ -215,26 +215,6 @@
 
     // Pizzeria Code here
 
-    // // Function to set sessionStorage
-    // function setSessionStorage(pizzaName, pizzaPrice, sessionName, sessionValue) {
-    //   var pizza = String(pizzaName);
-    //   var price = String(pizzaPrice);
-    //   console.log(pizza);
-    //   console.log(price);
-    //   sessionStorage.setItem(String(pizza), String(price));
-    // }
-
-    // Append sessionStorage
-    // function appendSession(pizza) {
-    //   console.log("finns jag?");
-    //   if (sessionStorage.pizza) {
-    //     sessionStorage.pizza = Number(sessionStorage.pizza) + 1;
-    //   } else {
-    //     sessionStorage.pizza = 1;
-    //   }
-    //   console.log(sessionStorage.pizza);
-    //   return sessionStorage.pizza;
-    // }
 
     /*
     * function to target count in the shopping cart
@@ -245,12 +225,19 @@
         document.getElementById(countpizza).innerHTML = sessionStorage.getItem(pizza);
     }
 
-    // function to set antal as 0 if sessionStorage doesnt exist
+    /*
+    *function to set antal as 0 if sessionStorage doesnt exist
+    * @param String countpizza the ID to target
+    */
     function shoppingCountZero(countpizza) {
       document.getElementById(countpizza).innerHTML = 0;
     }
 
-    // Function to delete individual sessionStorage
+    /*
+    *Function to delete individual sessionStorage
+    * @param String ID The ID to target
+    * @param String pizza the sessionStorage name to remove
+    */
     function deletePizzaSession(ID, pizza) {
       $(ID).click(function() {
         console.log("du har klickat på att ta bort en pizza");
@@ -260,7 +247,7 @@
 
     }
 
-
+    // create pizza objects
     var bussola = {
       name : "Bussola",
       price : "70",
@@ -313,10 +300,10 @@
 
 
 
-    // Rensa beställningen
-    $('#rensa').click(function() {
-      console.log("du har klickat");
-    });
+
+    /*
+    * Click event for ordering pizzas
+    */
 
     // order Bussola
     $('#order-bussola').click(function() {
@@ -490,22 +477,10 @@
     }
 
 
-
-
-
-
-
-
     // sum of all the totalPizzas
     var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
 
-
-    // Set total sum to pay
-    // if (priceToPay.isNaN(true)) {
-    //   document.getElementById("total").innerHTML = 0;
-    // } else {
     document.getElementById("total").innerHTML = priceToPay + ' kr';
-    // }
 
     // refresh the shopping cart
     $('#refresh').click(function() {
@@ -514,7 +489,8 @@
 
 
 
-    // delete individual sessionStorage
+    // delete individual sessionStorage if the buttons are clicked.
+    // if not the functions below does nothing.
     deletePizzaSession("#deleteBussola", "bussola");
     deletePizzaSession("#deleteCalzoncino", "calzoncino");
     deletePizzaSession("#deleteCalzone", "calzone");
@@ -525,7 +501,6 @@
     deletePizzaSession("#deleteMargerita", "margerita");
     deletePizzaSession("#deleteMarina", "marina");
     deletePizzaSession("#deleteVesuvio", "vesuvio");
-
 
 
     // clear all the sessionstorage
