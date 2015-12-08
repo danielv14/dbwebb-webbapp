@@ -501,11 +501,11 @@
 
 
     // Set total sum to pay
-    if (priceToPay == NaN) {
-      document.getElementById("total").innerHTML = 0;
-    } else {
-      document.getElementById("total").innerHTML = priceToPay + ' kr';
-    }
+    // if (priceToPay.isNaN(true)) {
+    //   document.getElementById("total").innerHTML = 0;
+    // } else {
+    document.getElementById("total").innerHTML = priceToPay + ' kr';
+    // }
 
     // refresh the shopping cart
     $('#refresh').click(function() {
