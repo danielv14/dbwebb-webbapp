@@ -247,7 +247,7 @@
     /*
     * Function to push pizza object keys to list view
     * @param String listID the id to target
-    * @param String pizza the object to use
+    * @param Object pizza the object to push into listID
     */
     function pizzaListInfo(linkID, pizza) {
         var pizzaList = document.getElementById(linkID);
@@ -259,6 +259,11 @@
         //pizzaList.innerHTML += '<a href="#" id="' + pizza.id + '" data-role="button" data-icon="plus"></a>';
     }
 
+    /*
+    * Function to push object content to articles
+    * @param String articleID The article ID to target
+    * @param Object pizza The bbject to push to the article
+    */
     function pizzaArticle(articleID, pizza) {
       var article = document.getElementById(articleID);
       article.innerHTML = '<img src="' + pizza.image + '">';
@@ -270,7 +275,7 @@
 
     // create pizza objects
     var bussola = {
-      name : "bussola",
+      name : "Bussola",
       price : "70",
       image : "img/bussola.jpg",
       topping : "Skinka, räkor",
