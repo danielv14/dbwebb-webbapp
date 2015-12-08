@@ -214,6 +214,7 @@
     // Pizzeria Code here
 
 
+
     /*
     * function to target count in the shopping cart
     * @param String countpizza The html-id to target
@@ -241,62 +242,149 @@
         console.log("du har klickat på att ta bort en pizza");
         sessionStorage.removeItem(pizza);
       });
+    }
 
+    /*
+    * Function to push pizza object keys to list view
+    * @param String listID the id to target
+    * @param String pizza the object to use
+    */
+    function pizzaListInfo(linkID, pizza) {
+        var pizzaList = document.getElementById(linkID);
+        pizzaList.innerHTML = '<img src="' + pizza.image + '">';
+        pizzaList.innerHTML += '<h2>' + pizza.name + '</h2>';
+        pizzaList.innerHTML += '<p>' + pizza.topping + '</p>';
+        pizzaList.innerHTML += '<p>' + pizza.price + ' kr</p></a>';
+        $('<a href="#" id="' + pizza.id + '" data-role="button" data-icon="plus"></a>').insertAfter('#' + linkID);
+        //pizzaList.innerHTML += '<a href="#" id="' + pizza.id + '" data-role="button" data-icon="plus"></a>';
+    }
 
+    function pizzaArticle(articleID, pizza) {
+      var pizzaArticle = document.getElementById(articleID);
+      pizzaArticle.innerHTML = '<img src="' + pizza.image + '">';
+      pizzaArticle.innerHTML += '<h2 class="special-font">' + pizza.name + '</h2>';
+      pizzaArticle.innerHTML += '<p>' + pizza.desc + '</p>';
+      pizzaArticle.innerHTML += '<p><b>Innehåller: </b>' + pizza.topping + '</p>';
+      pizzaArticle.innerHTML += '<p><b>Pris: </b>' + pizza.price + '</p>';
     }
 
     // create pizza objects
     var bussola = {
-      name : "Bussola",
+      name : "bussola",
       price : "70",
+      image : "img/bussola.jpg",
+      topping : "Skinka, räkor",
+      id : "order-bussola",
+      desc : "Detta är våran sjukt goda Bussolapizza"
     };
 
     var calzoncino = {
       name : "Calzoncino",
-      price : "75"
-    };
-
-    var capricciosa = {
-      name : "Capricciosa",
-      price : "70"
-    };
-
-    var hawaiispecial = {
-      name : "Hawaii Special",
-      price : "80"
-    };
-
-    var hawaii = {
-      name : "Hawaii",
-      price : "65"
-    };
-
-    var kebabpizza = {
-      name : "Kebabpizza",
-      price : "75"
-    };
-
-    var margerita = {
-      name : "Margerita",
-      price : "70"
-    };
-
-    var marina = {
-      name : "Marina",
-      price : "70"
-    };
-
-    var vesuvio = {
-      name : "Vesuvio",
-      price : "65"
+      price : "75",
+      image : "img/calzoncino.jpg",
+      topping : "Inbakad. Skinka, champinjoner",
+      id : "order-calzoncino",
+      desc : "Detta är vår populära inbakade pizza Calzoncino"
     };
 
     var calzone = {
       name : "Calzone",
-      price : "65"
+      price : "65",
+      image : "img/calzone.jpg",
+      topping : "Inbakad. Skinka",
+      id : "order-calzone",
+      desc : "Detta är vår inbakade bästsäljare"
+    };
+
+    var capricciosa = {
+      name : "Capricciosa",
+      price : "70",
+      image : "img/capricciosa.jpeg",
+      topping : "Skinka, champinjoner",
+      id : "order-capricciosa",
+      desc : "Detta är vår mest sålda pizza och god är den verkligen"
+    };
+
+    var hawaiispecial = {
+      name : "Hawaii Special",
+      price : "80",
+      image : "img/hawaii-special.jpg",
+      topping : "Skinka, ananas, banan, curry",
+      id : "order-hawaiispecial",
+      desc : "Detta är en rolig twist på klassikern hawaii"
+    };
+
+    var hawaii = {
+      name : "Hawaii",
+      price : "65",
+      image : "img/hawaii.jpg",
+      topping : "Skinka, ananas",
+      id : "order-hawaii",
+      desc : "Den supergoda pizzan Hawaii med uppfriskande ananas"
+    };
+
+    var kebabpizza = {
+      name : "Kebabpizza",
+      price : "75",
+      image : "img/kebabpizza.jpg",
+      topping : "Lök, tomat, kebab, vitlökssås",
+      id : "order-kebabpizza",
+      desc : "Är du sugen på kebab? Prova då denna supergoda pizza"
+    };
+
+    var margerita = {
+      name : "Margerita",
+      price : "70",
+      image : "img/margerita.png",
+      topping : "Tomat, ost",
+      id : "order-margerita",
+      desc : "Ingrediensinnehållet må inte vara spännande, men låt dig inte luras"
+    };
+
+    var marina = {
+      name : "Marina",
+      price : "70",
+      image : "img/marina.jpg",
+      topping : "Skinka, räkor, musslor",
+      id : "order-marina",
+      desc : "Detta är vår populära pizza med inspiration från havet"
+    };
+
+    var vesuvio = {
+      name : "Vesuvio",
+      price : "65",
+      image : "img/vesuvio.jpg",
+      topping : "Skinka",
+      id : "order-vesuvio",
+      desc : "En av de mest populära pizzor hos Pizzeria Calzone"
     };
 
 
+
+    // fill the meny with pizza objects
+    pizzaListInfo("link-bussola", bussola);
+    pizzaListInfo("link-calzoncino", calzoncino);
+    pizzaListInfo("link-calzone", calzone);
+    pizzaListInfo("link-capricciosa", capricciosa);
+    pizzaListInfo("link-hawaiispecial", hawaiispecial);
+    pizzaListInfo("link-hawaii", hawaii);
+    pizzaListInfo("link-kebabpizza", kebabpizza);
+    pizzaListInfo("link-margerita", margerita);
+    pizzaListInfo("link-marina", marina);
+    pizzaListInfo("link-vesuvio", vesuvio);
+
+
+    // fill individual page about pizzaz
+    pizzaArticle("article-bussola", bussola);
+    pizzaArticle("article-calzoncino", calzoncino);
+    pizzaArticle("article-calzone", calzone);
+    pizzaArticle("article-capricciosa", capricciosa);
+    pizzaArticle("article-hawaiispecial", hawaiispecial);
+    pizzaArticle("article-hawaii", hawaii);
+    pizzaArticle("article-kebabpizza", kebabpizza);
+    pizzaArticle("article-margerita", margerita);
+    pizzaArticle("article-marina", marina);
+    pizzaArticle("article-vesuvio", vesuvio);
 
 
     /*
