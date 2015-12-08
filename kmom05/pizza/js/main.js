@@ -255,7 +255,7 @@
       $(ID).click(function() {
         console.log("du har klickat på att ta bort en pizza");
         sessionStorage.removeItem(pizza);
-      })
+      });
 
 
     }
@@ -316,7 +316,7 @@
     // Rensa beställningen
     $('#rensa').click(function() {
       console.log("du har klickat");
-    })
+    });
 
     // order Bussola
     $('#order-bussola').click(function() {
@@ -325,7 +325,7 @@
       } else {
         sessionStorage.setItem('bussola', 1);
       }
-    })
+    });
 
     // order Calzone
     $('#order-calzone').click(function() {
@@ -334,7 +334,7 @@
       } else {
         sessionStorage.setItem('calzone', 1);
       }
-    })
+    });
     // order calzoncino
     $('#order-calzoncino').click(function() {
       if (sessionStorage.calzoncino) {
@@ -342,7 +342,7 @@
       } else {
         sessionStorage.setItem('calzoncino', 1);
       }
-    })
+    });
     // order capricciosa
     $('#order-capricciosa').click(function() {
       if (sessionStorage.capricciosa) {
@@ -350,7 +350,7 @@
       } else {
         sessionStorage.setItem('capricciosa', 1);
       }
-    })
+    });
 
     // order hawaii-special
     $('#order-hawaiispecial').click(function() {
@@ -359,7 +359,7 @@
       } else {
         sessionStorage.setItem('hawaiispecial', 1);
       }
-    })
+    });
 
     // order hawaii
     $('#order-hawaii').click(function() {
@@ -368,7 +368,7 @@
       } else {
         sessionStorage.setItem('hawaii', 1);
       }
-    })
+    });
 
     // order kebabpizza
     $('#order-kebabpizza').click(function() {
@@ -377,7 +377,7 @@
       } else {
         sessionStorage.setItem('kebabpizza', 1);
       }
-    })
+    });
 
     // order margerita
     $('#order-margerita').click(function() {
@@ -386,7 +386,7 @@
       } else {
         sessionStorage.setItem('margerita', 1);
       }
-    })
+    });
 
     // order marina
     $('#order-marina').click(function() {
@@ -395,7 +395,7 @@
       } else {
         sessionStorage.setItem('marina', 1);
       }
-    })
+    });
 
     // order vesuvio
     $('#order-vesuvio').click(function() {
@@ -404,7 +404,7 @@
       } else {
         sessionStorage.setItem('vesuvio', 1);
       }
-    })
+    });
 
     // Set total number for pizzaz to 0
     var totalBussola = 0 ;
@@ -442,7 +442,7 @@
 
     if (sessionStorage.capricciosa) {
       shoppingCount("count-capricciosa", "capricciosa");
-      totalCapricciosa = Number(capricciosa.price * sessionStorage.capricciosa)
+      totalCapricciosa = Number(capricciosa.price * sessionStorage.capricciosa);
     } else {
       shoppingCountZero("count-capricciosa");
     }
@@ -492,6 +492,10 @@
 
 
 
+
+
+
+
     // sum of all the totalPizzas
     var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
 
@@ -529,7 +533,7 @@
       console.log("du har klickat på rensa");
       sessionStorage.clear();
       window.location.reload();
-    })
+    });
 
 
 
