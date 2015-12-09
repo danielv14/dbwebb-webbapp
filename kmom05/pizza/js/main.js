@@ -315,116 +315,37 @@
     }
 
     /*
-    * Funcion to sort out what get pushed into the shoppingCart
-    * This function uses 2 other functions, shoppingCount() and shoppingCountZero()
+    * Function to create objects
     *
-    * @param String sessionName   The sessionStorage Name to target
-    * @param String ID            The html ID to target
+    * @param String   pizzaname       name of the pizza
+    * @param String   pizzaprice      price of the pizza
+    * @param String   pizzaimage      image of the pizza
+    * @param String   pizzatopping    topping of the pizza
+    * @param String   pizzaid         html id of the pizza
+    * @param String   pizzadec        description of the pizza
+    *
     */
-    function showOrder(sessionName, ID, pizzaPrice, pizza) {
-      if (sessionStorage.getItem(sessionName)) {
-        console.log("händer det här?");
-        shoppingCount(ID, sessionName);
-        pizzaPrice = Number(pizza.price * sessionStorage.getItem(sessionName));
-        console.log("Funktionsvariablen pizzaPrice är:" + pizzaPrice);
-        return pizzaPrice;
-
-      } else {
-        shoppingCountZero(ID);
-      }
+    function PizzaObject(pizzaname, pizzaprice, pizzaimage, pizzatopping, pizzaid, pizzadesc) {
+      this.name = pizzaname;
+      this.price = pizzaprice;
+      this.image = pizzaimage;
+      this.topping = pizzatopping;
+      this.id = pizzaid;
+      this.desc = pizzadesc;
     }
 
+    // Create pizza objects from function pizzaObject()
+    var bussola = new PizzaObject("Bussola", "70", "img/bussola.jpg", "Skinka, räkor", "order-bussola", "Detta är våran sjukt goda Bussolapizza");
+    var calzoncino = new PizzaObject("Calzoncino", "75", "img/calzoncino.jpg", "Inbakad. Skinka, räkor", "order-calzoncino", "Detta är vår populära inbakade pizza Calzoncino");
+    var calzone = new PizzaObject("Calzone", "65", "img/calzone.jpg", "Inbakad. Skinka", "order-calzone", "Detta är vår inbakade bästsäljare");
+    var capricciosa = new PizzaObject("Capricciosa", "70", "img/capricciosa.jpeg", "Skinka, champinjoner", "order-capricciosa", "Detta är vår mest sålda pizza och god är den verkligen");
+    var hawaiispecial = new PizzaObject("Hawaii Special", "80", "img/hawaii-special.jpg", "Skinka, ananas, banan, curry", "order-hawaiispecial", "Detta är en rolig twist på klassikern hawaii");
+    var hawaii = new PizzaObject("Hawaii", "65", "img/hawaii.jpg", "Skinka, ananas", "order-hawaii", "Den supergoda pizzan Hawaii med uppfriskande ananas");
+    var kebabpizza = new PizzaObject("Kebabpizza", "75", "img/kebabpizza.jpg", "Lök, tomat, kebab, vitlökssås", "order-kebabpizza", "Är du sugen på kebab? Prova då denna supergoda pizza");
+    var margerita = new PizzaObject("Margerita", "70", "img/margerita.png", "Tomat, ost", "order-margerita", "Ingrediensinnehållet må inte vara spännande, men låt dig inte luras");
+    var marina = new PizzaObject("Marina", "70", "img/marina.jpg", "Skinka, räkor, musslor", "order-marina", "Detta är vår populära pizza med inspiration från havet");
+    var vesuvio = new PizzaObject("Vesuvio", "65", "img/vesuvio.jpg", "Skinka", "order-vesuvio", "En av de mest populära pizzor hos Pizzeria Calzone");
 
-    // create pizza objects
-    var bussola = {
-      name : "Bussola",
-      price : "70",
-      image : "img/bussola.jpg",
-      topping : "Skinka, räkor",
-      id : "order-bussola",
-      desc : "Detta är våran sjukt goda Bussolapizza"
-    };
-
-    var calzoncino = {
-      name : "Calzoncino",
-      price : "75",
-      image : "img/calzoncino.jpg",
-      topping : "Inbakad. Skinka, champinjoner",
-      id : "order-calzoncino",
-      desc : "Detta är vår populära inbakade pizza Calzoncino"
-    };
-
-    var calzone = {
-      name : "Calzone",
-      price : "65",
-      image : "img/calzone.jpg",
-      topping : "Inbakad. Skinka",
-      id : "order-calzone",
-      desc : "Detta är vår inbakade bästsäljare"
-    };
-
-    var capricciosa = {
-      name : "Capricciosa",
-      price : "70",
-      image : "img/capricciosa.jpeg",
-      topping : "Skinka, champinjoner",
-      id : "order-capricciosa",
-      desc : "Detta är vår mest sålda pizza och god är den verkligen"
-    };
-
-    var hawaiispecial = {
-      name : "Hawaii Special",
-      price : "80",
-      image : "img/hawaii-special.jpg",
-      topping : "Skinka, ananas, banan, curry",
-      id : "order-hawaiispecial",
-      desc : "Detta är en rolig twist på klassikern hawaii"
-    };
-
-    var hawaii = {
-      name : "Hawaii",
-      price : "65",
-      image : "img/hawaii.jpg",
-      topping : "Skinka, ananas",
-      id : "order-hawaii",
-      desc : "Den supergoda pizzan Hawaii med uppfriskande ananas"
-    };
-
-    var kebabpizza = {
-      name : "Kebabpizza",
-      price : "75",
-      image : "img/kebabpizza.jpg",
-      topping : "Lök, tomat, kebab, vitlökssås",
-      id : "order-kebabpizza",
-      desc : "Är du sugen på kebab? Prova då denna supergoda pizza"
-    };
-
-    var margerita = {
-      name : "Margerita",
-      price : "70",
-      image : "img/margerita.png",
-      topping : "Tomat, ost",
-      id : "order-margerita",
-      desc : "Ingrediensinnehållet må inte vara spännande, men låt dig inte luras"
-    };
-
-    var marina = {
-      name : "Marina",
-      price : "70",
-      image : "img/marina.jpg",
-      topping : "Skinka, räkor, musslor",
-      id : "order-marina",
-      desc : "Detta är vår populära pizza med inspiration från havet"
-    };
-
-    var vesuvio = {
-      name : "Vesuvio",
-      price : "65",
-      image : "img/vesuvio.jpg",
-      topping : "Skinka",
-      id : "order-vesuvio",
-      desc : "En av de mest populära pizzor hos Pizzeria Calzone"
-    };
 
 
     // fill the meny with pizza objects
