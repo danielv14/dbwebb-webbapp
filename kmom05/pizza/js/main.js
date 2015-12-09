@@ -277,7 +277,6 @@
         pizzaList.innerHTML += '<p>' + pizza.topping + '</p>';
         pizzaList.innerHTML += '<p>' + pizza.price + ' kr</p></a>';
         $('<a href="#" id="' + pizza.id + '" data-role="button" data-icon="plus"></a>').insertAfter('#' + linkID);
-        //pizzaList.innerHTML += '<a href="#" id="' + pizza.id + '" data-role="button" data-icon="plus"></a>';
     }
 
     /*
