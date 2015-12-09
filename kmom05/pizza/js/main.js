@@ -321,16 +321,18 @@
     * @param String sessionName   The sessionStorage Name to target
     * @param String ID            The html ID to target
     */
-    // function showOrder(sessionName, ID, totalPrice, pizza) {
-    //   if (sessionStorage.getItem(sessionName)) {
-    //     console.log("händer det här?");
-    //     shoppingCount(ID, sessionName);
-    //     totalPrice = Number(pizza.price * sessionStorage.getItem(sessionName));
-    //     return totalPrice;
-    //   } else {
-    //     shoppingCountZero(ID);
-    //   }
-    // }
+    function showOrder(sessionName, ID, pizzaPrice, pizza) {
+      if (sessionStorage.getItem(sessionName)) {
+        console.log("händer det här?");
+        shoppingCount(ID, sessionName);
+        pizzaPrice = Number(pizza.price * sessionStorage.getItem(sessionName));
+        console.log("Funktionsvariablen pizzaPrice är:" + pizzaPrice);
+        return pizzaPrice;
+
+      } else {
+        shoppingCountZero(ID);
+      }
+    }
 
 
     // create pizza objects
@@ -548,17 +550,6 @@
       shoppingCountZero("count-vesuvio");
     }
 
-
-    // showOrder("bussola", "count-bussola", totalBussola, bussola);
-    // showOrder("calzoncino", "count-calzoncino", totalCalzoncino, calzoncino);
-    // showOrder("calzone", "count-calzone", totalCalzone, calzone);
-    // showOrder("capricciosa", "count-capricciosa", totalCapricciosa, capricciosa);
-    // showOrder("hawaiispecial", "count-hawaiispecial", totalHawaiispecial, hawaiispecial);
-    // showOrder("hawaii", "count-hawaii", totalHawaii, hawaii);
-    // showOrder("kebabpizza", "count-kebabpizza", totalKebabpizza, kebabpizza);
-    // showOrder("margerita", "count-margerita", totalMargerita, margerita);
-    // showOrder("marina", "count-marina", totalMarina, marina);
-    // showOrder("vesuvio", "count-vesuvio", totalVesuvio, vesuvio);
 
     // sum of all the totalPizzas
     var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalCapricciosa + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
