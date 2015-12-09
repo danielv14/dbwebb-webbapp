@@ -321,16 +321,16 @@
     * @param String sessionName   The sessionStorage Name to target
     * @param String ID            The html ID to target
     */
-    function showOrder(sessionName, ID, totalPrice, pizza) {
-      if (sessionStorage.getItem(sessionName)) {
-        console.log("händer det här?");
-        shoppingCount(ID, sessionName);
-        totalPrice = Number(pizza.price * sessionStorage.getItem(sessionName));
-        return totalPrice;
-      } else {
-        shoppingCountZero(ID);
-      }
-    }
+    // function showOrder(sessionName, ID, totalPrice, pizza) {
+    //   if (sessionStorage.getItem(sessionName)) {
+    //     console.log("händer det här?");
+    //     shoppingCount(ID, sessionName);
+    //     totalPrice = Number(pizza.price * sessionStorage.getItem(sessionName));
+    //     return totalPrice;
+    //   } else {
+    //     shoppingCountZero(ID);
+    //   }
+    // }
 
 
     // create pizza objects
@@ -423,8 +423,6 @@
       id : "order-vesuvio",
       desc : "En av de mest populära pizzor hos Pizzeria Calzone"
     };
-
-
 
 
     // fill the meny with pizza objects
@@ -563,8 +561,7 @@
     // showOrder("vesuvio", "count-vesuvio", totalVesuvio, vesuvio);
 
     // sum of all the totalPizzas
-    var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
-    console.log(priceToPay);
+    var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalCapricciosa + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
 
     document.getElementById("total").innerHTML = priceToPay + ' kr';
 
