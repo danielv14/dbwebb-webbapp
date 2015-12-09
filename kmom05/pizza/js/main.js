@@ -220,8 +220,8 @@
     /*
     * function to target count in the shopping cart
     *
-    * @param String   countpizza The html-id to target
-    * @param String   pizza      The window.sessionStorage Name
+    * @param String   countpizza  The html-id to target
+    * @param String   pizza       The window.sessionStorage Name
     */
     function shoppingCount (countpizza, pizza) {
         document.getElementById(countpizza).innerHTML = window.sessionStorage.getItem(pizza);
@@ -251,8 +251,8 @@
 
     /* Function to delete one pizza
     *
-    * @param String   ID          the html ID to target
-    * @param String   sessionName the window.sessionStorage Name to alter
+    * @param String   ID            the html ID to target
+    * @param String   sessionName   the window.sessionStorage Name to alter
     */
     function minusPizzaSession(ID, sessionName) {
       $(ID).click(function() {
