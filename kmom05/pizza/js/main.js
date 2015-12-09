@@ -257,7 +257,9 @@
     function minusPizzaSession(ID, sessionName) {
       $(ID).click(function() {
         console.log("du har klickat för att ta bort EN pizza");
-        sessionStorage.setItem(sessionName, Number(sessionStorage.getItem(sessionName) - 1));
+        if (sessionStorage.getItem(sessionName) > 0) {
+          sessionStorage.setItem(sessionName, Number(sessionStorage.getItem(sessionName) - 1));
+        }
       });
     }
 
@@ -323,10 +325,10 @@
         console.log("händer det här?");
         shoppingCount(ID, sessionName);
         totalPrice = Number(pizza.price * sessionStorage.getItem(sessionName));
+        return totalPrice;
       } else {
         shoppingCountZero(ID);
       }
-      return totalPrice;
     }
 
 
