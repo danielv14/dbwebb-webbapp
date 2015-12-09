@@ -18,204 +18,210 @@
 
 
 
-     /**
-     * Get a quote from Marvin using jQuery AJAX.
-     *
-     * @return void
-     */
-    window.getMarvinQuoteByAjax = function() {
-
-        $.ajax({
-            url: 'http://dbwebb.se/javascript/lekplats/get-going-with-jquery-ajax/quote.php',
-            dataType: 'json',
-
-            success: function(data){
-                $('#quote').fadeOut(function() {
-                    $('#quote').html(data.quote).fadeIn();
-                });
-                console.log('.ajax() request returned successfully.');
-            },
-
-            error: function(jqXHR, textStatus, errorThrown){
-                console.log('.ajax() request failed: ' + textStatus + ', ' + errorThrown);
-            },
-        });
-    };
-
-
-
-
-
-    $(document).on('pagebeforeshow', '#af-totalt', function(event, data){
-
-        $.ajax({
-            url: "../ajax/arbetsformedlingen/soklista_lan.json",
-            dataType: "json",
-
-            success: function (data) {
-                soklistaLan = data;
-
-                var totalFree = document.getElementById("totalt_antal_ledigajobb");
-                var totalAds = document.getElementById("totalt_antal_platsannonser");
-
-                totalFree.innerHTML = soklistaLan.soklista.totalt_antal_ledigajobb;
-                totalAds.innerHTML = soklistaLan.soklista.totalt_antal_platsannonser;
-            },
-
-            error: function (/* request, error */) {
-                console.log('Network error has occurred please try again!');
-            }
-        });
-    });
-
-     /**
-     * Update the page showing AF total.
-     */
-    window.updateAFTotal = function() {
-        var totalFree = document.getElementById("totalt_antal_ledigajobb");
-        var totalAds = document.getElementById("totalt_antal_platsannonser");
-
-        totalFree.innerHTML = soklistaLan.soklista.totalt_antal_ledigajobb;
-        totalAds.innerHTML = soklistaLan.soklista.totalt_antal_platsannonser;
-    };
-
-     /**
-     * Cache the JSON objekt.
-     */
-    var soklistaLan = null;
-    $(document).on('pagebeforeshow', '#af-totalt', function(/* event, data */){
-
-        if (soklistaLan !== null) {
-            window.updateAFTotal();
-            return;
-        }
-
-        $.ajax({
-            url: "../ajax/arbetsformedlingen/soklista_lan.json",
-            dataType: "json",
-
-            success: function (data) {
-                soklistaLan = data;
-                window.updateAFTotal();
-            },
-
-            error: function (/* request, error */) {
-                console.log('Network error has occurred please try again!');
-            }
-        });
-    });
-
-     /**
-     * Get JSON, if not already available and update AF list,
-     * before loading page.
-     */
-    $(document).on('pagebeforeshow', '#af-lista', function(/* event, data */){
-
-        if (soklistaLan !== null) {
-          window.updateAFList();
-          return;
-        }
-
-        $.ajax({
-            url: "../pizza/arbetsformedlingen/soklista_lan.json",
-            dataType: "json",
-
-            success: function (data) {
-                soklistaLan = data;
-                window.updateAFList();
-            },
-
-            error: function (/* request, error */) {
-                console.log('Network error has occurred please try again!');
-            }
-        });
-    });
-
-     /**
-     * Update AP list with free jobs for each county.
-     */
-    window.updateAFList = function() {
-        var list = document.getElementById("af-listview");
-        var html="";
-
-        soklistaLan.soklista.sokdata.forEach(function(row) {
-            //html += "<li>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</li>";
-            html += "<li><a href='#af-lista-" + row.id + "'>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</a></li>";
-        });
-
-        list.innerHTML = html;
-
-        $('#af-listview').listview('refresh');
-    };
-
-     /**
-     * Display subpage, expect that JSON is already loaded.
-     */
-    var afSubPageId = null;
-
-    $(document).on('pagebeforeshow', '#af-sida', function(/*event, data*/){
-
-       window.updateAFSubPage(afSubPageId);
-
-    });
-
-     /**
-     * Update subpage with details from specified county.
-     */
-    window.updateAFSubPage = function(pageId) {
-        var element = document.getElementById("af-undersida");
-        var html="Specified page id not found.";
-
-        soklistaLan.soklista.sokdata.forEach(function(row) {
-            if (row.id == pageId) {
-                html = "<h1>" + row.namn + "</h1><p>Det finns " + row.antal_ledigajobb + " lediga jobb och " + row.antal_platsannonser + " platsannonser.</p>";
-                return;
-            }
-        });
-
-        element.innerHTML = html;
-    };
-
-     /**
-     * Intercept change of page and implement routing.
-     */
-    $("body").on( "pagecontainerbeforechange", function( event, ui ) {
-        var to = ui.toPage;
-        var from = ui.options.fromPage;
-
-        // If not a valid pageid
-        if (typeof to  === 'string') {
-            var url = $.mobile.path.parseUrl(to);
-            var toSubPage;
-
-            to = url.hash || '#' + url.pathname.substring(1);
-
-            if (from) {
-                from = '#' + from.attr('id');
-            }
-
-            var length = "#af-lista-".length;
-            toSubPage = to.substring(0, length);
-
-            if (from === '#af-lista' && toSubPage === '#af-lista-') {
-                event.preventDefault();
-                event.stopPropagation();
-
-                afSubPageId = to.substring(length);
-                console.log("Subpageid = " + afSubPageId);
-                $(":mobile-pagecontainer").pagecontainer("change", "#af-sida", { foo: "Hello World!" });
-            }
-        }
-    });
+    //  /**
+    //  * Get a quote from Marvin using jQuery AJAX.
+    //  *
+    //  * @return void
+    //  */
+    // window.getMarvinQuoteByAjax = function() {
+    //
+    //     $.ajax({
+    //         url: 'http://dbwebb.se/javascript/lekplats/get-going-with-jquery-ajax/quote.php',
+    //         dataType: 'json',
+    //
+    //         success: function(data){
+    //             $('#quote').fadeOut(function() {
+    //                 $('#quote').html(data.quote).fadeIn();
+    //             });
+    //             console.log('.ajax() request returned successfully.');
+    //         },
+    //
+    //         error: function(jqXHR, textStatus, errorThrown){
+    //             console.log('.ajax() request failed: ' + textStatus + ', ' + errorThrown);
+    //         },
+    //     });
+    // };
 
 
 
 
-    // Pizzeria Code here
+
+    // $(document).on('pagebeforeshow', '#af-totalt', function(event, data){
+    //
+    //     $.ajax({
+    //         url: "../ajax/arbetsformedlingen/soklista_lan.json",
+    //         dataType: "json",
+    //
+    //         success: function (data) {
+    //             soklistaLan = data;
+    //
+    //             var totalFree = document.getElementById("totalt_antal_ledigajobb");
+    //             var totalAds = document.getElementById("totalt_antal_platsannonser");
+    //
+    //             totalFree.innerHTML = soklistaLan.soklista.totalt_antal_ledigajobb;
+    //             totalAds.innerHTML = soklistaLan.soklista.totalt_antal_platsannonser;
+    //         },
+    //
+    //         error: function (/* request, error */) {
+    //             console.log('Network error has occurred please try again!');
+    //         }
+    //     });
+    // });
+    //
+    //  /**
+    //  * Update the page showing AF total.
+    //  */
+    // window.updateAFTotal = function() {
+    //     var totalFree = document.getElementById("totalt_antal_ledigajobb");
+    //     var totalAds = document.getElementById("totalt_antal_platsannonser");
+    //
+    //     totalFree.innerHTML = soklistaLan.soklista.totalt_antal_ledigajobb;
+    //     totalAds.innerHTML = soklistaLan.soklista.totalt_antal_platsannonser;
+    // };
+    //
+    //  /**
+    //  * Cache the JSON objekt.
+    //  */
+    // var soklistaLan = null;
+    // $(document).on('pagebeforeshow', '#af-totalt', function(/* event, data */){
+    //
+    //     if (soklistaLan !== null) {
+    //         window.updateAFTotal();
+    //         return;
+    //     }
+    //
+    //     $.ajax({
+    //         url: "../ajax/arbetsformedlingen/soklista_lan.json",
+    //         dataType: "json",
+    //
+    //         success: function (data) {
+    //             soklistaLan = data;
+    //             window.updateAFTotal();
+    //         },
+    //
+    //         error: function (/* request, error */) {
+    //             console.log('Network error has occurred please try again!');
+    //         }
+    //     });
+    // });
+    //
+    //  /**
+    //  * Get JSON, if not already available and update AF list,
+    //  * before loading page.
+    //  */
+    // $(document).on('pagebeforeshow', '#af-lista', function(/* event, data */){
+    //
+    //     if (soklistaLan !== null) {
+    //       window.updateAFList();
+    //       return;
+    //     }
+    //
+    //     $.ajax({
+    //         url: "../pizza/arbetsformedlingen/soklista_lan.json",
+    //         dataType: "json",
+    //
+    //         success: function (data) {
+    //             soklistaLan = data;
+    //             window.updateAFList();
+    //         },
+    //
+    //         error: function (/* request, error */) {
+    //             console.log('Network error has occurred please try again!');
+    //         }
+    //     });
+    // });
+    //
+    //  /**
+    //  * Update AP list with free jobs for each county.
+    //  */
+    // window.updateAFList = function() {
+    //     var list = document.getElementById("af-listview");
+    //     var html="";
+    //
+    //     soklistaLan.soklista.sokdata.forEach(function(row) {
+    //         //html += "<li>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</li>";
+    //         html += "<li><a href='#af-lista-" + row.id + "'>" + row.namn + " (" + row.antal_ledigajobb + " lediga jobb)</a></li>";
+    //     });
+    //
+    //     list.innerHTML = html;
+    //
+    //     $('#af-listview').listview('refresh');
+    // };
+    //
+    //  /**
+    //  * Display subpage, expect that JSON is already loaded.
+    //  */
+    // var afSubPageId = null;
+    //
+    // $(document).on('pagebeforeshow', '#af-sida', function(/*event, data*/){
+    //
+    //    window.updateAFSubPage(afSubPageId);
+    //
+    // });
+    //
+    //  /**
+    //  * Update subpage with details from specified county.
+    //  */
+    // window.updateAFSubPage = function(pageId) {
+    //     var element = document.getElementById("af-undersida");
+    //     var html="Specified page id not found.";
+    //
+    //     soklistaLan.soklista.sokdata.forEach(function(row) {
+    //         if (row.id == pageId) {
+    //             html = "<h1>" + row.namn + "</h1><p>Det finns " + row.antal_ledigajobb + " lediga jobb och " + row.antal_platsannonser + " platsannonser.</p>";
+    //             return;
+    //         }
+    //     });
+    //
+    //     element.innerHTML = html;
+    // };
+
+    //  /**
+    //  * Intercept change of page and implement routing.
+    //  */
+    // $("body").on( "pagecontainerbeforechange", function( event, ui ) {
+    //     var to = ui.toPage;
+    //     var from = ui.options.fromPage;
+    //
+    //     // If not a valid pageid
+    //     if (typeof to  === 'string') {
+    //         var url = $.mobile.path.parseUrl(to);
+    //         var toSubPage;
+    //
+    //         to = url.hash || '#' + url.pathname.substring(1);
+    //
+    //         if (from) {
+    //             from = '#' + from.attr('id');
+    //         }
+    //
+    //         var length = "#af-lista-".length;
+    //         toSubPage = to.substring(0, length);
+    //
+    //         if (from === '#af-lista' && toSubPage === '#af-lista-') {
+    //             event.preventDefault();
+    //             event.stopPropagation();
+    //
+    //             afSubPageId = to.substring(length);
+    //             console.log("Subpageid = " + afSubPageId);
+    //             $(":mobile-pagecontainer").pagecontainer("change", "#af-sida", { foo: "Hello World!" });
+    //         }
+    //     }
+    // });
+
+
+
+    /*
+    * Pizza code below
+    *
+    */
+
+
+
     /*
     * function to target count in the shopping cart
-    * @param String countpizza The html-id to target
-    * @param String pizza The sessionStorage Name
+    *
+    * @param String   countpizza The html-id to target
+    * @param String   pizza      The sessionStorage Name
     */
     function shoppingCount (countpizza, pizza) {
         document.getElementById(countpizza).innerHTML = sessionStorage.getItem(pizza);
@@ -223,7 +229,8 @@
 
     /*
     *function to set antal as 0 if sessionStorage doesnt exist
-    * @param String countpizza the ID to target
+    *
+    * @param String   countpizza  The ID to target
     */
     function shoppingCountZero(countpizza) {
       document.getElementById(countpizza).innerHTML = 0;
@@ -231,8 +238,9 @@
 
     /*
     *Function to delete all pizzas in sessionStorage Name
-    * @param String ID The ID to target
-    * @param String pizza the sessionStorage name to remove
+    *
+    * @param String   ID      The ID to target
+    * @param String   pizza   The sessionStorage name to remove
     */
     function deletePizzaSession(ID, pizza) {
       $(ID).click(function() {
@@ -242,20 +250,22 @@
     }
 
     /* Function to delete one pizza
-    * @param String ID the html ID to target
-    * @param String sessionName the sessionStorage Name to alter
+    *
+    * @param String   ID          the html ID to target
+    * @param String   sessionName the sessionStorage Name to alter
     */
     function minusPizzaSession(ID, sessionName) {
       $(ID).click(function() {
         console.log("du har klickat för att ta bort EN pizza");
         sessionStorage.setItem(sessionName, Number(sessionStorage.getItem(sessionName) - 1));
-      })
+      });
     }
 
     /*
     * Function to push pizza object keys to list view
-    * @param String listID the id to target
-    * @param Object pizza the object to push into listID
+    *
+    * @param String   listID   the id to target
+    * @param Object   pizza    the object to push into listID
     */
     function pizzaListInfo(linkID, pizza) {
         var pizzaList = document.getElementById(linkID);
@@ -269,8 +279,9 @@
 
     /*
     * Function to push object content to articles
-    * @param String articleID The article ID to target
-    * @param Object pizza The bbject to push to the article
+    *
+    * @param String   articleID   The article ID to target
+    * @param Object   pizza       The bbject to push to the article
     */
     function pizzaArticle(articleID, pizza) {
       var article = document.getElementById(articleID);
@@ -282,20 +293,42 @@
     }
 
     /* Funtion to order pizza
-
+    *
+    * @param String   orderID         The html ID to target
+    * @param String   sessionName     The sessionStorage Name to target
     */
-    function pizzaOrder(orderID, sessionName, createSessionName) {
+    function pizzaOrder(orderID, sessionName) {
       $(orderID).click(function() {
-        if (sessionStorage.sessionName) {
-          sessionStorage.sessionName = Number(sessionStorage.sessionName) + 1;
+        if (sessionStorage.getItem(sessionName)) {
+          var current = Number(sessionStorage.getItem(sessionName));
+          sessionStorage.setItem(sessionName, Number(current + 1));
           console.log('lägger till en pizza');
-          console.log('antal är nu: ' + sessionStorage.sessionName);
+          console.log('antal är nu: ' + sessionStorage.getItem(sessionName));
         } else {
-          sessionStorage.setItem(createSessionName, 1);
+          sessionStorage.setItem(sessionName, 1);
           console.log("sessionStorage är 1");
         }
       });
     }
+
+    /*
+    * Funcion to sort out what get pushed into the shoppingCart
+    * This function uses 2 other functions, shoppingCount() and shoppingCountZero()
+    *
+    * @param String sessionName   The sessionStorage Name to target
+    * @param String ID            The html ID to target
+    */
+    function showOrder(sessionName, ID, totalPrice, pizza) {
+      if (sessionStorage.getItem(sessionName)) {
+        console.log("händer det här?");
+        shoppingCount(ID, sessionName);
+        totalPrice = Number(pizza.price * sessionStorage.getItem(sessionName));
+      } else {
+        shoppingCountZero(ID);
+      }
+      return totalPrice;
+    }
+
 
     // create pizza objects
     var bussola = {
@@ -388,13 +421,6 @@
       desc : "En av de mest populära pizzor hos Pizzeria Calzone"
     };
 
-    // console.log(cartObject);
-    //
-    //
-    // //cartObject.bussola = 1;
-    //
-    //
-    // console.log(cartObject);
 
 
 
@@ -426,98 +452,20 @@
 
     /*
     * Click event for ordering pizzas
+    * Using the function pizzaOrder
     */
+    pizzaOrder("#order-bussola", "bussola");
+    pizzaOrder("#order-calzoncino", "calzoncino");
+    pizzaOrder("#order-calzone", "calzone");
+    pizzaOrder("#order-capricciosa", "capricciosa");
+    pizzaOrder("#order-hawaiispecial", "hawaiispecial");
+    pizzaOrder("#order-hawaii", "hawaii");
+    pizzaOrder("#order-kebabpizza", "kebabpizza");
+    pizzaOrder("#order-margerita", "margerita");
+    pizzaOrder("#order-marina", "marina");
+    pizzaOrder("#order-vesuvio", "vesuvio");
 
-    // order Bussola
-    //pizzaOrder("#order-bussola", bussola, "bussola");
-    $('#order-bussola').click(function() {
-      if (sessionStorage.bussola) {
-        sessionStorage.bussola = Number(sessionStorage.bussola) + 1;
-      } else {
-        sessionStorage.setItem('bussola', 1);
-      }
-    });
-
-    // order Calzone
-    $('#order-calzone').click(function() {
-      if (sessionStorage.calzone) {
-        sessionStorage.calzone = Number(sessionStorage.calzone) + 1;
-      } else {
-        sessionStorage.setItem('calzone', 1);
-      }
-    });
-    // order calzoncino
-    $('#order-calzoncino').click(function() {
-      if (sessionStorage.calzoncino) {
-        sessionStorage.calzoncino = Number(sessionStorage.calzoncino) + 1;
-      } else {
-        sessionStorage.setItem('calzoncino', 1);
-      }
-    });
-    // order capricciosa
-    $('#order-capricciosa').click(function() {
-      if (sessionStorage.capricciosa) {
-        sessionStorage.capricciosa = Number(sessionStorage.capricciosa) + 1;
-      } else {
-        sessionStorage.setItem('capricciosa', 1);
-      }
-    });
-
-    // order hawaii-special
-    $('#order-hawaiispecial').click(function() {
-      if (sessionStorage.hawaiispecial) {
-        sessionStorage.hawaiispecial = Number(sessionStorage.hawaiispecial) + 1;
-      } else {
-        sessionStorage.setItem('hawaiispecial', 1);
-      }
-    });
-
-    // order hawaii
-    $('#order-hawaii').click(function() {
-      if (sessionStorage.hawaii) {
-        sessionStorage.hawaii = Number(sessionStorage.hawaii) + 1;
-      } else {
-        sessionStorage.setItem('hawaii', 1);
-      }
-    });
-
-    // order kebabpizza
-    $('#order-kebabpizza').click(function() {
-      if (sessionStorage.kebabpizza) {
-        sessionStorage.kebabpizza = Number(sessionStorage.kebabpizza) + 1;
-      } else {
-        sessionStorage.setItem('kebabpizza', 1);
-      }
-    });
-
-    // order margerita
-    $('#order-margerita').click(function() {
-      if (sessionStorage.margerita) {
-        sessionStorage.margerita = Number(sessionStorage.margerita) + 1;
-      } else {
-        sessionStorage.setItem('margerita', 1);
-      }
-    });
-
-    // order marina
-    $('#order-marina').click(function() {
-      if (sessionStorage.marina) {
-        sessionStorage.marina = Number(sessionStorage.marina) + 1;
-      } else {
-        sessionStorage.setItem('marina', 1);
-      }
-    });
-
-    // order vesuvio
-    $('#order-vesuvio').click(function() {
-      if (sessionStorage.vesuvio) {
-        sessionStorage.vesuvio = Number(sessionStorage.vesuvio) + 1;
-      } else {
-        sessionStorage.setItem('vesuvio', 1);
-      }
-    });
-
-    // Set total number for pizzaz to 0
+    // Set total price number for pizzaz to 0
     var totalBussola = 0 ;
     var totalCalzoncino = 0;
     var totalCalzone = 0;
@@ -528,10 +476,6 @@
     var totalMargerita = 0;
     var totalMarina = 0;
     var totalVesuvio = 0;
-
-    // show how many pizzaz in the shopping bag.
-    // Use function shoppingCount or shoppingCountZero depending on if sessionStorage is created or not.
-
 
     if (sessionStorage.bussola) {
       shoppingCount("count-bussola", "bussola");
@@ -604,14 +548,22 @@
     }
 
 
+    // showOrder("bussola", "count-bussola", totalBussola, bussola);
+    // showOrder("calzoncino", "count-calzoncino", totalCalzoncino, calzoncino);
+    // showOrder("calzone", "count-calzone", totalCalzone, calzone);
+    // showOrder("capricciosa", "count-capricciosa", totalCapricciosa, capricciosa);
+    // showOrder("hawaiispecial", "count-hawaiispecial", totalHawaiispecial, hawaiispecial);
+    // showOrder("hawaii", "count-hawaii", totalHawaii, hawaii);
+    // showOrder("kebabpizza", "count-kebabpizza", totalKebabpizza, kebabpizza);
+    // showOrder("margerita", "count-margerita", totalMargerita, margerita);
+    // showOrder("marina", "count-marina", totalMarina, marina);
+    // showOrder("vesuvio", "count-vesuvio", totalVesuvio, vesuvio);
+
     // sum of all the totalPizzas
     var priceToPay = totalBussola + totalCalzoncino + totalCalzone + totalHawaiispecial + totalHawaii + totalKebabpizza + totalMargerita + totalMarina + totalVesuvio;
+    console.log(priceToPay);
 
     document.getElementById("total").innerHTML = priceToPay + ' kr';
-
-
-
-
 
     // delete individual sessionStorage if the buttons are clicked.
     // if not the functions below does nothing.
@@ -638,42 +590,17 @@
     minusPizzaSession("#deleteOneMarina", "marina");
     minusPizzaSession("#deleteOneVesuvio", "vesuvio");
 
-
-
-
     // refresh the shopping cart
     $('#refresh').click(function() {
-      location.reload();
+      window.location.reload();
     });
 
     // clear all the sessionstorage
     $('#clearShoppingcart').click(function() {
       console.log("du har klickat på rensa");
       sessionStorage.clear();
-      location.reload();
+      window.location.reload();
     });
-
-
-
-
-
-    // // function for google maps on contact view
-    // function initMap() {
-    //   var myLatLng = {lat: 63.827894, lng: 20.256578};
-    //
-    //   var map = new google.maps.Map(document.getElementById('googleMap'), {
-    //     zoom: 15,
-    //     center: myLatLng
-    //   });
-    //
-    //   var marker = new google.maps.Marker({
-    //     position: myLatLng,
-    //     map: map,
-    //     title: 'Hello World!'
-    //   });
-    // }
-    //
-    // initMap();
 
 
 })();
