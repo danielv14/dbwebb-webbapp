@@ -212,9 +212,6 @@
 
 
     // Pizzeria Code here
-
-
-
     /*
     * function to target count in the shopping cart
     * @param String countpizza The html-id to target
@@ -233,15 +230,26 @@
     }
 
     /*
-    *Function to delete individual sessionStorage
+    *Function to delete all pizzas in sessionStorage Name
     * @param String ID The ID to target
     * @param String pizza the sessionStorage name to remove
     */
     function deletePizzaSession(ID, pizza) {
       $(ID).click(function() {
-        console.log("du har klickat på att ta bort en pizza");
+        console.log("du har klickat på att ta bort alla pizza");
         sessionStorage.removeItem(pizza);
       });
+    }
+
+    /* Function to delete one pizza
+    * @param String ID the html ID to target
+    * @param String sessionName the sessionStorage Name to alter
+    */
+    function minusPizzaSession(ID, sessionName) {
+      $(ID).click(function() {
+        console.log("du har klickat för att ta bort EN pizza");
+        sessionStorage.setItem(sessionName, Number(sessionStorage.getItem(sessionName) - 1));
+      })
     }
 
     /*
@@ -271,6 +279,22 @@
       article.innerHTML += '<p>' + pizza.desc + '</p>';
       article.innerHTML += '<p><b>Innehåller: </b>' + pizza.topping + '</p>';
       article.innerHTML += '<p><b>Pris: </b>' + pizza.price + '</p>';
+    }
+
+    /* Funtion to order pizza
+
+    */
+    function pizzaOrder(orderID, sessionName, createSessionName) {
+      $(orderID).click(function() {
+        if (sessionStorage.sessionName) {
+          sessionStorage.sessionName = Number(sessionStorage.sessionName) + 1;
+          console.log('lägger till en pizza');
+          console.log('antal är nu: ' + sessionStorage.sessionName);
+        } else {
+          sessionStorage.setItem(createSessionName, 1);
+          console.log("sessionStorage är 1");
+        }
+      });
     }
 
     // create pizza objects
@@ -364,6 +388,14 @@
       desc : "En av de mest populära pizzor hos Pizzeria Calzone"
     };
 
+    // console.log(cartObject);
+    //
+    //
+    // //cartObject.bussola = 1;
+    //
+    //
+    // console.log(cartObject);
+
 
 
     // fill the meny with pizza objects
@@ -397,6 +429,7 @@
     */
 
     // order Bussola
+    //pizzaOrder("#order-bussola", bussola, "bussola");
     $('#order-bussola').click(function() {
       if (sessionStorage.bussola) {
         sessionStorage.bussola = Number(sessionStorage.bussola) + 1;
@@ -496,7 +529,10 @@
     var totalMarina = 0;
     var totalVesuvio = 0;
 
-    // show how many pizzaz in the shopping bag, using the function targetCount
+    // show how many pizzaz in the shopping bag.
+    // Use function shoppingCount or shoppingCountZero depending on if sessionStorage is created or not.
+
+
     if (sessionStorage.bussola) {
       shoppingCount("count-bussola", "bussola");
       totalBussola = Number(bussola.price * sessionStorage.bussola);
@@ -589,6 +625,20 @@
     deletePizzaSession("#deleteMargerita", "margerita");
     deletePizzaSession("#deleteMarina", "marina");
     deletePizzaSession("#deleteVesuvio", "vesuvio");
+
+    // Delete only one pizza if button is clicked.
+    minusPizzaSession("#deleteOneBussola", "bussola");
+    minusPizzaSession("#deleteOneCalzoncino", "calzoncino");
+    minusPizzaSession("#deleteOneCalzone", "calzone");
+    minusPizzaSession("#deleteOneCapricciosa", "capricciosa");
+    minusPizzaSession("#deleteOneHawaiispecial", "hawaiispecial");
+    minusPizzaSession("#deleteOneHawaii", "hawaii");
+    minusPizzaSession("#deleteOneKebabpizza", "kebabpizza");
+    minusPizzaSession("#deleteOneMargerita", "margerita");
+    minusPizzaSession("#deleteOneMarina", "marina");
+    minusPizzaSession("#deleteOneVesuvio", "vesuvio");
+
+
 
 
     // refresh the shopping cart
