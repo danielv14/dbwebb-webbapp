@@ -84,7 +84,7 @@
     <div data-role="main" class="ui-content">
       <article>
         <h1 class="center-text special-font">Din Order</h1>
-        <p>Tänk på att du kanske måste ladda om sidan för att visa korrekta antal.</p>
+        <p>Tänk på att du måste ladda om sidan för att dina ändringar ska synas. Gör detta med hjälp av knappen här nedan.</p>
         <a href="#" id="refresh" data-inline="true" data-role="button" data-icon="refresh">Uppdatera kundvagn</a>
       </article>
         <table data-role="table" class="ui-responsive" id="shoppingcart">
@@ -92,59 +92,58 @@
         <tr>
           <th>Pizza</th>
           <th>Antal</th>
-          <th>Åtgärd</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Bussola</td>
-          <td id="count-bussola">0</td>
-          <td> <a href="#deleteBussola" id="deleteBussola" data-role="button" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-bussola"></td>
+          <td><a href="#deleteBussola" id="deleteOneBussola" data-role="button" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteBussola" id="deleteBussola" data-role="button" class="ui-btn ui-btn-inline">Ta bort alla</a> </td>
         </tr>
         <tr>
           <td>Calzoncino</td>
-          <td id="count-calzoncino">0</td>
-          <td> <a href="#deleteCalzoncino" id="deleteCalzoncino" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-calzoncino"></td>
+          <td><a href="#deleteCalzoncino" id="deleteOneCalzoncino" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteCalzoncino" id="deleteCalzoncino" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Calzone</td>
-          <td id="count-calzone">0</td>
-          <td> <a href="#deleteCalzone" id="deleteCalzone" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-calzone"></td>
+          <td><a href="#deleteCalzone" id="deleteOneCalzone" class="ui-btn ui-btn-inline">Ta bort en</a> <a href="#deleteCalzone" id="deleteCalzone" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Capricciosa</td>
-          <td id="count-capricciosa">0</td>
-          <td><a href="#deleteCapricciosa" id="deleteCapricciosa" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-capricciosa"></td>
+          <td><a href="#deleteCapricciosa" id="deleteOneCapricciosa" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteCapricciosa" id="deleteCapricciosa" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Hawaii Special</td>
-          <td id="count-hawaiispecial">0</td>
-          <td> <a href="#deleteHawaiispecial" id="deleteHawaiispecial" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-hawaiispecial"></td>
+          <td> <a href="#deleteOneHawaiispecial" id="deleteOneHawaiispecial" class="ui-btn ui-btn-inline">Ta bort en</a> <a href="#deleteHawaiispecial" id="deleteHawaiispecial" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Hawaii</td>
-          <td id="count-hawaii">0</td>
-          <td> <a href="#deleteHawaii" id="deleteHawaii" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-hawaii"></td>
+          <td><a href="#deleteHawaii" id="deleteOneHawaii" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteHawaii" id="deleteHawaii" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Kebabpizza</td>
-          <td id="count-kebabpizza">0</td>
-          <td> <a href="#deleteKebabpizza" id="deleteKebabpizza" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-kebabpizza"></td>
+          <td><a href="#deleteKebabpizza" id="deleteOneKebabpizza" class="ui-btn ui-btn-inline">Ta bort en</a> <a href="#deleteKebabpizza" id="deleteKebabpizza" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Margerita</td>
-          <td id="count-margerita">0</td>
-          <td> <a href="#deleteMargerita" id="deleteMargerita" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-margerita"></td>
+          <td><a href="#deleteMargerita" id="deleteOneMargerita" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteMargerita" id="deleteMargerita" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Marina</td>
-          <td id="count-marina">0</td>
-          <td><a href="#deleteMarina" id="deleteMarina" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-marina"></td>
+          <td><a href="#deleteMarina" id="deleteOneMarina" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteMarina" id="deleteMarina" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
         <tr>
           <td>Vesuvio</td>
-          <td id="count-vesuvio">0</td>
-          <td><a href="#deleteVesuvio" id="deleteVesuvio" class="ui-btn ui-btn-inline">Ta bort</a></td>
+          <td id="count-vesuvio"></td>
+          <td><a href="#deleteVesuvio" id="deleteOneVesuvio" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteVesuvio" id="deleteVesuvio" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
         </tr>
       </tbody>
     </table>
