@@ -257,6 +257,7 @@
     function minusPizzaSession(ID, sessionName) {
       $(ID).click(function() {
         console.log("du har klickat för att ta bort EN pizza");
+        // check if pizza count is above 0
         if (sessionStorage.getItem(sessionName) > 0) {
           sessionStorage.setItem(sessionName, Number(sessionStorage.getItem(sessionName) - 1));
         }
