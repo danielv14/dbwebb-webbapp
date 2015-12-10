@@ -216,7 +216,6 @@
     */
 
 
-
     /*
     * function to target count in the shopping cart
     *
