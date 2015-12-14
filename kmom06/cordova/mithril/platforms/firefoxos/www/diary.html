@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mithril diary</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="example"></div>
+
+<script src="js/mithril.min.js"></script>
+<script>
+//app goes here
+
+// Model
+var Page = {
+  list: function() {
+    return m.request({
+      method: "GET",
+      url: "json/diary.json"
+    });
+  }
+};
+
+var Demo = {
+  // Controller
+  controller: function() {
+    var pages = Page.list();
+    return {
+      pages: pages,
+    }
+  },
+
+  //view
+  view: function(ctrl) {
+      return m(
+          "ul", {class: "listview"}, [
+              ctrl.pages().map(function(page) {
+                  return m(
+                      "a", {href: "#"}, [
+                          m("li", [
+                              m("img", {src: page.image}),
+                              m("h1", page.title),
+                              m("p", page.content)
+                          ]),
+                  ]);
+              })
+      ]);
+  }
+};
+
+// Initialize
+m.mount(document.getElementById("example"), Demo);
+</script>
