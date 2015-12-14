@@ -1,49 +1,304 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Pizzeria Calzone</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- add apple stuff -->
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png"/>
 
-    http://www.apache.org/licenses/LICENSE-2.0
+  <!-- Add fonts from google -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+</head>
+<body>
+
+
+  <!-- Header -->
+  <div id="header" data-role="header" data-theme="a" data-position="fixed">
+    <h1 class="special-font">Pizzeria Calzone</h1>
+  </div><!-- /header -->
+
+  <!-- Footer -->
+  <div id="footer" data-role="footer" data-theme="a" data-position="fixed">
+      <div data-role="navbar">
+          <ul>
+              <li><a href="#me" data-icon="home">Hem</a></li>
+              <li><a href="#pizza-meny" data-icon="bullets">Meny</a></li>
+              <li><a href="#order" data-icon="shop">Beställning</a></li>
+              <li><a href="#contact" data-icon="location">Kontakt</a></li>
+          </ul>
+      </div>
+  </div><!-- /footer -->
+
+  <!-- Me-sidan -->
+  <div id="me" data-role="page">
+    <div class="ui-content" data-role="main">
+        <article>
+          <h1 class="center-text">Pizzeria Calzone</h1>
+          <img src="img/pizzeria.jpg" alt="bild på pizzerian" class="right">
+          <h2 class="special-font"><span class="font-lighter">Välkommen till </span>Pizzeria Calzone!</h2>
+          <p>Välkommen till Pizzeria Calzone. Hos oss kan du  beställa de bästa och godaste pizzorna i Sverige.
+            Kanske är du sugen på en Vesuvio? Eller kanske en riktigt god kebabpizza? Vi har något för alla helt enkelt!.</p>
+          <p>Navigera med hjälp av ikonerna för att se vårat sortiment. Känner du dig sugen kan du direkt i appen köpa de pizzor du vill ha.</p>
+        </article>
+    </div><!-- slut på main -->
+  </div><!-- slut på me -->
+
+
+
+  <!-- contact -->
+  <div id="contact" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1 class="center-text special-font">Kontakt</h1>
+        <p>Här nedan finns olika kanaler att kontakta oss på.</p>
+        <div class="contact">
+          <ul>
+            <li><i class="fa fa-phone"></i> 090-1234567</li>
+            <li><i class="fa fa-envelope-o"></i> pizzeriacalzone@pizza.se</li>
+            <li><i class="fa fa-map-marker"></i> Pizzavägen 23. 902 40 Umeå. Sverige.</li>
+            <li><i class="fa fa-facebook"></i> <a href="#">Vi finns på Facebook</a></li>
+          </ul>
+
+          <img src="img/restaurang.jpeg" alt="restaurangen">
+        </div>
+
+      </article>
+    </div><!-- slut på content -->
+  </div> <!-- slut på about -->
+
+
+
+  <!-- beställning -->
+  <div id="order" data-role="page">
+    <div data-role="main" class="ui-content">
+      <article>
+        <h1 class="center-text special-font">Din Order</h1>
+        <p>Tänk på att du måste ladda om sidan för att dina ändringar ska synas. Gör detta med hjälp av knappen här nedan.</p>
+        <a href="#" id="refresh" data-inline="true" data-role="button" data-icon="refresh">Uppdatera kundvagn</a>
+      </article>
+        <table data-role="table" class="ui-responsive" id="shoppingcart">
+      <thead>
+        <tr>
+          <th>Pizza</th>
+          <th>Antal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bussola</td>
+          <td id="count-bussola"></td>
+          <td><a href="#deleteBussola" id="deleteOneBussola" data-role="button" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteBussola" id="deleteBussola" data-role="button" class="ui-btn ui-btn-inline">Ta bort alla</a> </td>
+        </tr>
+        <tr>
+          <td>Calzoncino</td>
+          <td id="count-calzoncino"></td>
+          <td><a href="#deleteCalzoncino" id="deleteOneCalzoncino" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteCalzoncino" id="deleteCalzoncino" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Calzone</td>
+          <td id="count-calzone"></td>
+          <td><a href="#deleteCalzone" id="deleteOneCalzone" class="ui-btn ui-btn-inline">Ta bort en</a> <a href="#deleteCalzone" id="deleteCalzone" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Capricciosa</td>
+          <td id="count-capricciosa"></td>
+          <td><a href="#deleteCapricciosa" id="deleteOneCapricciosa" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteCapricciosa" id="deleteCapricciosa" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Hawaii Special</td>
+          <td id="count-hawaiispecial"></td>
+          <td> <a href="#deleteOneHawaiispecial" id="deleteOneHawaiispecial" class="ui-btn ui-btn-inline">Ta bort en</a> <a href="#deleteHawaiispecial" id="deleteHawaiispecial" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Hawaii</td>
+          <td id="count-hawaii"></td>
+          <td><a href="#deleteHawaii" id="deleteOneHawaii" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteHawaii" id="deleteHawaii" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Kebabpizza</td>
+          <td id="count-kebabpizza"></td>
+          <td><a href="#deleteKebabpizza" id="deleteOneKebabpizza" class="ui-btn ui-btn-inline">Ta bort en</a> <a href="#deleteKebabpizza" id="deleteKebabpizza" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Margerita</td>
+          <td id="count-margerita"></td>
+          <td><a href="#deleteMargerita" id="deleteOneMargerita" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteMargerita" id="deleteMargerita" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Marina</td>
+          <td id="count-marina"></td>
+          <td><a href="#deleteMarina" id="deleteOneMarina" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteMarina" id="deleteMarina" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+        <tr>
+          <td>Vesuvio</td>
+          <td id="count-vesuvio"></td>
+          <td><a href="#deleteVesuvio" id="deleteOneVesuvio" class="ui-btn ui-btn-inline">Ta bort en</a><a href="#deleteVesuvio" id="deleteVesuvio" class="ui-btn ui-btn-inline">Ta bort alla</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+        <div class="total-price">
+          <p><b>Totalt:</b></p>
+          <p id="total"></p>
+        </div>
+        <div data-role="popup" id="popupDelete">
+          <p>Är du säker?</p>
+        </div>
+        <!-- button to confirm your purchase -->
+        <a href="#popupConfirm" data-rel="popup" data-transition="pop" class="ui-btn ui-btn-inline ui-btn-b">Köp</a>
+        <!-- the popup dialog for buying -->
+        <div data-role="popup" id="popupConfirm">
+        	<p>Tack för ditt köp!</p>
+        </div>
+
+        <!-- code for deleting the shopping cart -->
+        <a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left">Rensa beställning</a>
+        <div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="true" style="max-width:400px;">
+            <div data-role="header" data-theme="a">
+            <h1>Ta Bort</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <h3 class="ui-title">Ta bort</h3>
+                <p>Vill du ta bort beställningen?</p>
+                <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Nej</a>
+                <a href="#" id="clearShoppingcart" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Ja</a>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+      </div>
+
+    </div><!-- slut på main -->
+
+
+  <!-- pizza-menyn här nedan -->
+  <div id="pizza-meny" data-role="page">
+      <div role="main" class="ui-content">
+        <h1 class="center-text special-font">Meny</h1>
+        <p>Här nedan finns Pizzeria Calzones meny. Tryck på bilderna eller texterna för att få mer info om pizzorna. Tryck på plus-tecknet för att lägga till pizzan i din beställning.</p>
+        <br>
+          <ul data-role="listview" data-inset="false">
+              <li id="menu-bussola"><a id="link-bussola" href="#bussola"></a>
+              </li>
+
+              <li><a href="#calzoncino" id="link-calzoncino"></a>
+              </li>
+
+              <li><a href="#calzone" id="link-calzone"></a>
+              </li>
+
+              <li><a href="#capricciosa" id="link-capricciosa"></a>
+              </li>
+
+              <li><a href="#hawaii-special" id="link-hawaiispecial"></a>
+              </li>
+
+              <li><a href="#hawaii" id="link-hawaii"></a>
+              </li>
+
+              <li><a href="#kebabpizza" id="link-kebabpizza"></a>
+              </li>
+
+              <li><a href="#margerita" id="link-margerita"></a>
+              </li>
+
+              <li><a href="#marina" id="link-marina"></a>
+              </li>
+
+              <li><a href="#vesuvio" id="link-vesuvio"></a>
+              </li>
+
+
+          </ul>
+
+      </div>
+  </div>
+
+  <!-- Individuella pizzor -->
+  <!-- lista för bussola -->
+  <div id="bussola" data-role="page" data-swipeleft="back">
+    <div role="main" class="ui-content">
+        <article id="article-bussola"></article>
+    </div>
+  </div>
+
+  <!-- Lista för calzoncino -->
+  <div id="calzoncino" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-calzoncino"></article>
+    </div>
+  </div>
+
+  <!-- Lista för calzone -->
+  <div id="calzone" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-calzone"></article>
+    </div>
+  </div>
+
+  <!-- Lista för capricciosa -->
+  <div id="capricciosa" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-capricciosa"></article>
+    </div>
+  </div>
+
+  <!-- Lista för hawaii special -->
+  <div id="hawaii-special" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-hawaiispecial"></article>
+    </div>
+  </div>
+
+  <!-- Lista för hawaii -->
+  <div id="hawaii" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-hawaii"></article>
+    </div>
+  </div>
+
+  <!-- Lista för kebabpizza -->
+  <div id="kebabpizza" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-kebabpizza"></article>
+    </div>
+  </div>
+
+  <!-- Lista för margerita -->
+  <div id="margerita" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-margerita"></article>
+    </div>
+  </div>
+
+  <!-- Lista för marina -->
+  <div id="marina" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-marina"></article>
+    </div>
+  </div>
+
+  <!-- Lista för vesuvio -->
+  <div id="vesuvio" data-role="page">
+    <div role="main" class="ui-content" data-swipeleft="back">
+        <article id="article-vesuvio"></article>
+    </div>
+  </div>
+
+
+
+<!-- <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
