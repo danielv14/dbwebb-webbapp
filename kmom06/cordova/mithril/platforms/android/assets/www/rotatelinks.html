@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mithril test app</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="example"></div>
+
+<script src="js/mithril.min.js"></script>
+<script>
+//app goes here
+
+// Model
+var Page = {
+  list: function() {
+    return m.request({method: "GET", url: "json/pages.json"});
+  }
+};
+
+var Demo = {
+  // Controller
+  controller: function() {
+    var pages = Page.list();
+    return {
+      pages: pages,
+      rotate: function() {
+        pages().push(pages().shift());
+      }
+    }
+  },
+
+  // View
+  view: function(ctrl) {
+    return m("div", [
+      ctrl.pages().map(function(page) {
+        return m("a", {href: page.url}, page.title);
+      }),
+      m("button", {onclick: ctrl.rotate}, "Rotate Links")
+    ]);
+  }
+};
+
+// Initialize
+m.mount(document.getElementById("example"), Demo);
+</script>
