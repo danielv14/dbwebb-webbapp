@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+        "title": "Min Chef",
+        "content": "Detta är min chef, Michael Scott.",
+        "image": "img/michael.jpg"
+    },
+    {
+        "title": "Min Nemesis",
+        "content": "Detta är min nemesis, Jim Halpert. Tillsammans med sin fru Pam försöker dom alltid förstöra för mig.",
+        "image": "img/jim2.jpg"
+    },
+    {
+        "title": "Min Nemesis Fru",
+        "content": "Detta är min nemesis fru, Pam Beesly. Tillsammans med Jim försöker dom bägge göra livet surt för mig.",
+        "image": "img/pam.jpg"
+    },
+    {
+        "title": "Toby",
+        "content": "Varken min chef eller jag gillar Toby...",
+        "image": "img/toby.jpg"
+    }
+  ]
+
+}
