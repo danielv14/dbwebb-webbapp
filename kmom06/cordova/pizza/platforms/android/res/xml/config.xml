@@ -10,6 +10,17 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
+    <splash density="hdpi" src="resources/splash.png" />
+    <splash density="mdpi" src="resources/splash.png" />
+    <splash density="xhdpi" src="resources/splash.png" />
+    <splash density="land-hdpi" src="resources/splash.png" />
+    <splash density="land-ldpi" src="resources/splash.png" />
+    <splash density="land-mdpi" src="resources/splash.png" />
+    <splash density="land-xhdpi" src="resources/splash.png" />
+    <splash density="port-hdpi" src="resources/splash.png" />
+    <splash density="port-ldpi" src="resources/splash.png" />
+    <splash density="port-mdpi" src="resources/splash.png" />
+    <splash density="port-xhdpi" src="resources/splash.png" />
     <name>Pizzeria Calzone</name>
     <description>
         En app för en pizzeria
@@ -25,5 +36,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon src="res/icon.png" />
+    <icon src="resources/icon.png" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
 </widget>
