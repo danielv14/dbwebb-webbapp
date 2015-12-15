@@ -4,14 +4,14 @@
         "*"
     ],
     "version": "0.0.1",
-    "name": "HelloCordova",
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "name": "Pizzeria Calzone",
+    "description": "En app för en pizzeria",
     "developer": {
         "name": "Apache Cordova Team",
         "url": "http://cordova.io"
     },
     "icons": {
-        "60": "/icon/icon-60.png",
-        "128": "/icon/icon-128.png"
+        "60": "/icon/icon.png",
+        "128": "/icon/icon.png"
     }
 }
