@@ -22,10 +22,12 @@
       <splash src="resources/splash.png" density="hdpi"/>
       <splash src="resources/splash.png" density="mdpi"/>
       <splash src="resources/splash.png" density="xhdpi"/>
+
       <splash src="resources/splash.png" density="land-hdpi"/>
       <splash src="resources/splash.png" density="land-ldpi"/>
       <splash src="resources/splash.png" density="land-mdpi"/>
       <splash src="resources/splash.png" density="land-xhdpi"/>
+
       <splash src="resources/splash.png" density="port-hdpi"/>
       <splash src="resources/splash.png" density="port-ldpi"/>
       <splash src="resources/splash.png" density="port-mdpi"/>
