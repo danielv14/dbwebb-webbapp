@@ -38,6 +38,11 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <icon src="resources/icon.png"/>
+    <platform name="firefoxos">
+      <icon src="resources/logo.png" width="60" height="60" />
+      <icon src="resources/logo.png" width="128" height="128" />
+
+    </platform>
 
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="5000" />
