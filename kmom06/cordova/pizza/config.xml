@@ -22,16 +22,12 @@
       <splash src="resources/splash.png" density="hdpi"/>
       <splash src="resources/splash.png" density="mdpi"/>
       <splash src="resources/splash.png" density="xhdpi"/>
-
-      <splash src="resources/splash.png" density="land-hdpi"/>
-      <splash src="resources/splash.png" density="land-ldpi"/>
-      <splash src="resources/splash.png" density="land-mdpi"/>
-      <splash src="resources/splash.png" density="land-xhdpi"/>
-
       <splash src="resources/splash.png" density="port-hdpi"/>
-      <splash src="resources/splash.png" density="port-ldpi"/>
-      <splash src="resources/splash.png" density="port-mdpi"/>
       <splash src="resources/splash.png" density="port-xhdpi"/>
+      <icon src="resources/icon.png" density="ldpi" />
+      <icon src="resources/icon.png" density="mdpi" />
+      <icon src="resources/icon.png" density="hdpi" />
+      <icon src="resources/icon.png" density="xhdpi" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
