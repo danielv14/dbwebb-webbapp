@@ -27,6 +27,7 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <icon src="resources/icon.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -34,7 +35,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon src="resources/icon.png" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="5000" />
 </widget>
