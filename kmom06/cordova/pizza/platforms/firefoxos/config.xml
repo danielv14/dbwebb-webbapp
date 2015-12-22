@@ -4,6 +4,8 @@
         <icon height="128" src="icon/icon-128.png" width="128" />
         <icon height="60" src="icon/icon-60.png" width="60" />
     </platform>
+    <icon height="60" src="resources/logo.png" width="60" />
+    <icon height="128" src="resources/logo.png" width="128" />
     <name>Pizzeria Calzone</name>
     <description>
         En app för en pizzeria
@@ -12,6 +14,7 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
+    <icon src="resources/icon.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -19,5 +22,6 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <icon src="res/icon.png" />
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="5000" />
 </widget>
