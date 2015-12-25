@@ -29,7 +29,7 @@ function getAPItoJson {
     if [ ! -e $2 ]
     then
       curl -s -H "Accept-Language: sv" $1 | jq '.' > $2
-      echo $2 "skapades."
+      echo $2 "created."
     else # if the file does exist
       tempFile=$(<$2) # temp variable from file to check against new API req
       newJSON=$(curl -s -H "Accept-Language: sv" $1 | jq '.') # new JSON to test against
@@ -37,7 +37,7 @@ function getAPItoJson {
       #If not tempFile matches the new JSON req
       if [ ! "$tempFile" == "$newJSON" ]
       then
-        echo "Uppdaterar filen" $2 "med nytt innehåll då förändring har skett"
+        echo "Updating file: " $2 "with new content."
         curl -s -H "Accept-Language: sv" $1 | jq '.' > $2
       fi
     fi
