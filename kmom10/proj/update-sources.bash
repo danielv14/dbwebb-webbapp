@@ -31,20 +31,29 @@ function getAPItoJson {
       tempFile=$(<$2) # temp variable from file to check against new API req
       newJSON=$(curl -s -H "Accept-Language: sv" $1 | jq '.') # new JSON to test against
 
-      #If the tempFile matches the new JSON req
+      #If not tempFile matches the new JSON req
       if [ ! "$tempFile" == "$newJSON" ]
       then
         echo "Uppdaterar filen" $2 "med nytt innehåll då förändring har skett"
         curl -s -H "Accept-Language: sv" $1 | jq '.' > $2
-      # then
-      #   echo 'Uppdaterar inte filen' $2 'då inget har förändrats'
-      # else # IF updates have happened since file was created
-
       fi
     fi
 }
 
 # Call the function for all the needed api requests and output files
 
-#getAPItoJson $itfield IT-field.json
+getAPItoJson $itfield IT-field.json
+getAPItoJson $ID_3511 ID-3511.json
 getAPItoJson $ID_2516 ID-2516.json
+getAPItoJson $ID_2512 ID-2512.json
+getAPItoJson $ID_2516 ID-2516.json
+getAPItoJson $ID_2512 ID-2512.json
+getAPItoJson $ID_3514 ID-3514.json
+getAPItoJson $ID_3512 ID-3512.json
+getAPItoJson $ID_3513 ID-3513.json
+getAPItoJson $ID_2511 ID-2511.json
+getAPItoJson $ID_2515 ID-2515.json
+getAPItoJson $ID_2514 ID-2514.json
+getAPItoJson $ID_2513 ID-2513.json
+getAPItoJson $ID_3515 ID-3515.json
+getAPItoJson $ID_2519 ID-2519.json

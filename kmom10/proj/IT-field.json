@@ -1,0 +1,81 @@
+{
+  "soklista": {
+    "listnamn": "yrkesgrupper",
+    "totalt_antal_platsannonser": 2434,
+    "totalt_antal_ledigajobb": 3610,
+    "sokdata": [
+      {
+        "id": 3511,
+        "namn": "Drifttekniker, IT",
+        "antal_platsannonser": 205,
+        "antal_ledigajobb": 245
+      },
+      {
+        "id": 2516,
+        "namn": "IT-säkerhetsspecialister",
+        "antal_platsannonser": 38,
+        "antal_ledigajobb": 53
+      },
+      {
+        "id": 2512,
+        "namn": "Mjukvaru- och systemutvecklare m.fl.",
+        "antal_platsannonser": 1267,
+        "antal_ledigajobb": 2118
+      },
+      {
+        "id": 3514,
+        "namn": "Nätverks- och systemtekniker m.fl.",
+        "antal_platsannonser": 93,
+        "antal_ledigajobb": 104
+      },
+      {
+        "id": 3512,
+        "namn": "Supporttekniker, IT",
+        "antal_platsannonser": 247,
+        "antal_ledigajobb": 428
+      },
+      {
+        "id": 3513,
+        "namn": "Systemadministratörer",
+        "antal_platsannonser": 76,
+        "antal_ledigajobb": 80
+      },
+      {
+        "id": 2511,
+        "namn": "Systemanalytiker och IT-arkitekter m.fl.",
+        "antal_platsannonser": 164,
+        "antal_ledigajobb": 190
+      },
+      {
+        "id": 2515,
+        "namn": "Systemförvaltare m.fl.",
+        "antal_platsannonser": 79,
+        "antal_ledigajobb": 86
+      },
+      {
+        "id": 2514,
+        "namn": "Systemtestare och testledare",
+        "antal_platsannonser": 128,
+        "antal_ledigajobb": 150
+      },
+      {
+        "id": 2513,
+        "namn": "Utvecklare inom spel och digitala media",
+        "antal_platsannonser": 12,
+        "antal_ledigajobb": 15
+      },
+      {
+        "id": 3515,
+        "namn": "Webbmaster och webbadministratörer",
+        "antal_platsannonser": 48,
+        "antal_ledigajobb": 50
+      },
+      {
+        "id": 2519,
+        "namn": "Övriga IT-specialister",
+        "antal_platsannonser": 77,
+        "antal_ledigajobb": 91
+      }
+    ]
+  }
+}

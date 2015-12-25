@@ -1,0 +1,39 @@
+{
+  "soklista": {
+    "listnamn": "yrken",
+    "totalt_antal_platsannonser": 12,
+    "totalt_antal_ledigajobb": 15,
+    "sokdata": [
+      {
+        "id": 7432,
+        "namn": "Programmerare, konsolspel",
+        "antal_platsannonser": 4,
+        "antal_ledigajobb": 4
+      },
+      {
+        "id": 7433,
+        "namn": "Programmerare, mobilspel",
+        "antal_platsannonser": 1,
+        "antal_ledigajobb": 1
+      },
+      {
+        "id": 7570,
+        "namn": "Programmerare, onlinespel",
+        "antal_platsannonser": 2,
+        "antal_ledigajobb": 3
+      },
+      {
+        "id": 7431,
+        "namn": "Programmerare, PC-spel",
+        "antal_platsannonser": 1,
+        "antal_ledigajobb": 1
+      },
+      {
+        "id": 7435,
+        "namn": "Programmerare, webbspel",
+        "antal_platsannonser": 4,
+        "antal_ledigajobb": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "soklista": {
+    "listnamn": "yrken",
+    "totalt_antal_platsannonser": 247,
+    "totalt_antal_ledigajobb": 428,
+    "sokdata": [
+      {
+        "id": 3638,
+        "namn": "Dispatcher",
+        "antal_platsannonser": 0,
+        "antal_ledigajobb": 0
+      },
+      {
+        "id": 7020,
+        "namn": "Helpdesktekniker/Supporttekniker",
+        "antal_platsannonser": 247,
+        "antal_ledigajobb": 428
+      },
+      {
+        "id": 335,
+        "namn": "Meteorologassistent/Observatör, flygvapnet",
+        "antal_platsannonser": 0,
+        "antal_ledigajobb": 0
+      },
+      {
+        "id": 7461,
+        "namn": "Meteorologisk observatör",
+        "antal_platsannonser": 0,
+        "antal_ledigajobb": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "soklista": {
+    "listnamn": "yrken",
+    "totalt_antal_platsannonser": 1267,
+    "totalt_antal_ledigajobb": 2118,
+    "sokdata": [
+      {
+        "id": 6528,
+        "namn": "Användbarhetsdesigner",
+        "antal_platsannonser": 13,
+        "antal_ledigajobb": 15
+      },
+      {
+        "id": 6529,
+        "namn": "Användbarhetsexpert",
+        "antal_platsannonser": 0,
+        "antal_ledigajobb": 0
+      },
+      {
+        "id": 7577,
+        "namn": "Applikationskonsult",
+        "antal_platsannonser": 12,
+        "antal_ledigajobb": 12
+      },
+      {
+        "id": 7576,
+        "namn": "Applikationsutvecklare/Apputvecklare",
+        "antal_platsannonser": 52,
+        "antal_ledigajobb": 61
+      },
+      {
+        "id": 7632,
+        "namn": "Backend-utvecklare",
+        "antal_platsannonser": 34,
+        "antal_ledigajobb": 49
+      },
+      {
+        "id": 6509,
+        "namn": "Civilingenjör, systemutveckling",
+        "antal_platsannonser": 67,
+        "antal_ledigajobb": 76
+      },
+      {
+        "id": 7135,
+        "namn": "Data Warehouse specialist",
+        "antal_platsannonser": 3,
+        "antal_ledigajobb": 7
+      },
+      {
+        "id": 2421,
+        "namn": "Databasdesigner",
+        "antal_platsannonser": 1,
+        "antal_ledigajobb": 1
+      },
+      {
+        "id": 2423,
+        "namn": "Databasutvecklare",
+        "antal_platsannonser": 8,
+        "antal_ledigajobb": 8
+      },
+      {
+        "id": 7633,
+        "namn": "Frontend-utvecklare",
+        "antal_platsannonser": 59,
+        "antal_ledigajobb": 77
+      },
+      {
+        "id": 7533,
+        "namn": "GIS-utvecklare",
+        "antal_platsannonser": 3,
+        "antal_ledigajobb": 3
+      },
+      {
+        "id": 7575,
+        "namn": "Interaktionsdesigner",
+        "antal_platsannonser": 10,
+        "antal_ledigajobb": 20
+      },
+      {
+        "id": 80,
+        "namn": "Mjukvaruutvecklare",
+        "antal_platsannonser": 165,
+        "antal_ledigajobb": 216
+      },
+      {
+        "id": 5388,
+        "namn": "Projektledare, IT",
+        "antal_platsannonser": 167,
+        "antal_ledigajobb": 192
+      },
+      {
+        "id": 2413,
+        "namn": "Systemdesigner",
+        "antal_platsannonser": 5,
+        "antal_ledigajobb": 5
+      },
+      {
+        "id": 2419,
+        "namn": "Systemutvecklare/Programmerare",
+        "antal_platsannonser": 668,
+        "antal_ledigajobb": 1376
+      }
+    ]
+  }
+}

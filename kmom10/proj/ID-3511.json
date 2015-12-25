@@ -1,0 +1,45 @@
+{
+  "soklista": {
+    "listnamn": "yrken",
+    "totalt_antal_platsannonser": 205,
+    "totalt_antal_ledigajobb": 245,
+    "sokdata": [
+      {
+        "id": 6027,
+        "namn": "Dataoperatör",
+        "antal_platsannonser": 8,
+        "antal_ledigajobb": 8
+      },
+      {
+        "id": 3097,
+        "namn": "Driftledare, IT",
+        "antal_platsannonser": 5,
+        "antal_ledigajobb": 5
+      },
+      {
+        "id": 5431,
+        "namn": "Drifttekniker, data",
+        "antal_platsannonser": 45,
+        "antal_ledigajobb": 50
+      },
+      {
+        "id": 6625,
+        "namn": "IT-tekniker/Datatekniker",
+        "antal_platsannonser": 146,
+        "antal_ledigajobb": 180
+      },
+      {
+        "id": 5428,
+        "namn": "PC-koordinator",
+        "antal_platsannonser": 1,
+        "antal_ledigajobb": 2
+      },
+      {
+        "id": 5997,
+        "namn": "PC-samordnare",
+        "antal_platsannonser": 0,
+        "antal_ledigajobb": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "soklista": {
+    "listnamn": "yrken",
+    "totalt_antal_platsannonser": 93,
+    "totalt_antal_ledigajobb": 104,
+    "sokdata": [
+      {
+        "id": 2514,
+        "namn": "Kommunikationstekniker",
+        "antal_platsannonser": 8,
+        "antal_ledigajobb": 10
+      },
+      {
+        "id": 6602,
+        "namn": "Nätverkskonstruktör",
+        "antal_platsannonser": 2,
+        "antal_ledigajobb": 2
+      },
+      {
+        "id": 2519,
+        "namn": "Nätverksoperatör",
+        "antal_platsannonser": 4,
+        "antal_ledigajobb": 4
+      },
+      {
+        "id": 5912,
+        "namn": "Nätverkstekniker",
+        "antal_platsannonser": 79,
+        "antal_ledigajobb": 88
+      }
+    ]
+  }
+}

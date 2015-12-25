@@ -1,0 +1,27 @@
+{
+  "soklista": {
+    "listnamn": "yrken",
+    "totalt_antal_platsannonser": 48,
+    "totalt_antal_ledigajobb": 50,
+    "sokdata": [
+      {
+        "id": 2523,
+        "namn": "Webbansvarig/Webbstrateg",
+        "antal_platsannonser": 24,
+        "antal_ledigajobb": 25
+      },
+      {
+        "id": 7046,
+        "namn": "Webbtekniker",
+        "antal_platsannonser": 13,
+        "antal_ledigajobb": 14
+      },
+      {
+        "id": 2525,
+        "namn": "Webmaster",
+        "antal_platsannonser": 11,
+        "antal_ledigajobb": 11
+      }
+    ]
+  }
+}
