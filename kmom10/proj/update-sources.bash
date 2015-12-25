@@ -44,19 +44,18 @@ function getAPItoJson {
 }
 
 # Call the function for all the needed api requests and output files
-
 getAPItoJson $URLsoklista$itfield IT-field.json
-getAPItoJson $URLsoklista$ID_3511 ID-3511.json
-getAPItoJson $URLsoklista$ID_2516 ID-2516.json
-getAPItoJson $URLsoklista$ID_2512 ID-2512.json
-getAPItoJson $URLsoklista$ID_2516 ID-2516.json
-getAPItoJson $URLsoklista$ID_2512 ID-2512.json
-getAPItoJson $URLsoklista$ID_3514 ID-3514.json
-getAPItoJson $URLsoklista$ID_3512 ID-3512.json
-getAPItoJson $URLsoklista$ID_3513 ID-3513.json
-getAPItoJson $URLsoklista$ID_2511 ID-2511.json
-getAPItoJson $URLsoklista$ID_2515 ID-2515.json
-getAPItoJson $URLsoklista$ID_2514 ID-2514.json
-getAPItoJson $URLsoklista$ID_2513 ID-2513.json
-getAPItoJson $URLsoklista$ID_3515 ID-3515.json
-getAPItoJson $URLsoklista$ID_2519 ID-2519.json
+getAPItoJson $URLsoklista$ID_3511 yrkesgruppID-3511.json
+getAPItoJson $URLsoklista$ID_2516 yrkesgruppID-2516.json
+getAPItoJson $URLsoklista$ID_2512 yrkesgruppID-2512.json
+getAPItoJson $URLsoklista$ID_2516 yrkesgruppID-2516.json
+getAPItoJson $URLsoklista$ID_2512 yrkesgruppID-2512.json
+getAPItoJson $URLsoklista$ID_3514 yrkesgruppID-3514.json
+getAPItoJson $URLsoklista$ID_3512 yrkesgruppID-3512.json
+getAPItoJson $URLsoklista$ID_3513 yrkesgruppID-3513.json
+getAPItoJson $URLsoklista$ID_2511 yrkesgruppID-2511.json
+getAPItoJson $URLsoklista$ID_2515 yrkesgruppID-2515.json
+getAPItoJson $URLsoklista$ID_2514 yrkesgruppID-2514.json
+getAPItoJson $URLsoklista$ID_2513 yrkesgruppID-2513.json
+getAPItoJson $URLsoklista$ID_3515 yrkesgruppID-3515.json
+getAPItoJson $URLsoklista$ID_2519 yrkesgruppID-2519.json
