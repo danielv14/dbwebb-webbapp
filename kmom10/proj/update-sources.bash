@@ -25,7 +25,7 @@ ID_2519=yrken?yrkesgruppid=2519 # Övriga IT-specialister
 # @param string $2 the output file
 function getAPItoJson {
 
-    # If file doesnt exist, create a new and fresh one
+    # If file doesn't exist, create a new and fresh one
     if [ ! -e $2 ]
     then
       curl -s -H "Accept-Language: sv" $1 | jq '.' > $2
