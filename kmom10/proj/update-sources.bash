@@ -20,7 +20,7 @@ ID_3515=yrken?yrkesgruppid=3515 # Webbmaster och webbadministratörer
 ID_2519=yrken?yrkesgruppid=2519 # Övriga IT-specialister
 
 
-# function to curl the API, format with jq and output to a file
+# function to curl the API, format with jq and output to a file of your choosing
 # @param string $1 the API-url to use
 # @param string $2 the output file
 function getAPItoJson {
