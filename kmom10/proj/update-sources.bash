@@ -1,23 +1,28 @@
 #!/bin/bash
 
 # Base URL's
-URLsoklista=http://api.arbetsformedlingen.se/af/v0/platsannonser/soklista/
-URLmatching=http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning?
+URLsoklista="http://api.arbetsformedlingen.se/af/v0/platsannonser/soklista/"
+URLmatching="http://api.arbetsformedlingen.se/af/v0/platsannonser/matchning?"
 
-# Variables for curl requests
-itfield=yrkesgrupper?yrkesomradeid=3 # Listar IT yrkesområdet och dess grupper med antal lediaga jobb och platsannonser
-ID_2516=yrken?yrkesgruppid=2516 # IT-säkerhetsspecialister
-ID_3511=yrken?yrkesgruppid=3511 # Drifttekniker
-ID_2512=yrken?yrkesgruppid=2512 # Mjukvaru- och systemutvecklare m.fl.
-ID_3514=yrken?yrkesgruppid=3514 # Närverks- och systemtekniker m.fl.
-ID_3512=yrken?yrkesgruppid=3512 # Supporrtekniker, IT
-ID_3513=yrken?yrkesgruppid=3513 # Systemadministratörer
-ID_2511=yrken?yrkesgruppid=2511 # Systemanalytiker och IT-arkitekter m.fl.
-ID_2515=yrken?yrkesgruppid=2515 # Systemförvaltare m.fl
-ID_2514=yrken?yrkesgruppid=2514 # Systemtestare och testledare
-ID_2513=yrken?yrkesgruppid=2513 # Utvecklare inom spel och digitala media
-ID_3515=yrken?yrkesgruppid=3515 # Webbmaster och webbadministratörer
-ID_2519=yrken?yrkesgruppid=2519 # Övriga IT-specialister
+########## Variables for curl requests
+# for yrkesgrupper
+itfield="yrkesgrupper?yrkesomradeid=3" # Listar IT yrkesområdet och dess grupper med antal lediaga jobb och platsannonser
+ID_2516="yrken?yrkesgruppid=2516" # IT-säkerhetsspecialister
+ID_3511="yrken?yrkesgruppid=3511" # Drifttekniker
+ID_2512="yrken?yrkesgruppid=2512" # Mjukvaru- och systemutvecklare m.fl.
+ID_3514="yrken?yrkesgruppid=3514" # Närverks- och systemtekniker m.fl.
+ID_3512="yrken?yrkesgruppid=3512" # Supporrtekniker, IT
+ID_3513="yrken?yrkesgruppid=3513" # Systemadministratörer
+ID_2511="yrken?yrkesgruppid=2511" # Systemanalytiker och IT-arkitekter m.fl.
+ID_2515="yrken?yrkesgruppid=2515" # Systemförvaltare m.fl
+ID_2514="yrken?yrkesgruppid=2514" # Systemtestare och testledare
+ID_2513="yrken?yrkesgruppid=2513" # Utvecklare inom spel och digitala media
+ID_3515="yrken?yrkesgruppid=3515" # Webbmaster och webbadministratörer
+ID_2519="yrken?yrkesgruppid=2519" # Övriga IT-specialister
+# for kommuner
+LanID_24="yrkesomradeid=3&lanid=24&antalrader=10000"
+LanID_1="yrkesomradeid=3&lanid=1&antalrader=10000"
+
 
 
 # function to curl the API, format with jq and output to a file of your choosing
@@ -59,3 +64,6 @@ getAPItoJson $URLsoklista$ID_2514 yrkesgruppID-2514.json
 getAPItoJson $URLsoklista$ID_2513 yrkesgruppID-2513.json
 getAPItoJson $URLsoklista$ID_3515 yrkesgruppID-3515.json
 getAPItoJson $URLsoklista$ID_2519 yrkesgruppID-2519.json
+
+getAPItoJson $URLmatching$LanID_24 lanID-24.json
+getAPItoJson $URLmatching$LanID_1 lanID-1.json
