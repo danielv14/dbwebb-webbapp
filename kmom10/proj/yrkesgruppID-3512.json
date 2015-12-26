@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 247,
-    "totalt_antal_ledigajobb": 428,
+    "totalt_antal_platsannonser": 241,
+    "totalt_antal_ledigajobb": 417,
     "sokdata": [
       {
         "id": 3638,
@@ -13,8 +13,8 @@
       {
         "id": 7020,
         "namn": "Helpdesktekniker/Supporttekniker",
-        "antal_platsannonser": 247,
-        "antal_ledigajobb": 428
+        "antal_platsannonser": 241,
+        "antal_ledigajobb": 417
       },
       {
         "id": 335,

@@ -1,14 +1,14 @@
 {
   "soklista": {
     "listnamn": "yrkesgrupper",
-    "totalt_antal_platsannonser": 2434,
-    "totalt_antal_ledigajobb": 3610,
+    "totalt_antal_platsannonser": 2410,
+    "totalt_antal_ledigajobb": 3573,
     "sokdata": [
       {
         "id": 3511,
         "namn": "Drifttekniker, IT",
-        "antal_platsannonser": 205,
-        "antal_ledigajobb": 245
+        "antal_platsannonser": 202,
+        "antal_ledigajobb": 242
       },
       {
         "id": 2516,
@@ -19,20 +19,20 @@
       {
         "id": 2512,
         "namn": "Mjukvaru- och systemutvecklare m.fl.",
-        "antal_platsannonser": 1267,
-        "antal_ledigajobb": 2118
+        "antal_platsannonser": 1255,
+        "antal_ledigajobb": 2099
       },
       {
         "id": 3514,
         "namn": "Nätverks- och systemtekniker m.fl.",
-        "antal_platsannonser": 93,
-        "antal_ledigajobb": 104
+        "antal_platsannonser": 92,
+        "antal_ledigajobb": 102
       },
       {
         "id": 3512,
         "namn": "Supporttekniker, IT",
-        "antal_platsannonser": 247,
-        "antal_ledigajobb": 428
+        "antal_platsannonser": 241,
+        "antal_ledigajobb": 417
       },
       {
         "id": 3513,
@@ -67,14 +67,14 @@
       {
         "id": 3515,
         "namn": "Webbmaster och webbadministratörer",
-        "antal_platsannonser": 48,
-        "antal_ledigajobb": 50
+        "antal_platsannonser": 47,
+        "antal_ledigajobb": 49
       },
       {
         "id": 2519,
         "namn": "Övriga IT-specialister",
-        "antal_platsannonser": 77,
-        "antal_ledigajobb": 91
+        "antal_platsannonser": 76,
+        "antal_ledigajobb": 90
       }
     ]
   }

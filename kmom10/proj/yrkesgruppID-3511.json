@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 205,
-    "totalt_antal_ledigajobb": 245,
+    "totalt_antal_platsannonser": 202,
+    "totalt_antal_ledigajobb": 242,
     "sokdata": [
       {
         "id": 6027,
@@ -25,8 +25,8 @@
       {
         "id": 6625,
         "namn": "IT-tekniker/Datatekniker",
-        "antal_platsannonser": 146,
-        "antal_ledigajobb": 180
+        "antal_platsannonser": 143,
+        "antal_ledigajobb": 177
       },
       {
         "id": 5428,

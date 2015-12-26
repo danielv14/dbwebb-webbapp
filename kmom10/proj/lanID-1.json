@@ -1,9 +1,9 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 1001,
-    "antal_platsannonser_exakta": 1001,
+    "antal_platsannonser": 986,
+    "antal_platsannonser_exakta": 986,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 1269,
+    "antal_platserTotal": 1247,
     "antal_sidor": 1,
     "matchningdata": [
       {
@@ -3111,19 +3111,6 @@
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6511076",
         "relevans": 100,
         "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6511049",
-        "annonsrubrik": "IT - supporttekniker , avancerad problemlösning , till Advania",
-        "yrkesbenamning": "Helpdesktekniker/Supporttekniker",
-        "arbetsplatsnamn": "WiseIT Konsult AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-12-18T16:29:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6511049",
-        "relevans": 100,
-        "antalplatser": "5",
         "antalPlatserVisa": 1
       },
       {
@@ -6871,19 +6858,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "6499643",
-        "annonsrubrik": "Supporttekniker / Chaufför sökes omgående till Nacka Kommun",
-        "yrkesbenamning": "Helpdesktekniker/Supporttekniker",
-        "arbetsplatsnamn": "Bemannia Kontor",
-        "kommunnamn": "Nacka",
-        "kommunkod": 182,
-        "publiceraddatum": "2015-12-10T10:48:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6499643",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "6499559",
         "annonsrubrik": "Javautvecklare till spännande projekt ",
         "yrkesbenamning": "Civilingenjör, systemutveckling",
@@ -7638,19 +7612,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "6496538",
-        "annonsrubrik": "Webbredaktör till PTK",
-        "yrkesbenamning": "Webbansvarig/Webbstrateg",
-        "arbetsplatsnamn": "Wise Professionals AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-12-08T09:15:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6496538",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "6496475",
         "annonsrubrik": "PHP utvecklare till NGM",
         "yrkesbenamning": "Mjukvaruutvecklare",
@@ -7958,19 +7919,6 @@
         "kommunkod": 184,
         "publiceraddatum": "2015-12-07T10:38:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2836109",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6495118",
-        "annonsrubrik": "Junior Bid Manager",
-        "yrkesbenamning": "IT-strateg",
-        "arbetsplatsnamn": "SW IT",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-12-07T10:20:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6495118",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -8751,19 +8699,6 @@
         "kommunkod": 180,
         "publiceraddatum": "2015-12-03T00:00:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2832166",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6489439",
-        "annonsrubrik": "IT - projektledare med verksamhetsinriktning till Spendrups",
-        "yrkesbenamning": "Projektledare, IT",
-        "arbetsplatsnamn": "WiseIT AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-12-02T19:27:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6489439",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -10355,19 +10290,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "2826384",
-        "annonsrubrik": "Senior drifttekniker",
-        "yrkesbenamning": "IT-tekniker/Datatekniker",
-        "arbetsplatsnamn": "Atrivo AB",
-        "kommunnamn": "Solna",
-        "kommunkod": 184,
-        "publiceraddatum": "2015-11-25T15:11:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2826384",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "6479289",
         "annonsrubrik": "Full - stack Data Scientist",
         "yrkesbenamning": "Systemutvecklare/Programmerare",
@@ -10394,32 +10316,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "2826277",
-        "annonsrubrik": "Nätverkstekniker / Installatör sökes!",
-        "yrkesbenamning": "Nätverkstekniker",
-        "arbetsplatsnamn": "TACTPARTNER AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-11-25T13:42:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2826277",
-        "relevans": 100,
-        "antalplatser": "2",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6479080",
-        "annonsrubrik": "Nu söker vi erfarna Oracle - konsulter",
-        "yrkesbenamning": "Projektledare, IT",
-        "arbetsplatsnamn": "Talangjägarna AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-11-25T13:07:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6479080",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "6478933",
         "annonsrubrik": "Webbutvecklare till produktbolag inom business intelligence",
         "yrkesbenamning": "Systemutvecklare/Programmerare",
@@ -10441,19 +10337,6 @@
         "kommunkod": 180,
         "publiceraddatum": "2015-11-25T11:31:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6478918",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "2826001",
-        "annonsrubrik": "Technical Operations & Server Specialist",
-        "yrkesbenamning": "IT-tekniker/Datatekniker",
-        "arbetsplatsnamn": "J.Kempe Konsult AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-11-25T10:29:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2826001",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -10493,45 +10376,6 @@
         "kommunkod": 180,
         "publiceraddatum": "2015-11-25T00:00:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2826176",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "2826283",
-        "annonsrubrik": "Kreativ och vass C#.NET - utvecklare",
-        "yrkesbenamning": "Civilingenjör, systemutveckling",
-        "arbetsplatsnamn": "Multisoft Consulting Sweden AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-11-25T00:00:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2826283",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "2826286",
-        "annonsrubrik": "Systemutvecklare mot nya utmaningar",
-        "yrkesbenamning": "Civilingenjör, systemutveckling",
-        "arbetsplatsnamn": "Multisoft Consulting Sweden AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-11-25T00:00:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2826286",
-        "relevans": 100,
-        "antalplatser": "3",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "2826303",
-        "annonsrubrik": "VASS INTERN SYSTEMUTVECKLARE MED IT - INTRESSE",
-        "yrkesbenamning": "Systemutvecklare/Programmerare",
-        "arbetsplatsnamn": "Multisoft Consulting Sweden AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-11-25T00:00:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2826303",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -12422,19 +12266,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "2792958",
-        "annonsrubrik": "Tekniker / IT / Support / Sharepoint - Stockholm",
-        "yrkesbenamning": "Helpdesktekniker/Supporttekniker",
-        "arbetsplatsnamn": "Centric Professionals AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-10-02T00:00:00+02:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2792958",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "2792974",
         "annonsrubrik": "Erfaren tekniker / servicedesk / Stockholm",
         "yrkesbenamning": "Helpdesktekniker/Supporttekniker",
@@ -12495,32 +12326,6 @@
         "kommunkod": 180,
         "publiceraddatum": "2015-09-29T10:12:00+02:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6414899",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "2789343",
-        "annonsrubrik": "Java Developer",
-        "yrkesbenamning": "Systemutvecklare/Programmerare",
-        "arbetsplatsnamn": "Granditude AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-09-28T00:00:00+02:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2789343",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "2789368",
-        "annonsrubrik": "Web Developer with Java Experience",
-        "yrkesbenamning": "Backend-utvecklare",
-        "arbetsplatsnamn": "Granditude AB",
-        "kommunnamn": "Stockholm",
-        "kommunkod": 180,
-        "publiceraddatum": "2015-09-28T00:00:00+02:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2789368",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
