@@ -43,6 +43,7 @@ LanID_18="yrkesomradeid=3&lanid=18&antalrader=10000" # Örebro län
 LanID_5="yrkesomradeid=3&lanid=5&antalrader=10000" # Östergötlands län
 
 
+
 # function to curl the API, format with jq and output to a file of your choosing
 # @param string $1 the API-url to use
 # @param string $2 the output file
@@ -68,39 +69,39 @@ function getAPItoJson {
 
 # Call the function for all the needed api requests and output files
 getAPItoJson $URLsoklista$itfield IT-field.json
-getAPItoJson $URLsoklista$ID_3511 yrkesgruppID-3511.json
-getAPItoJson $URLsoklista$ID_2516 yrkesgruppID-2516.json
-getAPItoJson $URLsoklista$ID_2512 yrkesgruppID-2512.json
-getAPItoJson $URLsoklista$ID_2516 yrkesgruppID-2516.json
-getAPItoJson $URLsoklista$ID_2512 yrkesgruppID-2512.json
-getAPItoJson $URLsoklista$ID_3514 yrkesgruppID-3514.json
-getAPItoJson $URLsoklista$ID_3512 yrkesgruppID-3512.json
-getAPItoJson $URLsoklista$ID_3513 yrkesgruppID-3513.json
-getAPItoJson $URLsoklista$ID_2511 yrkesgruppID-2511.json
-getAPItoJson $URLsoklista$ID_2515 yrkesgruppID-2515.json
-getAPItoJson $URLsoklista$ID_2514 yrkesgruppID-2514.json
-getAPItoJson $URLsoklista$ID_2513 yrkesgruppID-2513.json
-getAPItoJson $URLsoklista$ID_3515 yrkesgruppID-3515.json
-getAPItoJson $URLsoklista$ID_2519 yrkesgruppID-2519.json
+getAPItoJson $URLsoklista$ID_3511 af-api/yrkesgrupp/yrkesgruppID-3511.json
+getAPItoJson $URLsoklista$ID_2516 af-api/yrkesgrupp/yrkesgruppID-2516.json
+getAPItoJson $URLsoklista$ID_2512 af-api/yrkesgrupp/yrkesgruppID-2512.json
+getAPItoJson $URLsoklista$ID_2516 af-api/yrkesgrupp/yrkesgruppID-2516.json
+getAPItoJson $URLsoklista$ID_2512 af-api/yrkesgrupp/yrkesgruppID-2512.json
+getAPItoJson $URLsoklista$ID_3514 af-api/yrkesgrupp/yrkesgruppID-3514.json
+getAPItoJson $URLsoklista$ID_3512 af-api/yrkesgrupp/yrkesgruppID-3512.json
+getAPItoJson $URLsoklista$ID_3513 af-api/yrkesgrupp/yrkesgruppID-3513.json
+getAPItoJson $URLsoklista$ID_2511 af-api/yrkesgrupp/yrkesgruppID-2511.json
+getAPItoJson $URLsoklista$ID_2515 af-api/yrkesgrupp/yrkesgruppID-2515.json
+getAPItoJson $URLsoklista$ID_2514 af-api/yrkesgrupp/yrkesgruppID-2514.json
+getAPItoJson $URLsoklista$ID_2513 af-api/yrkesgrupp/yrkesgruppID-2513.json
+getAPItoJson $URLsoklista$ID_3515 af-api/yrkesgrupp/yrkesgruppID-3515.json
+getAPItoJson $URLsoklista$ID_2519 af-api/yrkesgrupp/yrkesgruppID-2519.json
 
-getAPItoJson $URLmatching$LanID_24 lanID-24.json
-getAPItoJson $URLmatching$LanID_1 lanID-1.json
-getAPItoJson $URLmatching$LanID_10 lanID-10.json
-getAPItoJson $URLmatching$LanID_20 lanID-20.json
-getAPItoJson $URLmatching$LanID_9 lanID-9.json
-getAPItoJson $URLmatching$LanID_21 lanID-21.json
-getAPItoJson $URLmatching$LanID_13 lanID-13.json
-getAPItoJson $URLmatching$LanID_23 lanID-23.json
-getAPItoJson $URLmatching$LanID_6 lanID-6.json
-getAPItoJson $URLmatching$LanID_8 lanID-8.json
-getAPItoJson $URLmatching$LanID_7 lanID-7.json
-getAPItoJson $URLmatching$LanID_25 lanID-25.json
-getAPItoJson $URLmatching$LanID_12 lanID-12.json
-getAPItoJson $URLmatching$LanID_4 lanID-4.json
-getAPItoJson $URLmatching$LanID_3 lanID-3.json
-getAPItoJson $URLmatching$LanID_17 lanID-17.json
-getAPItoJson $URLmatching$LanID_22 lanID-22.json
-getAPItoJson $URLmatching$LanID_19 lanID-19.json
-getAPItoJson $URLmatching$LanID_14 lanID-14.json
-getAPItoJson $URLmatching$LanID_18 lanID-18.json
-getAPItoJson $URLmatching$LanID_5 lanID-5.json
+getAPItoJson $URLmatching$LanID_24 af-api/lan/lanID-24.json
+getAPItoJson $URLmatching$LanID_1 af-api/lan/lanID-1.json
+getAPItoJson $URLmatching$LanID_10 af-api/lan/lanID-10.json
+getAPItoJson $URLmatching$LanID_20 af-api/lan/lanID-20.json
+getAPItoJson $URLmatching$LanID_9 af-api/lan/lanID-9.json
+getAPItoJson $URLmatching$LanID_21 af-api/lan/lanID-21.json
+getAPItoJson $URLmatching$LanID_13 af-api/lan/lanID-13.json
+getAPItoJson $URLmatching$LanID_23 af-api/lan/lanID-23.json
+getAPItoJson $URLmatching$LanID_6 af-api/lan/lanID-6.json
+getAPItoJson $URLmatching$LanID_8 af-api/lan/lanID-8.json
+getAPItoJson $URLmatching$LanID_7 af-api/lan/lanID-7.json
+getAPItoJson $URLmatching$LanID_25 af-api/lan/lanID-25.json
+getAPItoJson $URLmatching$LanID_12 af-api/lan/lanID-12.json
+getAPItoJson $URLmatching$LanID_4 af-api/lan/lanID-4.json
+getAPItoJson $URLmatching$LanID_3 af-api/lan/lanID-3.json
+getAPItoJson $URLmatching$LanID_17 af-api/lan/lanID-17.json
+getAPItoJson $URLmatching$LanID_22 af-api/lan/lanID-22.json
+getAPItoJson $URLmatching$LanID_19 af-api/lan/lanID-19.json
+getAPItoJson $URLmatching$LanID_14 af-api/lan/lanID-14.json
+getAPItoJson $URLmatching$LanID_18 af-api/lan/lanID-18.json
+getAPItoJson $URLmatching$LanID_5 af-api/lan/lanID-5.json

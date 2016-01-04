@@ -1,14 +1,14 @@
 {
   "soklista": {
     "listnamn": "yrkesgrupper",
-    "totalt_antal_platsannonser": 2131,
-    "totalt_antal_ledigajobb": 3222,
+    "totalt_antal_platsannonser": 2132,
+    "totalt_antal_ledigajobb": 3223,
     "sokdata": [
       {
         "id": 3511,
         "namn": "Drifttekniker, IT",
-        "antal_platsannonser": 174,
-        "antal_ledigajobb": 217
+        "antal_platsannonser": 175,
+        "antal_ledigajobb": 218
       },
       {
         "id": 2516,
@@ -19,8 +19,8 @@
       {
         "id": 2512,
         "namn": "Mjukvaru- och systemutvecklare m.fl.",
-        "antal_platsannonser": 1107,
-        "antal_ledigajobb": 1913
+        "antal_platsannonser": 1106,
+        "antal_ledigajobb": 1912
       },
       {
         "id": 3514,
@@ -67,8 +67,8 @@
       {
         "id": 3515,
         "namn": "Webbmaster och webbadministratörer",
-        "antal_platsannonser": 37,
-        "antal_ledigajobb": 39
+        "antal_platsannonser": 38,
+        "antal_ledigajobb": 40
       },
       {
         "id": 2519,
