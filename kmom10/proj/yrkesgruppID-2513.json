@@ -1,14 +1,14 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 12,
-    "totalt_antal_ledigajobb": 15,
+    "totalt_antal_platsannonser": 7,
+    "totalt_antal_ledigajobb": 9,
     "sokdata": [
       {
         "id": 7432,
         "namn": "Programmerare, konsolspel",
-        "antal_platsannonser": 4,
-        "antal_ledigajobb": 4
+        "antal_platsannonser": 1,
+        "antal_ledigajobb": 1
       },
       {
         "id": 7433,
@@ -31,8 +31,8 @@
       {
         "id": 7435,
         "namn": "Programmerare, webbspel",
-        "antal_platsannonser": 4,
-        "antal_ledigajobb": 6
+        "antal_platsannonser": 2,
+        "antal_ledigajobb": 3
       }
     ]
   }

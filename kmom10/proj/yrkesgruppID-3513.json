@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 76,
-    "totalt_antal_ledigajobb": 80,
+    "totalt_antal_platsannonser": 79,
+    "totalt_antal_ledigajobb": 85,
     "sokdata": [
       {
         "id": 5896,
@@ -19,20 +19,20 @@
       {
         "id": 2515,
         "namn": "Nätverksadministratör",
-        "antal_platsannonser": 12,
-        "antal_ledigajobb": 12
+        "antal_platsannonser": 13,
+        "antal_ledigajobb": 13
       },
       {
         "id": 2516,
         "namn": "Nätverksansvarig",
-        "antal_platsannonser": 1,
-        "antal_ledigajobb": 1
+        "antal_platsannonser": 2,
+        "antal_ledigajobb": 2
       },
       {
         "id": 2918,
         "namn": "Systemadministratör",
-        "antal_platsannonser": 52,
-        "antal_ledigajobb": 56
+        "antal_platsannonser": 53,
+        "antal_ledigajobb": 59
       }
     ]
   }

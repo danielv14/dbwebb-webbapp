@@ -1,11 +1,102 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 38,
-    "antal_platsannonser_exakta": 38,
+    "antal_platsannonser": 32,
+    "antal_platsannonser_exakta": 32,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 93,
+    "antal_platserTotal": 73,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "6518063",
+        "annonsrubrik": "ERP System Manager",
+        "yrkesbenamning": "Systemförvaltare",
+        "arbetsplatsnamn": "Clockwork Umeå AB",
+        "kommunnamn": "Umeå",
+        "kommunkod": 2480,
+        "publiceraddatum": "2015-12-28T13:25:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6518063",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6518042",
+        "annonsrubrik": "Junior mjukvaruutvecklare med driv till Data Ductus",
+        "yrkesbenamning": "Mjukvaruutvecklare",
+        "arbetsplatsnamn": "Ghost Competence AB",
+        "kommunnamn": "Skellefteå",
+        "kommunkod": 2482,
+        "publiceraddatum": "2015-12-28T13:17:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6518042",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6518040",
+        "annonsrubrik": "Systemarkitekt med erfarenhet av modellering till Data Ductus",
+        "yrkesbenamning": "Systemarkitekt",
+        "arbetsplatsnamn": "Ghost Competence AB",
+        "kommunnamn": "Skellefteå",
+        "kommunkod": 2482,
+        "publiceraddatum": "2015-12-28T13:16:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6518040",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6518035",
+        "annonsrubrik": "Ascom söker Senior Software Designer",
+        "yrkesbenamning": "Mjukvaruutvecklare",
+        "arbetsplatsnamn": "Ghost Competence AB",
+        "kommunnamn": "Skellefteå",
+        "kommunkod": 2482,
+        "publiceraddatum": "2015-12-28T13:11:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6518035",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6518034",
+        "annonsrubrik": "Kreativ Software Designer till Ascom ",
+        "yrkesbenamning": "Mjukvaruutvecklare",
+        "arbetsplatsnamn": "Ghost Competence AB",
+        "kommunnamn": "Skellefteå",
+        "kommunkod": 2482,
+        "publiceraddatum": "2015-12-28T13:10:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6518034",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6517877",
+        "annonsrubrik": "IT - tekniker",
+        "yrkesbenamning": "IT-tekniker/Datatekniker",
+        "arbetsplatsnamn": "Adecco Sweden AB",
+        "kommunnamn": "Umeå",
+        "kommunkod": 2480,
+        "publiceraddatum": "2015-12-28T11:17:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6517877",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "2833162",
+        "annonsrubrik": "Programmerare för WordPress",
+        "yrkesbenamning": "Webmaster",
+        "arbetsplatsnamn": "AMORI AB",
+        "kommunnamn": "Umeå",
+        "kommunkod": 2480,
+        "publiceraddatum": "2015-12-26T00:00:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2833162",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "6516175",
         "annonsrubrik": "Utvecklare till Codemill",
@@ -20,19 +111,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "6514775",
-        "annonsrubrik": "Systemarkitekt med erfarenhet av modellering till Data Ductus",
-        "yrkesbenamning": "Systemarkitekt",
-        "arbetsplatsnamn": "Ghost Competence AB",
-        "kommunnamn": "Skellefteå",
-        "kommunkod": 2482,
-        "publiceraddatum": "2015-12-22T14:04:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6514775",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "2844110",
         "annonsrubrik": "Programutvecklare till Komatsu Forest R & D",
         "yrkesbenamning": "Mjukvaruutvecklare",
@@ -41,19 +119,6 @@
         "kommunkod": 2480,
         "publiceraddatum": "2015-12-22T09:29:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2844110",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6513234",
-        "annonsrubrik": "Junior mjukvaruutvecklare med driv till Data Ductus",
-        "yrkesbenamning": "Mjukvaruutvecklare",
-        "arbetsplatsnamn": "Ghost Competence AB",
-        "kommunnamn": "Skellefteå",
-        "kommunkod": 2482,
-        "publiceraddatum": "2015-12-21T16:39:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6513234",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -111,32 +176,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "6510383",
-        "annonsrubrik": "Ascom söker Senior Software Designer",
-        "yrkesbenamning": "Mjukvaruutvecklare",
-        "arbetsplatsnamn": "Ghost Competence AB",
-        "kommunnamn": "Skellefteå",
-        "kommunkod": 2482,
-        "publiceraddatum": "2015-12-18T13:50:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6510383",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6510365",
-        "annonsrubrik": "Kreativ Software Designer till Ascom ",
-        "yrkesbenamning": "Mjukvaruutvecklare",
-        "arbetsplatsnamn": "Ghost Competence AB",
-        "kommunnamn": "Skellefteå",
-        "kommunkod": 2482,
-        "publiceraddatum": "2015-12-18T13:46:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6510365",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "0015-598920",
         "annonsrubrik": "Verksamhetsintresserad och tekniskt driven Microsoft BI - konsult",
         "yrkesbenamning": "Systemutvecklare/Programmerare",
@@ -147,19 +186,6 @@
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=0015-598920",
         "relevans": 100,
         "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6508969",
-        "annonsrubrik": "Drivna supportmedarbetare sökes!",
-        "yrkesbenamning": "Helpdesktekniker/Supporttekniker",
-        "arbetsplatsnamn": "Uniflex Sverige AB",
-        "kommunnamn": "Umeå",
-        "kommunkod": 2480,
-        "publiceraddatum": "2015-12-17T16:08:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6508969",
-        "relevans": 100,
-        "antalplatser": "15",
         "antalPlatserVisa": 1
       },
       {
@@ -197,19 +223,6 @@
         "kommunkod": 2482,
         "publiceraddatum": "2015-12-16T12:20:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2841388",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6506075",
-        "annonsrubrik": "Frontend & backend developer",
-        "yrkesbenamning": "Frontend-utvecklare",
-        "arbetsplatsnamn": "Poolia Sverige AB , Poolia Umeå AB",
-        "kommunnamn": "Umeå",
-        "kommunkod": 2480,
-        "publiceraddatum": "2015-12-16T09:42:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6506075",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -293,32 +306,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "6492231",
-        "annonsrubrik": "Systemutvecklare till Knowit",
-        "yrkesbenamning": "Systemutvecklare/Programmerare",
-        "arbetsplatsnamn": "Poolia Sverige AB , Poolia Umeå AB",
-        "kommunnamn": "Umeå",
-        "kommunkod": 2480,
-        "publiceraddatum": "2015-12-04T15:12:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6492231",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6489294",
-        "annonsrubrik": "Teknikkonsulter till Tieto i Skellefteå ",
-        "yrkesbenamning": "IT-tekniker/Datatekniker",
-        "arbetsplatsnamn": "Ghost Competence AB",
-        "kommunnamn": "Skellefteå",
-        "kommunkod": 2482,
-        "publiceraddatum": "2015-12-02T16:44:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6489294",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "6487976",
         "annonsrubrik": "Systemtestare och IT - support för INCA plattformen , Umeå",
         "yrkesbenamning": "Systemtestare",
@@ -345,32 +332,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "0015-565921",
-        "annonsrubrik": "Sales engineer",
-        "yrkesbenamning": "Applikationsutvecklare/Apputvecklare",
-        "arbetsplatsnamn": "MINDFREAK MOBILE MEDIA PRIVATE LIMITED",
-        "kommunnamn": "Skellefteå",
-        "kommunkod": 2482,
-        "publiceraddatum": "2015-12-01T11:08:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=0015-565921",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6486799",
-        "annonsrubrik": "Javautvecklare till internationellt IT - konsultföretag",
-        "yrkesbenamning": "Systemutvecklare/Programmerare",
-        "arbetsplatsnamn": "Ghost Competence AB",
-        "kommunnamn": "Skellefteå",
-        "kommunkod": 2482,
-        "publiceraddatum": "2015-12-01T10:35:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6486799",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "6486762",
         "annonsrubrik": "Systemutvecklare ",
         "yrkesbenamning": "Civilingenjör, systemutveckling",
@@ -379,32 +340,6 @@
         "kommunkod": 2480,
         "publiceraddatum": "2015-12-01T10:22:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6486762",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6486327",
-        "annonsrubrik": "Platschef till Rekab Entreprenad AB i Sundsvall",
-        "yrkesbenamning": "Projektledare, IT",
-        "arbetsplatsnamn": "Academic Work",
-        "kommunnamn": "Umeå",
-        "kommunkod": 2480,
-        "publiceraddatum": "2015-12-01T00:01:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6486327",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6485514",
-        "annonsrubrik": "IT - tekniker",
-        "yrkesbenamning": "Helpdesktekniker/Supporttekniker",
-        "arbetsplatsnamn": "Poolia Sverige AB , Poolia Umeå AB",
-        "kommunnamn": "Umeå",
-        "kommunkod": 2480,
-        "publiceraddatum": "2015-11-30T13:05:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6485514",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -431,19 +366,6 @@
         "kommunkod": 2480,
         "publiceraddatum": "2015-11-27T15:09:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2829820",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "2828948",
-        "annonsrubrik": "Systemtekniker / servertekniker till IT - funktionen",
-        "yrkesbenamning": "IT-tekniker/Datatekniker",
-        "arbetsplatsnamn": "Umeå kommun",
-        "kommunnamn": "Umeå",
-        "kommunkod": 2480,
-        "publiceraddatum": "2015-11-26T13:40:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2828948",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1

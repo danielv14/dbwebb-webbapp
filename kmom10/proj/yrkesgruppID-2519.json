@@ -1,32 +1,32 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 76,
-    "totalt_antal_ledigajobb": 90,
+    "totalt_antal_platsannonser": 66,
+    "totalt_antal_ledigajobb": 79,
     "sokdata": [
       {
         "id": 6677,
         "namn": "Datalingvist",
-        "antal_platsannonser": 8,
-        "antal_ledigajobb": 9
+        "antal_platsannonser": 6,
+        "antal_ledigajobb": 7
       },
       {
         "id": 7294,
         "namn": "Forskare, IT",
-        "antal_platsannonser": 8,
-        "antal_ledigajobb": 8
+        "antal_platsannonser": 9,
+        "antal_ledigajobb": 9
       },
       {
         "id": 5432,
         "namn": "IT-strateg",
-        "antal_platsannonser": 44,
-        "antal_ledigajobb": 55
+        "antal_platsannonser": 42,
+        "antal_ledigajobb": 53
       },
       {
         "id": 7477,
         "namn": "Processansvarig, ITIL",
-        "antal_platsannonser": 16,
-        "antal_ledigajobb": 18
+        "antal_platsannonser": 9,
+        "antal_ledigajobb": 10
       }
     ]
   }

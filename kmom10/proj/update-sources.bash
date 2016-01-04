@@ -19,10 +19,28 @@ ID_2514="yrken?yrkesgruppid=2514" # Systemtestare och testledare
 ID_2513="yrken?yrkesgruppid=2513" # Utvecklare inom spel och digitala media
 ID_3515="yrken?yrkesgruppid=3515" # Webbmaster och webbadministratörer
 ID_2519="yrken?yrkesgruppid=2519" # Övriga IT-specialister
-# for kommuner
-LanID_24="yrkesomradeid=3&lanid=24&antalrader=10000"
-LanID_1="yrkesomradeid=3&lanid=1&antalrader=10000"
-
+# for Län
+LanID_24="yrkesomradeid=3&lanid=24&antalrader=10000" # Västerbotten
+LanID_1="yrkesomradeid=3&lanid=1&antalrader=10000" # Stockholm
+LanID_10="yrkesomradeid=3&lanid=10&antalrader=10000" # Blekinge
+LanID_20="yrkesomradeid=3&lanid=20&antalrader=10000" # Dalarnas län
+LanID_9="yrkesomradeid=3&lanid=9&antalrader=10000" # GOtlands län
+LanID_21="yrkesomradeid=3&lanid=21&antalrader=10000" # Gävleborgs län
+LanID_13="yrkesomradeid=3&lanid=13&antalrader=10000" # Hallands län
+LanID_23="yrkesomradeid=3&lanid=23&antalrader=10000" # Jämtlands län
+LanID_6="yrkesomradeid=3&lanid=6&antalrader=10000" # Jönköpings län
+LanID_8="yrkesomradeid=3&lanid=8&antalrader=10000" # Kalmars län
+LanID_7="yrkesomradeid=3&lanid=7&antalrader=10000" # Kronobergs län
+LanID_25="yrkesomradeid=3&lanid=25&antalrader=10000" # Norrbottens län
+LanID_12="yrkesomradeid=3&lanid=12&antalrader=10000" # SKåne län
+LanID_4="yrkesomradeid=3&lanid=4&antalrader=10000" # Söermans län
+LanID_3="yrkesomradeid=3&lanid=3&antalrader=10000" # Uppsala län
+LanID_17="yrkesomradeid=3&lanid=17&antalrader=10000" # Värmlands län
+LanID_22="yrkesomradeid=3&lanid=22&antalrader=10000" # Västernorrlands län
+LanID_19="yrkesomradeid=3&lanid=19&antalrader=10000" # Västmanlands län
+LanID_14="yrkesomradeid=3&lanid=14&antalrader=10000" # Västra götalands län
+LanID_18="yrkesomradeid=3&lanid=18&antalrader=10000" # Örebro län
+LanID_5="yrkesomradeid=3&lanid=5&antalrader=10000" # Östergötlands län
 
 
 # function to curl the API, format with jq and output to a file of your choosing
@@ -67,3 +85,22 @@ getAPItoJson $URLsoklista$ID_2519 yrkesgruppID-2519.json
 
 getAPItoJson $URLmatching$LanID_24 lanID-24.json
 getAPItoJson $URLmatching$LanID_1 lanID-1.json
+getAPItoJson $URLmatching$LanID_10 lanID-10.json
+getAPItoJson $URLmatching$LanID_20 lanID-20.json
+getAPItoJson $URLmatching$LanID_9 lanID-9.json
+getAPItoJson $URLmatching$LanID_21 lanID-21.json
+getAPItoJson $URLmatching$LanID_13 lanID-13.json
+getAPItoJson $URLmatching$LanID_23 lanID-23.json
+getAPItoJson $URLmatching$LanID_6 lanID-6.json
+getAPItoJson $URLmatching$LanID_8 lanID-8.json
+getAPItoJson $URLmatching$LanID_7 lanID-7.json
+getAPItoJson $URLmatching$LanID_25 lanID-25.json
+getAPItoJson $URLmatching$LanID_12 lanID-12.json
+getAPItoJson $URLmatching$LanID_4 lanID-4.json
+getAPItoJson $URLmatching$LanID_3 lanID-3.json
+getAPItoJson $URLmatching$LanID_17 lanID-17.json
+getAPItoJson $URLmatching$LanID_22 lanID-22.json
+getAPItoJson $URLmatching$LanID_19 lanID-19.json
+getAPItoJson $URLmatching$LanID_14 lanID-14.json
+getAPItoJson $URLmatching$LanID_18 lanID-18.json
+getAPItoJson $URLmatching$LanID_5 lanID-5.json

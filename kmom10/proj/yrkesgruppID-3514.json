@@ -1,14 +1,14 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 92,
-    "totalt_antal_ledigajobb": 102,
+    "totalt_antal_platsannonser": 77,
+    "totalt_antal_ledigajobb": 85,
     "sokdata": [
       {
         "id": 2514,
         "namn": "Kommunikationstekniker",
-        "antal_platsannonser": 8,
-        "antal_ledigajobb": 10
+        "antal_platsannonser": 5,
+        "antal_ledigajobb": 5
       },
       {
         "id": 6602,
@@ -25,8 +25,8 @@
       {
         "id": 5912,
         "namn": "Nätverkstekniker",
-        "antal_platsannonser": 78,
-        "antal_ledigajobb": 86
+        "antal_platsannonser": 66,
+        "antal_ledigajobb": 74
       }
     ]
   }

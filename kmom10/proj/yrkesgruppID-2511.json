@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 164,
-    "totalt_antal_ledigajobb": 190,
+    "totalt_antal_platsannonser": 139,
+    "totalt_antal_ledigajobb": 162,
     "sokdata": [
       {
         "id": 7319,
@@ -13,8 +13,8 @@
       {
         "id": 7579,
         "namn": "Affärskonsult, IT",
-        "antal_platsannonser": 20,
-        "antal_ledigajobb": 22
+        "antal_platsannonser": 15,
+        "antal_ledigajobb": 17
       },
       {
         "id": 7600,
@@ -25,14 +25,14 @@
       {
         "id": 7602,
         "namn": "Infrastrukturarkitekt",
-        "antal_platsannonser": 16,
-        "antal_ledigajobb": 16
+        "antal_platsannonser": 14,
+        "antal_ledigajobb": 14
       },
       {
         "id": 6626,
         "namn": "IT-arkitekt/Lösningsarkitekt",
-        "antal_platsannonser": 50,
-        "antal_ledigajobb": 54
+        "antal_platsannonser": 49,
+        "antal_ledigajobb": 53
       },
       {
         "id": 2917,
@@ -43,32 +43,32 @@
       {
         "id": 7621,
         "namn": "Kravanalytiker",
-        "antal_platsannonser": 23,
-        "antal_ledigajobb": 36
+        "antal_platsannonser": 20,
+        "antal_ledigajobb": 32
       },
       {
         "id": 2410,
         "namn": "Metodanalytiker, IT",
-        "antal_platsannonser": 2,
-        "antal_ledigajobb": 2
+        "antal_platsannonser": 1,
+        "antal_ledigajobb": 1
       },
       {
         "id": 2411,
         "namn": "Systemanalytiker/Systemutredare",
-        "antal_platsannonser": 21,
-        "antal_ledigajobb": 23
+        "antal_platsannonser": 13,
+        "antal_ledigajobb": 15
       },
       {
         "id": 7601,
         "namn": "Systemarkitekt",
-        "antal_platsannonser": 13,
-        "antal_ledigajobb": 16
+        "antal_platsannonser": 9,
+        "antal_ledigajobb": 10
       },
       {
         "id": 7578,
         "namn": "Verksamhetskonsult, IT",
-        "antal_platsannonser": 12,
-        "antal_ledigajobb": 14
+        "antal_platsannonser": 11,
+        "antal_ledigajobb": 13
       }
     ]
   }

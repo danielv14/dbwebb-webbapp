@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 128,
-    "totalt_antal_ledigajobb": 150,
+    "totalt_antal_platsannonser": 118,
+    "totalt_antal_ledigajobb": 139,
     "sokdata": [
       {
         "id": 7436,
@@ -13,14 +13,14 @@
       {
         "id": 5422,
         "namn": "Systemtestare",
-        "antal_platsannonser": 92,
-        "antal_ledigajobb": 112
+        "antal_platsannonser": 83,
+        "antal_ledigajobb": 102
       },
       {
         "id": 6826,
         "namn": "Testledare",
-        "antal_platsannonser": 35,
-        "antal_ledigajobb": 36
+        "antal_platsannonser": 34,
+        "antal_ledigajobb": 35
       }
     ]
   }
