@@ -1,11 +1,24 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 36,
-    "antal_platsannonser_exakta": 36,
+    "antal_platsannonser": 37,
+    "antal_platsannonser_exakta": 37,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 74,
+    "antal_platserTotal": 75,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "2847929",
+        "annonsrubrik": ".NET - utvecklare till Örebro",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "Consid AB",
+        "kommunnamn": "Örebro",
+        "kommunkod": 1880,
+        "publiceraddatum": "2016-01-04T11:25:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2847929",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "6520074",
         "annonsrubrik": "Servicemedarbetare sökes till Sigma",

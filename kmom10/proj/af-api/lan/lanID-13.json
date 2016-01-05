@@ -1,11 +1,37 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 21,
-    "antal_platsannonser_exakta": 21,
+    "antal_platsannonser": 23,
+    "antal_platsannonser_exakta": 23,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 56,
+    "antal_platserTotal": 62,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "6520559",
+        "annonsrubrik": "IT - systemutvecklare sökes till IT Applikation , Halmstad / Varberg",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "Region Halland , IT Applikation",
+        "kommunnamn": "Varberg",
+        "kommunkod": 1383,
+        "publiceraddatum": "2016-01-04T10:10:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520559",
+        "relevans": 100,
+        "antalplatser": "3",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6520558",
+        "annonsrubrik": "IT - systemutvecklare sökes till IT Applikation , Halmstad / Varberg",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "Region Halland , IT Applikation",
+        "kommunnamn": "Halmstad",
+        "kommunkod": 1380,
+        "publiceraddatum": "2016-01-04T10:10:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520558",
+        "relevans": 100,
+        "antalplatser": "3",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "2846968",
         "annonsrubrik": "Junior supporttekniker till Retail Store",

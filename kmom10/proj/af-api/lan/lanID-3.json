@@ -1,11 +1,50 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 43,
-    "antal_platsannonser_exakta": 43,
+    "antal_platsannonser": 45,
+    "antal_platsannonser_exakta": 45,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 81,
+    "antal_platserTotal": 83,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "6520548",
+        "annonsrubrik": "Systemingenjör",
+        "yrkesbenamning": "Systemförvaltare",
+        "arbetsplatsnamn": "Försvarsmakten",
+        "kommunnamn": "Enköping",
+        "kommunkod": 381,
+        "publiceraddatum": "2016-01-04T10:06:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520548",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6520523",
+        "annonsrubrik": "Systemingenjör Windows",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "Försvarsmakten",
+        "kommunnamn": "Enköping",
+        "kommunkod": 381,
+        "publiceraddatum": "2016-01-04T09:52:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520523",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6520470",
+        "annonsrubrik": "Systemingenjör Linux",
+        "yrkesbenamning": "Systemförvaltare",
+        "arbetsplatsnamn": "Försvarsmakten",
+        "kommunnamn": "Enköping",
+        "kommunkod": 381,
+        "publiceraddatum": "2016-01-04T09:33:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520470",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "6519954",
         "annonsrubrik": "NOC - tekniker ",
@@ -418,19 +457,6 @@
         "kommunkod": 380,
         "publiceraddatum": "2015-12-10T08:28:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2838145",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "0015-577474",
-        "annonsrubrik": "IT - application developer and team leader",
-        "yrkesbenamning": "Mjukvaruutvecklare",
-        "arbetsplatsnamn": "Crowderia Sweden AB",
-        "kommunnamn": "Uppsala",
-        "kommunkod": 380,
-        "publiceraddatum": "2015-12-07T17:14:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=0015-577474",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1

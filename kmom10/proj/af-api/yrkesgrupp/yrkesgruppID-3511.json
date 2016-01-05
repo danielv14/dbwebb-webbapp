@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 175,
-    "totalt_antal_ledigajobb": 218,
+    "totalt_antal_platsannonser": 179,
+    "totalt_antal_ledigajobb": 223,
     "sokdata": [
       {
         "id": 6027,
@@ -13,20 +13,20 @@
       {
         "id": 3097,
         "namn": "Driftledare, IT",
-        "antal_platsannonser": 6,
-        "antal_ledigajobb": 6
+        "antal_platsannonser": 7,
+        "antal_ledigajobb": 7
       },
       {
         "id": 5431,
         "namn": "Drifttekniker, data",
         "antal_platsannonser": 40,
-        "antal_ledigajobb": 45
+        "antal_ledigajobb": 46
       },
       {
         "id": 6625,
         "namn": "IT-tekniker/Datatekniker",
-        "antal_platsannonser": 122,
-        "antal_ledigajobb": 157
+        "antal_platsannonser": 125,
+        "antal_ledigajobb": 160
       },
       {
         "id": 5428,

@@ -84,6 +84,7 @@ getAPItoJson $URLsoklista$ID_2513 af-api/yrkesgrupp/yrkesgruppID-2513.json
 getAPItoJson $URLsoklista$ID_3515 af-api/yrkesgrupp/yrkesgruppID-3515.json
 getAPItoJson $URLsoklista$ID_2519 af-api/yrkesgrupp/yrkesgruppID-2519.json
 
+# Matching for län
 getAPItoJson $URLmatching$LanID_24 af-api/lan/lanID-24.json
 getAPItoJson $URLmatching$LanID_1 af-api/lan/lanID-1.json
 getAPItoJson $URLmatching$LanID_10 af-api/lan/lanID-10.json

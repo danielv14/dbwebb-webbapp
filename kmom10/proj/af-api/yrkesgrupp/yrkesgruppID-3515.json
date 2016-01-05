@@ -1,14 +1,14 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 38,
-    "totalt_antal_ledigajobb": 40,
+    "totalt_antal_platsannonser": 39,
+    "totalt_antal_ledigajobb": 41,
     "sokdata": [
       {
         "id": 2523,
         "namn": "Webbansvarig/Webbstrateg",
-        "antal_platsannonser": 16,
-        "antal_ledigajobb": 17
+        "antal_platsannonser": 17,
+        "antal_ledigajobb": 18
       },
       {
         "id": 7046,

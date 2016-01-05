@@ -1,11 +1,50 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 32,
-    "antal_platsannonser_exakta": 32,
+    "antal_platsannonser": 34,
+    "antal_platsannonser_exakta": 34,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 57,
+    "antal_platserTotal": 59,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "6520788",
+        "annonsrubrik": "Erfaren Testare",
+        "yrkesbenamning": "Systemtestare",
+        "arbetsplatsnamn": "Cybercom Group",
+        "kommunnamn": "Sundsvall",
+        "kommunkod": 2281,
+        "publiceraddatum": "2016-01-04T11:49:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520788",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6520737",
+        "annonsrubrik": "Erfaren webbutvecklare - wordpress",
+        "yrkesbenamning": "Backend-utvecklare",
+        "arbetsplatsnamn": "Cybercom Group",
+        "kommunnamn": "Sundsvall",
+        "kommunkod": 2281,
+        "publiceraddatum": "2016-01-04T11:28:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520737",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "2847923",
+        "annonsrubrik": "Java - utvecklare till Sundsvall",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "CONSID AB",
+        "kommunnamn": "Sundsvall",
+        "kommunkod": 2281,
+        "publiceraddatum": "2016-01-04T11:24:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2847923",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "6516047",
         "annonsrubrik": "Säkerhetstekniker",
@@ -238,19 +277,6 @@
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6499926",
         "relevans": 100,
         "antalplatser": "2",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6499047",
-        "annonsrubrik": "Kollektivtrafikmyndigheten i Västernorrland ",
-        "yrkesbenamning": "IT-samordnare",
-        "arbetsplatsnamn": "Proffice Sverige AB",
-        "kommunnamn": "Kramfors",
-        "kommunkod": 2282,
-        "publiceraddatum": "2015-12-09T16:21:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6499047",
-        "relevans": 100,
-        "antalplatser": "1",
         "antalPlatserVisa": 1
       },
       {

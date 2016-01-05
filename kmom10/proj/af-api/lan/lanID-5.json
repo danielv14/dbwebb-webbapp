@@ -1,11 +1,63 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 156,
-    "antal_platsannonser_exakta": 156,
+    "antal_platsannonser": 158,
+    "antal_platsannonser_exakta": 158,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 245,
+    "antal_platserTotal": 247,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "6521281",
+        "annonsrubrik": "Systemutvecklare till Linköping!",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "Combitech AB",
+        "kommunnamn": "Linköping",
+        "kommunkod": 580,
+        "publiceraddatum": "2016-01-04T15:24:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6521281",
+        "relevans": 100,
+        "antalplatser": "2",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "2847839",
+        "annonsrubrik": "SMHI söker servicedesigner / lösningsarkitekt , ref",
+        "yrkesbenamning": "Mjukvaruutvecklare",
+        "arbetsplatsnamn": "SMHI",
+        "kommunnamn": "Norrköping",
+        "kommunkod": 581,
+        "publiceraddatum": "2016-01-04T10:48:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2847839",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6520490",
+        "annonsrubrik": "Mångsidig fälttekniker med stort tekniskt intresse",
+        "yrkesbenamning": "Nätverkstekniker",
+        "arbetsplatsnamn": "Ericsson Local Services AB ",
+        "kommunnamn": "Linköping",
+        "kommunkod": 580,
+        "publiceraddatum": "2016-01-04T09:40:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520490",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6520459",
+        "annonsrubrik": "Mjukvarukonstruktör - inbyggda system",
+        "yrkesbenamning": "Mjukvaruutvecklare",
+        "arbetsplatsnamn": "i3tex AB",
+        "kommunnamn": "Linköping",
+        "kommunkod": 580,
+        "publiceraddatum": "2016-01-04T09:29:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520459",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "6520112",
         "annonsrubrik": "Mjukvaruutvecklare",
@@ -1047,19 +1099,6 @@
         "antalPlatserVisa": 1
       },
       {
-        "annonsid": "6500932",
-        "annonsrubrik": "Erfaren testledare till långt uppdrag",
-        "yrkesbenamning": "Testledare",
-        "arbetsplatsnamn": "TNG Group AB",
-        "kommunnamn": "Norrköping",
-        "kommunkod": 581,
-        "publiceraddatum": "2015-12-11T09:05:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6500932",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
         "annonsid": "6500380",
         "annonsrubrik": "Test Architect Design and Product Verification",
         "yrkesbenamning": "Civilingenjör, systemutveckling",
@@ -1122,19 +1161,6 @@
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6500014",
         "relevans": 100,
         "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6499942",
-        "annonsrubrik": "Systemutvecklare till Linköping!",
-        "yrkesbenamning": "Systemutvecklare/Programmerare",
-        "arbetsplatsnamn": "Combitech AB",
-        "kommunnamn": "Linköping",
-        "kommunkod": 580,
-        "publiceraddatum": "2015-12-10T12:54:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6499942",
-        "relevans": 100,
-        "antalplatser": "2",
         "antalPlatserVisa": 1
       },
       {

@@ -1,26 +1,26 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 76,
-    "totalt_antal_ledigajobb": 83,
+    "totalt_antal_platsannonser": 79,
+    "totalt_antal_ledigajobb": 86,
     "sokdata": [
       {
         "id": 2915,
         "namn": "IT-samordnare",
-        "antal_platsannonser": 24,
-        "antal_ledigajobb": 26
+        "antal_platsannonser": 23,
+        "antal_ledigajobb": 25
       },
       {
         "id": 5996,
         "namn": "Systemansvarig",
-        "antal_platsannonser": 12,
-        "antal_ledigajobb": 13
+        "antal_platsannonser": 13,
+        "antal_ledigajobb": 14
       },
       {
         "id": 2919,
         "namn": "Systemförvaltare",
-        "antal_platsannonser": 40,
-        "antal_ledigajobb": 44
+        "antal_platsannonser": 43,
+        "antal_ledigajobb": 47
       }
     ]
   }

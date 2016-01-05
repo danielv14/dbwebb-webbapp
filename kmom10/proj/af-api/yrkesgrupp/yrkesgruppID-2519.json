@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 66,
-    "totalt_antal_ledigajobb": 79,
+    "totalt_antal_platsannonser": 67,
+    "totalt_antal_ledigajobb": 84,
     "sokdata": [
       {
         "id": 6677,
@@ -19,8 +19,8 @@
       {
         "id": 5432,
         "namn": "IT-strateg",
-        "antal_platsannonser": 42,
-        "antal_ledigajobb": 53
+        "antal_platsannonser": 43,
+        "antal_ledigajobb": 58
       },
       {
         "id": 7477,

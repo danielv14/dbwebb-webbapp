@@ -1,11 +1,50 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 30,
-    "antal_platsannonser_exakta": 30,
+    "antal_platsannonser": 33,
+    "antal_platsannonser_exakta": 33,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 90,
+    "antal_platserTotal": 95,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "2847936",
+        "annonsrubrik": "Projektledare",
+        "yrkesbenamning": "Projektledare, IT",
+        "arbetsplatsnamn": "FDT AB",
+        "kommunnamn": "Luleå",
+        "kommunkod": 2580,
+        "publiceraddatum": "2016-01-04T11:31:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2847936",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "2847634",
+        "annonsrubrik": "Mjukvaruutvecklare",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "FDT AB",
+        "kommunnamn": "Luleå",
+        "kommunkod": 2580,
+        "publiceraddatum": "2016-01-04T09:07:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2847634",
+        "relevans": 100,
+        "antalplatser": "2",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "2847624",
+        "annonsrubrik": "Drift - och IT - tekniker",
+        "yrkesbenamning": "Drifttekniker, data",
+        "arbetsplatsnamn": "FDT AB",
+        "kommunnamn": "Luleå",
+        "kommunkod": 2580,
+        "publiceraddatum": "2016-01-04T09:02:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=2847624",
+        "relevans": 100,
+        "antalplatser": "2",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "6519094",
         "annonsrubrik": "Systemarkitekt",

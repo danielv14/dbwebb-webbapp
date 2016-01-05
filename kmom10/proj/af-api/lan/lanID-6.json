@@ -7,6 +7,32 @@
     "antal_sidor": 1,
     "matchningdata": [
       {
+        "annonsid": "6521384",
+        "annonsrubrik": "IT tekniker",
+        "yrkesbenamning": "Driftledare, IT",
+        "arbetsplatsnamn": "Poolia Sverige AB , Poolia Jönköping AB",
+        "kommunnamn": "Mullsjö",
+        "kommunkod": 642,
+        "publiceraddatum": "2016-01-04T16:19:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6521384",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
+      {
+        "annonsid": "6520956",
+        "annonsrubrik": "Utvecklare för inbyggda system",
+        "yrkesbenamning": "Mjukvaruutvecklare",
+        "arbetsplatsnamn": "Combitech AB",
+        "kommunnamn": "Jönköping",
+        "kommunkod": 680,
+        "publiceraddatum": "2016-01-04T13:17:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6520956",
+        "relevans": 100,
+        "antalplatser": "2",
+        "antalPlatserVisa": 1
+      },
+      {
         "annonsid": "2847501",
         "annonsrubrik": "Servicetekniker IT Jönköping",
         "yrkesbenamning": "IT-tekniker/Datatekniker",
@@ -392,19 +418,6 @@
         "kommunkod": 642,
         "publiceraddatum": "2015-12-21T16:30:00+01:00",
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6513211",
-        "relevans": 100,
-        "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6513196",
-        "annonsrubrik": "IT tekniker helpdesk",
-        "yrkesbenamning": "Drifttekniker, data",
-        "arbetsplatsnamn": "Poolia Jönköping AB ",
-        "kommunnamn": "Jönköping",
-        "kommunkod": 680,
-        "publiceraddatum": "2015-12-21T16:26:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6513196",
         "relevans": 100,
         "antalplatser": "1",
         "antalPlatserVisa": 1
@@ -1005,19 +1018,6 @@
         "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6490248",
         "relevans": 100,
         "antalplatser": "1",
-        "antalPlatserVisa": 1
-      },
-      {
-        "annonsid": "6482425",
-        "annonsrubrik": "Utvecklare för inbyggda system",
-        "yrkesbenamning": "Systemutvecklare/Programmerare",
-        "arbetsplatsnamn": "Combitech AB",
-        "kommunnamn": "Jönköping",
-        "kommunkod": 680,
-        "publiceraddatum": "2015-11-26T13:45:00+01:00",
-        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6482425",
-        "relevans": 100,
-        "antalplatser": "2",
         "antalPlatserVisa": 1
       },
       {

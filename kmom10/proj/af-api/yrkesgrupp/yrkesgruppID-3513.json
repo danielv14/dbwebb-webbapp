@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 79,
-    "totalt_antal_ledigajobb": 85,
+    "totalt_antal_platsannonser": 81,
+    "totalt_antal_ledigajobb": 87,
     "sokdata": [
       {
         "id": 5896,
@@ -31,8 +31,8 @@
       {
         "id": 2918,
         "namn": "Systemadministratör",
-        "antal_platsannonser": 53,
-        "antal_ledigajobb": 59
+        "antal_platsannonser": 55,
+        "antal_ledigajobb": 61
       }
     ]
   }

@@ -1,11 +1,24 @@
 {
   "matchningslista": {
-    "antal_platsannonser": 37,
-    "antal_platsannonser_exakta": 37,
+    "antal_platsannonser": 38,
+    "antal_platsannonser_exakta": 38,
     "antal_platsannonser_narliggande": 0,
-    "antal_platserTotal": 48,
+    "antal_platserTotal": 49,
     "antal_sidor": 1,
     "matchningdata": [
+      {
+        "annonsid": "6521242",
+        "annonsrubrik": "Är du Systemutvecklare , som fixar ax till limpa?",
+        "yrkesbenamning": "Systemutvecklare/Programmerare",
+        "arbetsplatsnamn": "ClearSense",
+        "kommunnamn": "Växjö",
+        "kommunkod": 780,
+        "publiceraddatum": "2016-01-04T15:15:00+01:00",
+        "annonsurl": "http://www.arbetsformedlingen.se/ledigajobb?id=6521242",
+        "relevans": 100,
+        "antalplatser": "1",
+        "antalPlatserVisa": 1
+      },
       {
         "annonsid": "6517681",
         "annonsrubrik": "Installationsjobb av datorer , extraarbete",

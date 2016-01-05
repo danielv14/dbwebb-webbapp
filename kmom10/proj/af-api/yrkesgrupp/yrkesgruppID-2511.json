@@ -1,8 +1,8 @@
 {
   "soklista": {
     "listnamn": "yrken",
-    "totalt_antal_platsannonser": 139,
-    "totalt_antal_ledigajobb": 162,
+    "totalt_antal_platsannonser": 142,
+    "totalt_antal_ledigajobb": 165,
     "sokdata": [
       {
         "id": 7319,
@@ -43,8 +43,8 @@
       {
         "id": 7621,
         "namn": "Kravanalytiker",
-        "antal_platsannonser": 20,
-        "antal_ledigajobb": 32
+        "antal_platsannonser": 21,
+        "antal_ledigajobb": 33
       },
       {
         "id": 2410,
@@ -55,14 +55,14 @@
       {
         "id": 2411,
         "namn": "Systemanalytiker/Systemutredare",
-        "antal_platsannonser": 13,
-        "antal_ledigajobb": 15
+        "antal_platsannonser": 14,
+        "antal_ledigajobb": 16
       },
       {
         "id": 7601,
         "namn": "Systemarkitekt",
-        "antal_platsannonser": 9,
-        "antal_ledigajobb": 10
+        "antal_platsannonser": 10,
+        "antal_ledigajobb": 11
       },
       {
         "id": 7578,
