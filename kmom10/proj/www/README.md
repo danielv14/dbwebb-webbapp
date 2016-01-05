@@ -1,5 +1,5 @@
 # IT_Jobb
-Detta är en webbapp som med hjälp av ett bash-script och json-filer presenterar data från Arbetsförmedlingens API om IT jobb i Sverige
+Detta är en webbapp som med hjälp av ett bash-script och json-filer presenterar data från Arbetsförmedlingens API om IT jobb i Sverige.
 
 ### Scriptet
 I ```json/``` finns det ett script som heter ```update-sources.bash``` som med hjälp av curl sparar ned den data i json-format som applikationen behöver.
