@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>IT_Jobb</name>
+    <description>
+      Få koll på IT-markanden i Sverige.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" subdomains="true"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+
+
+    <platform name="firefoxos">
+      <icon src="resources/ff/icon-60.png" width="60" height="60" />
+      <icon src="resources/ff/icon-128.png" width="128" height="128" />
+    </platform>
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="resources/android-icon.png" />
+
+        <!-- splash screen -->
+        <splash src="resources/splash.png" density="hdpi"/>
+        <splash src="resources/splash.png" density="mdpi"/>
+        <splash src="resources/splash.png" density="xhdpi"/>
+        <preference name="SplashScreenDelay" value="5000" />
+        <preference name="SplashMaintainAspectRatio" value="true" />
+        <preference name="SplashShowOnlyFirstTime" value="false" />
+    </platform>
+
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <!-- <preference name="StatusBarOverlaysWebView" value="false"/>
+        <preference name="StatusBarStyle" value="blacktranslucent" />
+        <preference name="StatusBarBackgroundColor" value="#F8F8F8" /> -->
+        <preference name="StatusBarOverlaysWebView" value="false"/>
+        <preference name="StatusBarBackgroundColor" value="#F8F8F8"/>
+        <preference name="StatusBarStyle" value="blacktranslucent" />
+        <!-- splash screen -->
+        <!-- images are determined by width and height. The following are supported -->
+        <splash src="resources/splash.png" width="320" height="480"/>
+        <splash src="resources/splash.png" width="640" height="960"/>
+        <splash src="resources/splash.png" width="768" height="1024"/>
+        <splash src="resources/splash.png" width="1536" height="2048"/>
+        <splash src="resources/splash.png" width="1024" height="768"/>
+        <splash src="resources/splash.png" width="2048" height="1536"/>
+        <splash src="resources/splash.png" width="640" height="1136"/>
+        <splash src="resources/splash.png" width="750" height="1334"/>
+        <splash src="resources/splash.png" width="1242" height="2208"/>
+        <splash src="resources/splash.png" width="2208" height="1242"/>
+        <preference name="FadeSplashScreenDuration" value="5000"/>
+
+        <!-- screen orientation -->
+        <preference name="Orientation" value="all" />
+    </platform>
+
+    <icon src="resources/icon.png" />
+</widget>

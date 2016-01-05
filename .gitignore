@@ -1,3 +1,4 @@
-kmom10/proj/ITbanken/platforms/
-kmom10/proj/ITbanken/plugins
-kmom10/proj/*.json
+kmom10/proj/platforms/
+kmom10/proj/plugins
+kmom10/proj/www/json/*.json
+kmom10/proj/www/json/af-api
