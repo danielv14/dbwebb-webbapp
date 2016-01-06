@@ -2,7 +2,7 @@
 Detta är en webbapp som med hjälp av ett bash-script och json-filer presenterar data från Arbetsförmedlingens API om IT jobb i Sverige.
 
 ### Scriptet
-I ```json/``` finns det ett script som heter ```update-sources.bash``` som med hjälp av curl sparar ned den data i json-format som applikationen behöver.
+I ```json/``` finns det ett script som heter ```update-sources.bash``` som med hjälp av curl sparar ned den data i json-format som applikationen behöver. Märk att scriptet använder sig av jq för att formatera den data som sparas ned till json-filer
 
 ### Starta IT_Jobb
 Att starta IT_Jobb är väldigt enkelt: starta med hjälp av ```index.html``` filen som finns i ```www/```.
