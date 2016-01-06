@@ -40,28 +40,7 @@
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <!-- <preference name="StatusBarOverlaysWebView" value="false"/>
-        <preference name="StatusBarStyle" value="blacktranslucent" />
-        <preference name="StatusBarBackgroundColor" value="#F8F8F8" /> -->
-        <preference name="StatusBarOverlaysWebView" value="false"/>
-        <preference name="StatusBarBackgroundColor" value="#F8F8F8"/>
-        <preference name="StatusBarStyle" value="blacktranslucent" />
-        <!-- splash screen -->
-        <!-- images are determined by width and height. The following are supported -->
-        <splash src="resources/splash.png" width="320" height="480"/>
-        <splash src="resources/splash.png" width="640" height="960"/>
-        <splash src="resources/splash.png" width="768" height="1024"/>
-        <splash src="resources/splash.png" width="1536" height="2048"/>
-        <splash src="resources/splash.png" width="1024" height="768"/>
-        <splash src="resources/splash.png" width="2048" height="1536"/>
-        <splash src="resources/splash.png" width="640" height="1136"/>
-        <splash src="resources/splash.png" width="750" height="1334"/>
-        <splash src="resources/splash.png" width="1242" height="2208"/>
-        <splash src="resources/splash.png" width="2208" height="1242"/>
-        <preference name="FadeSplashScreenDuration" value="5000"/>
 
-        <!-- screen orientation -->
-        <preference name="Orientation" value="all" />
     </platform>
 
     <icon src="resources/icon.png" />
