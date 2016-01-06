@@ -17,8 +17,6 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
 
-
-
     <platform name="firefoxos">
       <icon src="resources/ff/icon-60.png" width="60" height="60" />
       <icon src="resources/ff/icon-128.png" width="128" height="128" />
