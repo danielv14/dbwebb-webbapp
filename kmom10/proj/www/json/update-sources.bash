@@ -24,7 +24,7 @@ LanID_24="yrkesomradeid=3&lanid=24&antalrader=10000" # Västerbotten
 LanID_1="yrkesomradeid=3&lanid=1&antalrader=10000" # Stockholm
 LanID_10="yrkesomradeid=3&lanid=10&antalrader=10000" # Blekinge
 LanID_20="yrkesomradeid=3&lanid=20&antalrader=10000" # Dalarnas län
-LanID_9="yrkesomradeid=3&lanid=9&antalrader=10000" # GOtlands län
+LanID_9="yrkesomradeid=3&lanid=9&antalrader=10000" # Gotlands län
 LanID_21="yrkesomradeid=3&lanid=21&antalrader=10000" # Gävleborgs län
 LanID_13="yrkesomradeid=3&lanid=13&antalrader=10000" # Hallands län
 LanID_23="yrkesomradeid=3&lanid=23&antalrader=10000" # Jämtlands län
@@ -33,7 +33,7 @@ LanID_8="yrkesomradeid=3&lanid=8&antalrader=10000" # Kalmars län
 LanID_7="yrkesomradeid=3&lanid=7&antalrader=10000" # Kronobergs län
 LanID_25="yrkesomradeid=3&lanid=25&antalrader=10000" # Norrbottens län
 LanID_12="yrkesomradeid=3&lanid=12&antalrader=10000" # SKåne län
-LanID_4="yrkesomradeid=3&lanid=4&antalrader=10000" # Söermans län
+LanID_4="yrkesomradeid=3&lanid=4&antalrader=10000" # Södermans län
 LanID_3="yrkesomradeid=3&lanid=3&antalrader=10000" # Uppsala län
 LanID_17="yrkesomradeid=3&lanid=17&antalrader=10000" # Värmlands län
 LanID_22="yrkesomradeid=3&lanid=22&antalrader=10000" # Västernorrlands län
